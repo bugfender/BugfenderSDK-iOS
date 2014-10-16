@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, RLLogLevel)
 #define RLogWarn(args, ...) RLog2(RLLogLevelWarning, nil, args, ##__VA_ARGS__)
 #define RLogErr(args, ...)  RLog2(RLLogLevelError, nil, args, ##__VA_ARGS__)
 
-#if (DEBUG && 0)
+#if (DEBUG)
 
 #define RLog2(level, tag, args, ...) ({\
     __RLLog(__LINE__,\
