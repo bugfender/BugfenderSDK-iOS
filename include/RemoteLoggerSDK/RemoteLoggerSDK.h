@@ -8,7 +8,16 @@
 
 #define RLLibraryVersionNumber_0_1  0.1
 
+/**
+ * Current RemoteLogger version number. 
+ * @discussion This value can be compared with the defined macros RLLibraryVersionNumber_X_Y.
+ **/
 FOUNDATION_EXPORT double const RLLibraryVersionNumber;
+
+/**
+ * Exception thrown when calling any RLog method without having activated previously the RemoteLogger.
+ **/
+extern NSString * const RLInvalidMethodCallException;
 
 typedef NS_ENUM(NSUInteger, RLLogLevel)
 {
@@ -61,14 +70,14 @@ typedef NS_ENUM(NSUInteger, RLLogLevel)
 FOUNDATION_EXPORT void __RLLog(NSInteger lineNumber, NSString *method, NSString *file, RLLogLevel level, NSString *tag, NSString *format, ...);
 
 /**
- * Main Remote Logger interface.
+ * Main RemoteLogger interface.
  **/
 @interface RemoteLogger : NSObject
 
 /**
  * Activates the remote logger for an specific app.
  * @param appToken The app token of the remote logger.
- * @discussion This method needs to be called before any RLog call.
+ * @discussion This method needs to be called before any RLog call, otherwise the `RLInvalidMethodCallException` exception will be thrown.
  **/
 + (void)activateLogger:(NSString*)appToken;
 
