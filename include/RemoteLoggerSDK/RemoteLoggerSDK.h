@@ -1,9 +1,7 @@
 //
 //  RemoteLoggerSDK.h
 //  RemoteLoggerSDK
-//
-//  Created by Joan Martin on 02/07/14.
-//  Copyright (c) 2014 Mobile Jazz. All rights reserved.
+//  Copyright (c) 2014 Mobile Jazz SL. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

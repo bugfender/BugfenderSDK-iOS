@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "RemoteLoggerSDK-iOS"
+  s.name         = "RemoteLoggerSDK"
   s.version      = "0.1.0"
   s.summary      = "Remote Logger SDK for iOS"
 
   s.description  = <<-DESC
-                   A longer description of RemoteLoggerSDK-iOS in Markdown format.
+                   A longer description of RemoteLoggerSDK in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
