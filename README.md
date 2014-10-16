@@ -1,0 +1,4 @@
+RemoteLoggerSDK-iOS
+===================
+
+Remote logging
