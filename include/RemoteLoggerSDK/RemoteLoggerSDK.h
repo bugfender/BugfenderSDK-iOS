@@ -81,6 +81,17 @@ FOUNDATION_EXPORT void __RLLog(NSInteger lineNumber, NSString *method, NSString 
  **/
 + (void)activateLogger:(NSString*)appToken;
 
+/**
+ * Maximum space availalbe to store local logs. This value is represented in bytes. Default value is 5242880 (1024*1024*5 = 1MB).
+ * @discussion If maximumLocalStroageSize is 0 (zero), then there is no limit and everything will be stored locally.
+ **/
++ (NSUInteger)maximumLocalStroageSize;
+
+/**
+ * Set the maximum space availalbe to store local logs. This value is represented in bytes.
+ * @discussion If maximumLocalStroageSize is 0 (zero), then there is no limit and everything will be stored locally.
+ **/
++ (void)setMaximumLocalStroageSize:(NSUInteger)maximumLocalStroageSize;
 
 /**
  * Returns the device identifier used to identify the curretn device in the Remote Logger environment.
