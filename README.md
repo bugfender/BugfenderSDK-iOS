@@ -1,25 +1,25 @@
 BugFenderSDK for iOS
 ===================
 
-BugFender is a service that enables devices to log to remote servers. The main feature is that developers can control from the server side which devices must log and which devices must not log to the server.
+Bug Fender is a service that enables devices to log to remote servers. The main feature is that developers can control from the server side which devices must log and which devices must not log to the server.
 
-In this repository you will find the BugFenderSDK to be used in iOS 6.0 or greater.
+In this repository you will find the Bug Fender SDK for iOS 6.0 or greater.
 
 #Instalation
 
 ## Cocoa Pods
-The easiest way to install BugFenderSDK for iOS is using CocoaPods.
+The easiest way to install Bug Fender SDK for iOS is using CocoaPods.
 ```
 pod 'BugFenderSDK', :git => 'https://github.com/mobilejazz/BugFenderSDK-iOS.git'
 ```
 The repository is not yet available in CocoaPods main repository as it is still under development. 
 
-## Manual
-If you prefer to install manually the SDK, you need to download the file `BugFenderSDK.framework` and add the framework to your project.
+## Manual Instalation
+If you prefer to install manually the SDK, you need to download the file `BugFenderSDK.framework` and add the framework to your project. That simple.
 
-# Using the BugFenderSDK
+# Using the Bug Fender SDK
 
-## Configuring the BugFender
+## Configuring Bug Fender
 
 First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:` you need to set the AppKey:
 
@@ -36,7 +36,7 @@ First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:
 }
 ```
 
-Optionally, you can get the device identifier used by the BugFender in order to display it in the Settings bundle for example. This device identifeir wil be used to recognize the device in the BugFender admin website.
+Optionally, you can get the device identifier used by the Bug Fender in order to display it in the Settings bundle for example. This device identifeir wil be used to recognize the device in the Bug Fender admin website.
 
 ## Writing Logs
 
@@ -69,4 +69,4 @@ Also, you can manually specify a tag o set of tags (string separated by comas) a
 
 ## To know
 
-By using the `BFLog` methods BugFender will store locally all logs and then send them when possible to the server. Also, will add extra information as the date of the log, the file where the log happened, the number of line or the name of the method.
+By using the `BFLog` methods Bug Fender will store locally all logs and then send them when possible to the server. Also, will add extra information as the date of the log, the file where the log happened, the number of line or the name of the method.
