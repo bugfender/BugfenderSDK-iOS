@@ -1,9 +1,9 @@
-BugFenderSDK for iOS
+Bug Fender SDK for iOS
 ===================
 
-Bug Fender is a service that enables devices to log to remote servers. The main feature is that developers can control from the server side which devices must log and which devices must not log to the server.
+Bug Fender is a service that enables devices to log to remote servers when needed. Developers can control from the server side which devices must send logs and which devices must not send logs to Bug Fender server. Later, you will be able to read all the received logs for each specific device.
 
-In this repository you will find the Bug Fender SDK for iOS 6.0 or greater.
+In this repository you will find Bug Fender SDK for iOS 6.0 or greater.
 
 #Instalation
 
