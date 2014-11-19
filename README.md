@@ -30,13 +30,13 @@ First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:
     [BugFender activateLogger:@"XCwWtq3uBX7hPLbe"];
    
     // Optionally, you can get the Device Idnetifier 
-    NSString *remoteLoggerDeviceIdentifier = [BugFender deviceIdentifier];
+    NSString *bugFenderDeviceIdentifier = [BugFender deviceIdentifier];
     
     return YES;
 }
 ```
 
-Optionally, you can get the device identifier used by the Bug Fender in order to display it in the Settings bundle for example. This device identifeir wil be used to recognize the device in the Bug Fender admin website.
+Optionally, you can get the device identifier used by the Bug Fender in order to display it in the Settings bundle for example. This device identifeir will be used to recognize the device in the Bug Fender admin website.
 
 ## Writing Logs
 
@@ -69,4 +69,4 @@ Also, you can manually specify a tag o set of tags (string separated by comas) a
 
 ## To know
 
-By using the `BFLog` methods Bug Fender will store locally all logs and then send them when possible to the server. Also, will add extra information as the date of the log, the file where the log happened, the number of line or the name of the method.
+By using the `BFLog` methods, Bug Fender will store locally all logs and then send them when possible to the server. Also, will add extra information as the date of the log, the file where the log happened, the number of line or the name of the method.
