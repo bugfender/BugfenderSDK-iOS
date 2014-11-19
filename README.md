@@ -63,7 +63,7 @@ Also, you can manually specify a tag o set of tags (string separated by comas) a
     
     BFLogError(@"This is an error with error code: %ld", 42);
     
-    BFLog2(RLLogLevelWarning, @"networking, error, TODO", @"This is a warning with some tags. Error code: %ld", (long)23);
+    BFLog2(RLLogLevelWarning, @"networking, error", @"This is a warning with some tags. Error code: %ld", (long)23);
 }
 ```
 
