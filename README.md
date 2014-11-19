@@ -48,7 +48,9 @@ To write logs, you must replace `NSLog`with one of the following methods:
 
 As shown above, there are 3 kind of log levels: `BFLogLevelDefault`, `BFLogLevelWarning`, `BFLogLevelError`.
 
-Also, you can manually specify a tag o set of tags (string separated by comas) and a log level by using the following method:
+When compiling in DEBUG, Bug Fender will redirect the logs to the NSLog, displaying your messages in the console. However, when not compiling on DEBUG (RELEASE, for example), Bug Fender won't output anything on the console.
+
+Additionally, you can manually specify a tag o set of tags (string separated by comas) and a log level by using the following method:
 
 - `BFLog2(level, tag, ...)`: Where log level is one of the enums shown above, tag is an string containing tags separated by coma, and then the log itself.
 
@@ -57,12 +59,16 @@ Also, you can manually specify a tag o set of tags (string separated by comas) a
 ```
 - (void)foo
 {
+    // Default log
     BFLog(@"Foo method started at time: %@", [[NSDate date] description]);
     
+    // Warning log
     BFLogWarn(@"This is a warning with error code: %ld", 23);
     
+    // Error log
     BFLogError(@"This is an error with error code: %ld", 42);
     
+    // Custom log, specifiying level, tags, and the text
     BFLog2(RLLogLevelWarning, @"networking, error", @"This is a warning with some tags. Error code: %ld", (long)23);
 }
 ```
