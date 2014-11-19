@@ -69,10 +69,10 @@ Additionally, you can manually specify a tag o set of tags (string separated by 
     BFLogError(@"This is an error with error code: %ld", 42);
     
     // Custom log, specifiying level, tags, and the text
-    BFLog2(RLLogLevelWarning, @"networking, error", @"This is a warning with some tags. Error code: %ld", (long)23);
+    BFLog2(BFLogLevelWarning, @"networking, error", @"This is a warning with some tags. Error code: %ld", (long)23);
 }
 ```
 
-## To know
+## To Know
 
 By using the `BFLog` methods, Bug Fender will store locally all logs and then send them when possible to the server. Also, will add extra information as the date of the log, the file where the log happened, the number of line or the name of the method.
