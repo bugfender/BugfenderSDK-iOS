@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "https://github.com/mobilejazz/BugFenderSDK-iOS"
+  s.homepage     = "www.bugfender.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  s.platform     = :ios, "6.0"
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "BugFenderSDK.framework"
+  s.source_files  = "BugFenderSDK.framework/Headers/*.h"
 #  s.source_files  = "include/RemoteLoggerSDK/*.h"
   #s.exclude_files = "Classes/Exclude"
 
@@ -107,8 +107,9 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
-#  s.preserve_paths = "libRemoteLoggerSDK.a"
+  s.preserve_paths = "BugFenderSDK.framework/*"
 #  s.vendored_library = "libRemoteLoggerSDK.a"
+
   
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -118,7 +119,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "BugFenderSDK"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -132,7 +133,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = {"FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/BugFenderSDK"}#{ "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
