@@ -10,13 +10,13 @@
 #define BFLibraryVersionNumber_0_2  0.2
 
 /**
- * Current BugFender version number.
+ * Current Bug Fender version number.
  * @discussion This value can be compared with the defined macros BFLibraryVersionNumber_X_Y.
  **/
 FOUNDATION_EXPORT double const BFLibraryVersionNumber;
 
 /**
- * Exception thrown when calling any BFLog method without having activated previously the BugFender.
+ * Exception thrown when calling any BFLog method without having activated previously the `BugFender` interface.
  **/
 extern NSString * const BFInvalidMethodCallException;
 
@@ -58,8 +58,14 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 #endif
 
+#if (DEBUG)
+#define BF_DEBUG 1
+#else
+#define BF_DEBUG 0
+#endif
+
 /**
- * Default remote logger interface for logging.
+ * Default Bug Fender interface for logging.
  * @param lineNumber The line number of the log.
  * @param method The method where the log has happened.
  * @param file The file where the log has happened.
@@ -71,31 +77,31 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString *file, BFLogLevel level, NSString *tag, NSString *format, ...);
 
 /**
- * Main RemoteLogger interface.
+ * Main Bug Fender interface.
  **/
 @interface BugFender : NSObject
 
 /**
- * Activates the remote logger for an specific app.
- * @param appToken The app token of the remote logger.
+ * Activates the Bug Fender for an specific app.
+ * @param appToken The app token of the Bug Fender application
  * @discussion This method needs to be called before any BFLog call, otherwise the `BFInvalidMethodCallException` exception will be thrown.
  **/
 + (void)activateLogger:(NSString*)appToken;
 
 /**
- * Maximum space availalbe to store local logs. This value is represented in bytes. Default value is 5242880 (1024*1024*5 = 1MB).
- * @discussion If maximumLocalStroageSize is 0 (zero), then there is no limit and everything will be stored locally.
+ * Maximum space availalbe to store local logs. This value is represented in bytes. Default value is 5242880 (1024*1024*5 = 5MB).
+ * @discussion If maximumLocalStorageSize is 0 (zero), then there is no limit and everything will be stored locally.
  **/
-+ (NSUInteger)maximumLocalStroageSize;
++ (NSUInteger)maximumLocalStorageSize;
 
 /**
  * Set the maximum space availalbe to store local logs. This value is represented in bytes.
- * @discussion If maximumLocalStroageSize is 0 (zero), then there is no limit and everything will be stored locally.
+ * @discussion If maximumLocalStorageSize is 0 (zero), then there is no limit and everything will be stored locally.
  **/
-+ (void)setMaximumLocalStroageSize:(NSUInteger)maximumLocalStroageSize;
++ (void)setMaximumLocalStorageSize:(NSUInteger)maximumLocalStorageSize;
 
 /**
- * Returns the device identifier used to identify the curretn device in the Remote Logger environment.
+ * Returns the device identifier used to identify the current device in the Bug Fender website.
  * @return
  **/
 + (NSString*)deviceIdentifier;
