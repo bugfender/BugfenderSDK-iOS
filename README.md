@@ -1,25 +1,25 @@
-BugFenderSDK for iOS
+Bug Fender SDK for iOS
 ===================
 
-BugFender is a service that enables devices to log to remote servers. The main feature is that developers can control from the server side which devices must log and which devices must not log to the server.
+Bug Fender is a service that enables devices to log to remote servers when needed. Developers can control from the server side which devices must send logs and which devices must not send logs to Bug Fender server. Later, you will be able to read all the received logs for each specific device.
 
-In this repository you will find the BugFenderSDK to be used in iOS 6.0 or greater.
+In this repository you will find Bug Fender SDK for iOS 6.0 or greater.
 
 #Instalation
 
 ## Cocoa Pods
-The easiest way to install BugFenderSDK for iOS is using CocoaPods.
+The easiest way to install Bug Fender SDK for iOS is using CocoaPods.
 ```
 pod 'BugFenderSDK', :git => 'https://github.com/mobilejazz/BugFenderSDK-iOS.git'
 ```
 The repository is not yet available in CocoaPods main repository as it is still under development. 
 
-## Manual
-If you prefer to install manually the SDK, you need to download the file `BugFenderSDK.framework` and add the framework to your project.
+## Manual Instalation
+If you prefer to install manually the SDK, you need to download the file `BugFenderSDK.framework` and add the framework to your project. That simple.
 
-# Using the BugFenderSDK
+# Using the Bug Fender SDK
 
-## Configuring the BugFender
+## Configuring Bug Fender
 
 First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:` you need to set the AppKey:
 
@@ -30,13 +30,13 @@ First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:
     [BugFender activateLogger:@"XCwWtq3uBX7hPLbe"];
    
     // Optionally, you can get the Device Idnetifier 
-    NSString *remoteLoggerDeviceIdentifier = [BugFender deviceIdentifier];
+    NSString *bugFenderDeviceIdentifier = [BugFender deviceIdentifier];
     
     return YES;
 }
 ```
 
-Optionally, you can get the device identifier used by the BugFender in order to display it in the Settings bundle for example. This device identifeir wil be used to recognize the device in the BugFender admin website.
+Optionally, you can get the device identifier used by the Bug Fender in order to display it in the Settings bundle for example. This device identifeir will be used to recognize the device in the Bug Fender admin website.
 
 ## Writing Logs
 
@@ -48,7 +48,9 @@ To write logs, you must replace `NSLog`with one of the following methods:
 
 As shown above, there are 3 kind of log levels: `BFLogLevelDefault`, `BFLogLevelWarning`, `BFLogLevelError`.
 
-Also, you can manually specify a tag o set of tags (string separated by comas) and a log level by using the following method:
+When compiling in DEBUG, Bug Fender will redirect the logs to the NSLog, displaying your messages in the console. However, when not compiling on DEBUG (RELEASE, for example), Bug Fender won't output anything on the console.
+
+Additionally, you can manually specify a tag o set of tags (string separated by comas) and a log level by using the following method:
 
 - `BFLog2(level, tag, ...)`: Where log level is one of the enums shown above, tag is an string containing tags separated by coma, and then the log itself.
 
@@ -57,16 +59,20 @@ Also, you can manually specify a tag o set of tags (string separated by comas) a
 ```
 - (void)foo
 {
+    // Default log
     BFLog(@"Foo method started at time: %@", [[NSDate date] description]);
     
+    // Warning log
     BFLogWarn(@"This is a warning with error code: %ld", 23);
     
+    // Error log
     BFLogError(@"This is an error with error code: %ld", 42);
     
-    BFLog2(RLLogLevelWarning, @"networking, error, TODO", @"This is a warning with some tags. Error code: %ld", (long)23);
+    // Custom log, specifiying level, tags, and the text
+    BFLog2(BFLogLevelWarning, @"networking, error", @"This is a warning with some tags. Error code: %ld", (long)23);
 }
 ```
 
-## To know
+## To Know
 
-By using the `BFLog` methods BugFender will store locally all logs and then send them when possible to the server. Also, will add extra information as the date of the log, the file where the log happened, the number of line or the name of the method.
+By using the `BFLog` methods, Bug Fender will store locally all logs and then send them when possible to the server. Also, will add extra information as the date of the log, the file where the log happened, the number of line or the name of the method.
