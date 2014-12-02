@@ -7,6 +7,7 @@
 #import <Foundation/Foundation.h>
 
 #define BFLibraryVersionNumber_0_1  0.1
+#define BFLibraryVersionNumber_0_2  0.2
 
 /**
  * Current BugFender version number.

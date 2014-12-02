@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BugFenderSDK"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "BugFenderSDK for iOS"
 
   s.description  = <<-DESC
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/mobilejazz/BugFenderSDK-iOS.git", :tag => "0.2.0" }
+  s.source       = { :git => "https://github.com/mobilejazz/BugFenderSDK-iOS.git", :tag => "0.2.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
