@@ -47,10 +47,10 @@ Bug Fender will store locally all logs and send them when possible to the server
 
 ```
     // Setting maximum cache size to 1 Mb
-    [BugFender setMaximumLocalStroageSize:1024*1024];
+    [BugFender setMaximumLocalStorageSize:1024*1024];
     
     // Setting maximum cache size to infinite
-    [BugFender setMaximumLocalStroageSize:0];
+    [BugFender setMaximumLocalStorageSize:0];
     
     // Reading the current maximum cache size
     NSUInteger maximumLocalStorageSize = [BugFender maximumLocalStroageSize];
