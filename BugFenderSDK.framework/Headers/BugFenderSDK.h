@@ -58,12 +58,6 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 #endif
 
-#if (DEBUG)
-#define BF_DEBUG 1
-#else
-#define BF_DEBUG 0
-#endif
-
 /**
  * Default Bug Fender interface for logging.
  * @param lineNumber The line number of the log.
