@@ -1,22 +1,24 @@
 //
-//  BugFenderSDK.h
-//  BugFenderSDK
+//  BugfenderSDK.h
+//  BugfenderSDK
 //  Copyright (c) 2014 Mobile Jazz SL. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-#define BFLibraryVersionNumber_0_1  0.1
-#define BFLibraryVersionNumber_0_2  0.2
+#define BFLibraryVersionNumber_0_1_0  0
+#define BFLibraryVersionNumber_0_2_0  1
+#define BFLibraryVersionNumber_0_2_1  2
+#define BFLibraryVersionNumber_0_3_0  3
 
 /**
- * Current Bug Fender version number.
- * @discussion This value can be compared with the defined macros BFLibraryVersionNumber_X_Y.
+ * Current Bugfender version number.
+ * @discussion This value can be compared with the defined macros BFLibraryVersionNumber_X_Y_Z.
  **/
 FOUNDATION_EXPORT double const BFLibraryVersionNumber;
 
 /**
- * Exception thrown when calling any BFLog method without having activated previously the `BugFender` interface.
+ * Exception thrown when calling any BFLog method without having activated previously the `Bugfender` interface.
  **/
 extern NSString * const BFInvalidMethodCallException;
 
@@ -59,7 +61,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 #endif
 
 /**
- * Default Bug Fender interface for logging.
+ * Default Bugfender interface for logging.
  * @param lineNumber The line number of the log.
  * @param method The method where the log has happened.
  * @param file The file where the log has happened.
@@ -71,13 +73,13 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString *file, BFLogLevel level, NSString *tag, NSString *format, ...);
 
 /**
- * Main Bug Fender interface.
+ * Main Bugfender interface.
  **/
-@interface BugFender : NSObject
+@interface Bugfender : NSObject
 
 /**
- * Activates the Bug Fender for an specific app.
- * @param appToken The app token of the Bug Fender application
+ * Activates the Bugfender for an specific app.
+ * @param appToken The app token of the Bugfender application
  * @discussion This method needs to be called before any BFLog call, otherwise the `BFInvalidMethodCallException` exception will be thrown.
  **/
 + (void)activateLogger:(NSString*)appToken;
@@ -95,7 +97,7 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
 + (void)setMaximumLocalStorageSize:(NSUInteger)maximumLocalStorageSize;
 
 /**
- * Returns the device identifier used to identify the current device in the Bug Fender website.
+ * Returns the device identifier used to identify the current device in the Bugfender website.
  * @return
  **/
 + (NSString*)deviceIdentifier;

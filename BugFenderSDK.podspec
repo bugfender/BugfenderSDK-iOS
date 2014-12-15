@@ -15,12 +15,12 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "BugFenderSDK"
+  s.name         = "BugfenderSDK"
   s.version      = "0.2.1"
-  s.summary      = "BugFenderSDK for iOS"
+  s.summary      = "BugfenderSDK for iOS"
 
   s.description  = <<-DESC
-                   A longer description of BugFenderSDK in Markdown format.
+                   A longer description of BugfenderSDK in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/mobilejazz/BugFenderSDK-iOS.git", :tag => "0.2.1" }
+  s.source       = { :git => "https://github.com/mobilejazz/BugfenderSDK-iOS.git", :tag => "0.2.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "BugFenderSDK.framework/Headers/*.h"
+  s.source_files  = "BugfenderSDK.framework/Headers/*.h"
 #  s.source_files  = "include/RemoteLoggerSDK/*.h"
   #s.exclude_files = "Classes/Exclude"
 
@@ -107,7 +107,7 @@ Pod::Spec.new do |s|
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"
 
-  s.preserve_paths = "BugFenderSDK.framework/*"
+  s.preserve_paths = "BugfenderSDK.framework/*"
 #  s.vendored_library = "libRemoteLoggerSDK.a"
 
   
@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "BugFenderSDK"
+  s.frameworks = "BugfenderSDK"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -133,7 +133,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.xcconfig = {"FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/BugFenderSDK"}#{ "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = {"FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/BugfenderSDK"}#{ "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
