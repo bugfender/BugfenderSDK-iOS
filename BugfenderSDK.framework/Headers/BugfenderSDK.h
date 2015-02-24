@@ -19,7 +19,7 @@
 FOUNDATION_EXPORT double const BFLibraryVersionNumber;
 
 /**
- * Exception thrown when calling any BFLog method without having activated previously the `Bugfender` interface.
+ * Exception thrown when calling any BFLog method without having previously activated the `Bugfender` interface.
  **/
 extern NSString * const BFInvalidMethodCallException;
 
