@@ -9,7 +9,7 @@ In this repository you will find Bugfender SDK for iOS 6.0 or greater.
 
 ## Using Cocoa Pods
 The easiest way to install Bugfender SDK for iOS is using CocoaPods.
-```
+```ruby
 pod 'BugfenderSDK', :git => 'https://github.com/bugfender/BugfenderSDK-iOS.git', :tag => ‘0.3.1’
 ```
 The repository is not yet available in CocoaPods main repository as is under development. 
@@ -24,7 +24,7 @@ If you prefer to install manually the SDK, you need to download the file `Bugfen
 ### 1. Setting the App Key
 First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:` you need to set the AppKey and you are done:
 
-```
+```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Activate the remote logger with an App Key.
@@ -37,7 +37,7 @@ First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:
 ### 2. Retriving the device identifier
 You can get the device identifier used by the Bugfender used to recognize the device itself in the Bugfender admin website. Typically, you could show this identifier in the Settings bundle or your custom settings screen for example.
 
-```
+```objective-c
     // Get the device identifier
     NSString *bugFenderDeviceIdentifier = [Bugfender deviceIdentifier];
 ```
@@ -45,7 +45,7 @@ You can get the device identifier used by the Bugfender used to recognize the de
 ### 3. Setting maximum local storage
 Bugfender will store locally all logs and send them when possible to the server. Therefore, you can control how much space Bugfender can use from your device cache. The default value is 5242880 bytes (5MB).
 
-```
+```objective-c
     // Setting maximum cache size to 1 Mb
     [Bugfender setMaximumLocalStorageSize:1024*1024];
     
@@ -74,7 +74,7 @@ Additionally, you can manually specify a tag o set of tags (string separated by 
 
 ### Example
 
-```
+```objective-c
 - (void)foo
 {
     // Default log
