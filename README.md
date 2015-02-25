@@ -28,7 +28,7 @@ First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Activate the remote logger with an App Key.
-    [Bugfender activateLogger:@"XCwWtq3uBX7hPLbe"];
+    [Bugfender activateLogger:@"YOUR_API_KEY"];
     
     return YES;
 }
