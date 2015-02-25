@@ -42,6 +42,14 @@ You can get the device identifier used by the Bugfender used to recognize the de
     NSString *bugFenderDeviceIdentifier = [Bugfender deviceIdentifier];
 ```
 
+To help your users find the device identifier, one easy way to do it is adding it to the app's user defaults, so it shows up in the app's section inside the device Settings.
+
+```objective-c
+    // Displaying the device identifier in the app's settings.
+    [[NSUserDefaults standardUserDefaults] setObject:[Bugfender deviceIdentifier] forKey:@"bugfenderDeviceIDKey"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+```
+
 ### 3. Setting maximum local storage
 Bugfender will store locally all logs and send them when possible to the server. Therefore, you can control how much space Bugfender can use from your device cache. The default value is 5242880 bytes (5MB).
 
