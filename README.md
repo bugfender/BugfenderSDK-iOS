@@ -38,30 +38,30 @@ First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:
 You can get the device identifier used by the Bugfender used to recognize the device itself in the Bugfender admin website. Typically, you could show this identifier in the Settings bundle or your custom settings screen for example.
 
 ```objective-c
-    // Get the device identifier
-    NSString *bugFenderDeviceIdentifier = [Bugfender deviceIdentifier];
+// Get the device identifier
+NSString *bugFenderDeviceIdentifier = [Bugfender deviceIdentifier];
 ```
 
 To help your users find the device identifier, one easy way to do it is adding it to the app's user defaults, so it shows up in the app's section inside the device Settings.
 
 ```objective-c
-    // Displaying the device identifier in the app's settings.
-    [[NSUserDefaults standardUserDefaults] setObject:[Bugfender deviceIdentifier] forKey:@"bugfenderDeviceIDKey"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+// Displaying the device identifier in the app's settings.
+[[NSUserDefaults standardUserDefaults] setObject:[Bugfender deviceIdentifier] forKey:@"bugfenderDeviceIDKey"];
+[[NSUserDefaults standardUserDefaults] synchronize];
 ```
 
 ### 3. Setting maximum local storage
 Bugfender will store locally all logs and send them when possible to the server. Therefore, you can control how much space Bugfender can use from your device cache. The default value is 5242880 bytes (5MB).
 
 ```objective-c
-    // Setting maximum cache size to 1 Mb
-    [Bugfender setMaximumLocalStorageSize:1024*1024];
+// Setting maximum cache size to 1 Mb
+[Bugfender setMaximumLocalStorageSize:1024*1024];
+
+// Setting maximum cache size to infinite
+[Bugfender setMaximumLocalStorageSize:0];
     
-    // Setting maximum cache size to infinite
-    [Bugfender setMaximumLocalStorageSize:0];
-    
-    // Reading the current maximum cache size
-    NSUInteger maximumLocalStorageSize = [Bugfender maximumLocalStroageSize];
+// Reading the current maximum cache size
+NSUInteger maximumLocalStorageSize = [Bugfender maximumLocalStroageSize];
 ```
 
 ## Writing Logs
