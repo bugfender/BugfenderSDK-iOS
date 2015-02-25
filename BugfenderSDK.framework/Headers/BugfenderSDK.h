@@ -1,7 +1,7 @@
 //
 //  BugfenderSDK.h
 //  BugfenderSDK
-//  Copyright (c) 2014 Mobile Jazz SL. All rights reserved.
+//  Copyright (c) 2014 Bugfender SL. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,6 +11,7 @@
 #define BFLibraryVersionNumber_0_2_1  2
 #define BFLibraryVersionNumber_0_3_0  3
 #define BFLibraryVersionNumber_0_3_1  4
+#define BFLibraryVersionNumber_0_3_2  5
 
 /**
  * Current Bugfender version number.
@@ -19,7 +20,7 @@
 FOUNDATION_EXPORT double const BFLibraryVersionNumber;
 
 /**
- * Exception thrown when calling any BFLog method without having previously activated the `Bugfender` interface.
+ * Exception thrown when calling any BFLog method without having activated previously the `Bugfender` interface.
  **/
 extern NSString * const BFInvalidMethodCallException;
 

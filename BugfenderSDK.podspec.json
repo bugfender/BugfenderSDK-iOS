@@ -1,23 +1,23 @@
 {
   "name": "BugfenderSDK",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "summary": "BugfenderSDK for iOS",
-  "description": "                   A longer description of BugfenderSDK in Markdown format.\n\n                   * Think: Why did you write this? What is the focus? What does it do?\n                   * CocoaPods will be using this to generate tags, and improve search results.\n                   * Try to keep it short, snappy and to the point.\n                   * Finally, don't worry about the indent, CocoaPods strips it!\n",
+  "description": "A modern remote logger tailor-made for mobile development.",
   "homepage": "http://bugfender.com",
   "license": {
     "type": "No License",
     "file": "LICENSE"
   },
   "authors": {
-    "Mobile Jazz": "info@mobilejazz.cat"
+    "Bugfender": "support@bugfender.com"
   },
   "social_media_url": "http://twitter.com/mobilejazzcat",
   "platforms": {
     "ios": "6.0"
   },
   "source": {
-    "git": "https://github.com/mobilejazz/BugfenderSDK-iOS.git",
-    "tag": "0.3.1"
+    "git": "https://github.com/bugfender/BugfenderSDK-iOS.git",
+    "tag": "0.3.2"
   },
   "source_files": "BugfenderSDK.framework/Headers/*.h",
   "preserve_paths": "BugfenderSDK.framework/*",
