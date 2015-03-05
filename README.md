@@ -22,7 +22,13 @@ If you prefer to install manually the SDK, you need to download the file `Bugfen
 ## Configuring Bugfender
 
 ### 1. Setting the App Key
-First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:` you need to set the AppKey and you are done:
+First, import the `BugfenderSDK.h` file somewhere (you can add it to your `pch` file to have the functions available in the whole projct) in your project:
+
+```objective-c
+#import <BugfenderSDK.h>
+```
+
+Then in the **AppDelegate** method `application:didFinishLaunchingWithOptions:` you need to set the AppKey and you are done:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -33,6 +39,7 @@ First, in the **AppDelegate** method `application:didFinishLaunchingWithOptions:
     return YES;
 }
 ```
+Now you can start logging using `BFLog` function.
 
 ### 2. Retriving the device identifier
 You can get the device identifier used by the Bugfender used to recognize the device itself in the Bugfender admin website. Typically, you could show this identifier in the Settings bundle or your custom settings screen for example.
