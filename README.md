@@ -25,7 +25,7 @@ If you prefer to install manually the SDK, you need to download the file `Bugfen
 First, import the `BugfenderSDK.h` file somewhere (you can add it to your `pch` file to have the functions available in the whole projct) in your project:
 
 ```objective-c
-#import <BugfenderSDK.h>
+#import <BugfenderSDK/BugfenderSDK.h>
 ```
 
 Then in the **AppDelegate** method `application:didFinishLaunchingWithOptions:` you need to set the AppKey and you are done:
