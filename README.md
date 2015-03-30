@@ -99,7 +99,7 @@ Additionally, you can manually specify a tag o set of tags (string separated by 
     BFLogWarn(@"This is a warning with error code: %ld", 23);
     
     // Error log
-    BFLogError(@"This is an error with error code: %ld", 42);
+    BFLogErr(@"This is an error with error code: %ld", 42);
     
     // Custom log, specifiying level, tags, and the text
     BFLog2(BFLogLevelWarning, @"networking, error", @"This is a warning with some tags. Error code: %ld", (long)23);
