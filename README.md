@@ -98,7 +98,7 @@ Additionally, you can manually specify a tag o set of tags (string separated by 
 
 - `BFLog2(level, tag, ...)`: Where log level is one of the enums shown above, tag is an string containing tags separated by coma, and then the log itself.
 
-#### Example
+Use like this:
 
 ```objective-c
 - (void)foo
@@ -129,8 +129,8 @@ func BFLog(message: String, filename: String = __FILE__, line: Int = __LINE__, f
 }
 ```
 
-```swift
 Use like this:
+```swift
 func sliderChanged(slider: UISlider) {
     BFLog("Slider Value: \(slider.value)");
 }
