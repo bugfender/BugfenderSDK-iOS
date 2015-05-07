@@ -10,7 +10,7 @@ In this repository you will find Bugfender SDK for iOS 6.0 or greater.
 ## Using Cocoa Pods
 The easiest way to install Bugfender SDK for iOS in your project is using CocoaPods. Add the following line to your `Podfile` or create one:
 ```ruby
-pod 'BugfenderSDK', :git => 'https://github.com/bugfender/BugfenderSDK-iOS.git', :tag => '0.3.2'
+pod 'BugfenderSDK', :git => 'https://github.com/bugfender/BugfenderSDK-iOS.git', :tag => '0.3.3'
 ```
 Then run `pod install`.
 
@@ -24,7 +24,7 @@ If you prefer to install manually the SDK, you need to download the file `Bugfen
 ## Configuring Bugfender
 
 ### 1. Setting the App Key
-First, import the `BugfenderSDK.h` file somewhere (you can add it to your `pch` file to have the functions available in the whole projct) in your project:
+First, import the `BugfenderSDK.h` file somewhere (you can add it to your `pch` file to have the functions available in the whole projct) in your project. If using Swift, add the following line to your Bridging Header:
 
 ```objective-c
 #import <BugfenderSDK/BugfenderSDK.h>
@@ -39,6 +39,14 @@ Then in the **AppDelegate** method `application:didFinishLaunchingWithOptions:` 
     [Bugfender activateLogger:@"YOUR_API_KEY"];
     
     return YES;
+}
+```
+```swift
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    // Activate the remote logger with an App Key.
+	Bugfender.activateLogger("YOUR_API_KEY")
+
+	return true
 }
 ```
 Now you can start logging using `BFLog` function.
@@ -75,6 +83,7 @@ NSUInteger maximumLocalStorageSize = [Bugfender maximumLocalStroageSize];
 
 ## Writing Logs
 
+### Objective-C
 To write logs, you must replace `NSLog`with one of the following methods:
 
 - `BFLog(...)`: Default log.
@@ -89,7 +98,7 @@ Additionally, you can manually specify a tag o set of tags (string separated by 
 
 - `BFLog2(level, tag, ...)`: Where log level is one of the enums shown above, tag is an string containing tags separated by coma, and then the log itself.
 
-### Example
+#### Example
 
 ```objective-c
 - (void)foo
@@ -107,3 +116,23 @@ Additionally, you can manually specify a tag o set of tags (string separated by 
     BFLog2(BFLogLevelWarning, @"networking, error", @"This is a warning with some tags. Error code: %ld", (long)23);
 }
 ```
+
+### Swift
+In Swift you can use `Bugfender.LogLineNumber` method or write a helper function similar to `println`:
+
+```swift
+func BFLog(message: String, filename: String = __FILE__, line: Int = __LINE__, funcname: String = __FUNCTION__) {
+    Bugfender.logLineNumber(line, method: funcname, file: filename.lastPathComponent, level: BFLogLevel.Default, tag: nil, message: message)
+    #if DEBUG
+        NSLog("[\(filename.lastPathComponent):\(line)] \(funcname) - %@", message)
+    #endif
+}
+```
+
+```swift
+Use like this:
+func sliderChanged(slider: UISlider) {
+    BFLog("Slider Value: \(slider.value)");
+}
+```
+
