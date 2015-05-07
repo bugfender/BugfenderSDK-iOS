@@ -12,6 +12,7 @@
 #define BFLibraryVersionNumber_0_3_0  3
 #define BFLibraryVersionNumber_0_3_1  4
 #define BFLibraryVersionNumber_0_3_2  5
+#define BFLibraryVersionNumber_0_3_3  6
 
 /**
  * Current Bugfender version number.
@@ -37,27 +38,25 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 #if (DEBUG)
 
-#define BFLog2(level, tag, args, ...) ({\
-    __BFLog(__LINE__,\
-            [NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__],\
-            [NSString stringWithFormat:@"%s",__FILE__],\
-            level,\
-            tag,\
-            args,\
-            ##__VA_ARGS__);\
+#define BFLog2(logLevel, tagName, args, ...) ({\
+[Bugfender logLineNumber:__LINE__ \
+                  method:[NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__] \
+                    file:[NSString stringWithFormat:@"%s",__FILE__] \
+                   level:logLevel \
+                     tag:tagName \
+                  format:args, ##__VA_ARGS__];\
     NSLog(args, ##__VA_ARGS__);\
 })
 
 #else
 
-#define BFLog2(level, tag, args, ...) ({\
-    __BFLog(__LINE__,\
-            [NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__],\
-            [NSString stringWithFormat:@"%s",__FILE__],\
-            level,\
-            tag,\
-            args,\
-            ##__VA_ARGS__);\
+#define BFLog2(logLevel, tagName, args, ...) ({\
+[Bugfender logLineNumber:__LINE__ \
+                  method:[NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__] \
+                    file:[NSString stringWithFormat:@"%s",__FILE__] \
+                   level:logLevel \
+                     tag:tagName \
+                  format:args, ##__VA_ARGS__];\
 })
 
 #endif
@@ -71,6 +70,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * @param tag
  * @param format
  * @discussion Do not use this method direclty. Instead, use the BFLog or BFLog2 macros.
+ * @deprecated Will be removed by September 6th, 2015.
  **/
 FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString *file, BFLogLevel level, NSString *tag, NSString *format, ...);
 
@@ -103,5 +103,41 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * @return
  **/
 + (NSString*)deviceIdentifier;
+
+/**
+ * Bugfender interface for logging, which takes a string format with parameters as log message.
+ * @param lineNumber The line number of the log.
+ * @param method The method where the log has happened.
+ * @param file The file where the log has happened.
+ * @param level
+ * @param tag
+ * @param format
+ * @discussion Prefer to use the BFLog or BFLog2 macros in order to get file name and line number filled in automatically
+ **/
++ (void) logLineNumber:(NSInteger)lineNumber method:(NSString*)method file:(NSString*)file level:(BFLogLevel)level tag:(NSString*)tag format:(NSString*)format, ...;
+
+/**
+ * Bugfender interface for logging, which takes a varargs.
+ * @param lineNumber The line number of the log.
+ * @param method The method where the log has happened.
+ * @param file The file where the log has happened.
+ * @param level
+ * @param tag
+ * @param format
+ * @discussion Prefer to use the BFLog or BFLog2 macros in order to get file name and line number filled in automatically
+ **/
++ (void) logLineNumber:(NSInteger)lineNumber method:(NSString*)method file:(NSString*)file level:(BFLogLevel)level tag:(NSString*)tag format:(NSString*)format args:(va_list)args;
+
+/**
+ * Bugfender interface for logging, which takes a simple string as log message.
+ * @param lineNumber The line number of the log.
+ * @param method The method where the log has happened.
+ * @param file The file where the log has happened.
+ * @param level
+ * @param tag
+ * @param message
+ * @discussion Prefer to use the BFLog or BFLog2 macros in order to get file name and line number filled in automatically
+ **/
++ (void) logLineNumber:(NSInteger)lineNumber method:(NSString*)method file:(NSString*)file level:(BFLogLevel)level tag:(NSString*)tag message:(NSString*)message;
 
 @end
