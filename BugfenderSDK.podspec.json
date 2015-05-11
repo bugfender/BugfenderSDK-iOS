@@ -1,7 +1,7 @@
 {
   "name": "BugfenderSDK",
   "version": "0.3.3",
-  "summary": "BugfenderSDK for iOS",
+  "summary": "Bugfender: a mobile remote logger",
   "description": "A modern remote logger tailor-made for mobile development.",
   "homepage": "http://bugfender.com",
   "license": {
