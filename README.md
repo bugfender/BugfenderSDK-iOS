@@ -10,11 +10,9 @@ In this repository you will find Bugfender SDK for iOS 6.0 or greater.
 ## Using Cocoa Pods
 The easiest way to install Bugfender SDK for iOS in your project is using CocoaPods. Add the following line to your `Podfile` or create one:
 ```ruby
-pod 'BugfenderSDK', :git => 'https://github.com/bugfender/BugfenderSDK-iOS.git', :tag => '0.3.3'
+pod 'BugfenderSDK', '~> 0.3'
 ```
 Then run `pod install`.
-
-The repository is not yet available in CocoaPods main repository as is under development. 
 
 ## Manually
 If you prefer to install manually the SDK, you need to download the file `BugfenderSDK.framework` and add the framework to your project. That simple.
