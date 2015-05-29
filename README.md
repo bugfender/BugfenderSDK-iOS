@@ -1,4 +1,4 @@
-Bugfender SDK for iOS
+Bugfender SDK for iOS [![Build Status](https://travis-ci.org/bugfender/BugfenderSDK-iOS-swift-sample.svg)](https://travis-ci.org/bugfender/BugfenderSDK-iOS-swift-sample) [![Available in CocoaPods](https://img.shields.io/cocoapods/v/BugfenderSDK.svg)](https://cocoapods.org/pods/BugfenderSDK) [![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/BugfenderSDK/) 
 ===================
 
 Bugfender is a service that enables devices to log to remote servers when needed. Developers can control from the server side which devices must send logs and which devices must not send logs to Bugfender server. Later, you will be able to read all the received logs for each specific device. Also, Bugfender will store extra information as the date of the log, the file where the log happened, the number of line or the name of the method.
