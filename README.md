@@ -49,7 +49,13 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
 ```
 Now you can start logging using `BFLog` function.
 
-### 2. Retriving the device identifier
+### 2. Enable automated logs
+Automated UIEvent logging, such as taps and gestures:
+```objective-c
+[Bugfender enableUIEventLogging];
+```
+
+### 3. Retrieving the device identifier
 You can get the device identifier used by the Bugfender used to recognize the device itself in the Bugfender admin website. Typically, you could show this identifier in the Settings bundle or your custom settings screen for example.
 
 ```objective-c
@@ -65,7 +71,7 @@ To help your users find the device identifier, one easy way to do it is adding i
 [[NSUserDefaults standardUserDefaults] synchronize];
 ```
 
-### 3. Setting maximum local storage
+### 4. Setting maximum local storage
 Bugfender will store locally all logs and send them when possible to the server. Therefore, you can control how much space Bugfender can use from your device cache. The default value is 5242880 bytes (5MB).
 
 ```objective-c

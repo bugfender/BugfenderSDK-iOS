@@ -94,50 +94,97 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
 
 /**
  * Set the maximum space availalbe to store local logs. This value is represented in bytes.
- * @discussion If maximumLocalStorageSize is 0 (zero), then there is no limit and everything will be stored locally.
+ * @discussion If maximumLocalStorageSize is 0 (zero), then there is no limit and everything will be stored locally (use at your own risk!).
  **/
 + (void)setMaximumLocalStorageSize:(NSUInteger)maximumLocalStorageSize;
 
 /**
  * Returns the device identifier used to identify the current device in the Bugfender website.
- * @return
+ * @discussion This string can not be changed, but can be shown to the user or sent to your server, in order to
+ * keep a relationship between a Bugfender device and a user or some other important event in your application.
+ * 
+ * The device identifier is constant while the application is installed in the device.
+ * @return A string identifying the device.
  **/
 + (NSString*)deviceIdentifier;
 
 /**
  * Bugfender interface for logging, which takes a string format with parameters as log message.
+ * @discussion This command can be called anytime, and will take effect the next time the device is online.
+ * For efficiency, several log lines can be sent together to the server with some delay.
  * @param lineNumber The line number of the log.
  * @param method The method where the log has happened.
  * @param file The file where the log has happened.
- * @param level
- * @param tag
- * @param format
+ * @param level Log level.
+ * @param tag Tag or tags to be applied to the log line.
+ * @param format Format string, equivalent to NSLog's first parameter. Format is followed by a variable list of arguments, equivalent to NSLog's parameters after the format string.
  * @discussion Prefer to use the BFLog or BFLog2 macros in order to get file name and line number filled in automatically
  **/
 + (void) logLineNumber:(NSInteger)lineNumber method:(NSString*)method file:(NSString*)file level:(BFLogLevel)level tag:(NSString*)tag format:(NSString*)format, ...;
 
 /**
  * Bugfender interface for logging, which takes a varargs.
+ * @discussion This command can be called anytime, and will take effect the next time the device is online.
+ * For efficiency, several log lines can be sent together to the server with some delay.
  * @param lineNumber The line number of the log.
  * @param method The method where the log has happened.
  * @param file The file where the log has happened.
- * @param level
- * @param tag
- * @param format
+ * @param level Log level.
+ * @param tag Tag or tags to be applied to the log line.
+ * @param format Format string, equivalent to NSLog's first parameter.
+ * @param args Arguments to the format string, equivalent to NSLog's parameters after the format string.
  * @discussion Prefer to use the BFLog or BFLog2 macros in order to get file name and line number filled in automatically
  **/
 + (void) logLineNumber:(NSInteger)lineNumber method:(NSString*)method file:(NSString*)file level:(BFLogLevel)level tag:(NSString*)tag format:(NSString*)format args:(va_list)args;
 
 /**
  * Bugfender interface for logging, which takes a simple string as log message.
+ * @discussion This command can be called anytime, and will take effect the next time the device is online.
+ * For efficiency, several log lines can be sent together to the server with some delay.
  * @param lineNumber The line number of the log.
  * @param method The method where the log has happened.
  * @param file The file where the log has happened.
- * @param level
- * @param tag
- * @param message
+ * @param level Log level.
+ * @param tag Tag or tags to be applied to the log line.
+ * @param message Message to be logged. The message will be logged verbatim, no interpretation will be performed.
  * @discussion Prefer to use the BFLog or BFLog2 macros in order to get file name and line number filled in automatically
  **/
 + (void) logLineNumber:(NSInteger)lineNumber method:(NSString*)method file:(NSString*)file level:(BFLogLevel)level tag:(NSString*)tag message:(NSString*)message;
+
+
+/**
+ * Synchronizes all logs with the server once, regardless if this device is enabled or not.
+ * @discussion This method is useful when an error condition is detected and the logs should be sent to
+ * the server for analysis, regardless if the device is enabled in the Bugfender Console.
+ *
+ * Logs are synchronized only once. After that, the logs are again sent according to the enabled flag
+ * in the Bugfender Console.
+ * 
+ * This command can be called anytime, and will take effect the next time the device is online.
+ */
++ (void) forceSendOnce;
+
+/**
+ * Synchronizes all logs with the server all the time, regardless if this device is enabled or not.
+ * @discussion This method is useful when the logs should be sent to the server
+ * regardless if the device is enabled in the Bugfender Console.
+ *
+ * Logs are synchronized continuously while forceEnabled is active.
+ *
+ * This command can be called anytime, and will take effect the next time the device is online.
+ * @param enabled Whether logs should be sent regardless of the Bugfender Console settings.
+ */
++(void) setForceEnabled:(BOOL)enabled;
+
+/**
+ * Gets the status of forceEnabled.
+ * @discussion See setForceEnabled:.
+ */
++(BOOL) forceEnabled;
+
+/**
+ * Logs all actions performed in the application, such as button touches, swipes and gestures.
+ */
++(void)enableUIEventLogging;
 
 @end
