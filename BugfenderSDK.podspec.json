@@ -5,8 +5,8 @@
   "description": "A modern remote logger tailor-made for mobile development.",
   "homepage": "http://bugfender.com",
   "license": {
-    "type": "No License",
-    "file": "LICENSE"
+    "type": "Commercial",
+    "file": "See http://bugfender.com/terms-of-service/"
   },
   "authors": {
     "Bugfender": "support@bugfender.com"
@@ -19,10 +19,9 @@
     "git": "https://github.com/bugfender/BugfenderSDK-iOS.git",
     "tag": "0.3.4"
   },
-  "source_files": "BugfenderSDK.framework/Headers/*.h",
-  "preserve_paths": "BugfenderSDK.framework/*",
   "ios": {
-    "vendored_frameworks": "BugfenderSDK.framework"
+    "vendored_frameworks": "BugfenderSDK.framework",
+    "frameworks": ["Foundation", "SystemConfiguration", "Security"]
   },
   "requires_arc": true
 }
