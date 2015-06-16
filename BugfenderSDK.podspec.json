@@ -6,7 +6,7 @@
   "homepage": "http://bugfender.com",
   "license": {
     "type": "Commercial",
-    "file": "See http://bugfender.com/terms-of-service/"
+    "text": "See http://bugfender.com/terms-of-service/"
   },
   "authors": {
     "Bugfender": "support@bugfender.com"
