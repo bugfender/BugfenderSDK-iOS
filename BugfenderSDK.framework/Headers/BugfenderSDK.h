@@ -79,12 +79,23 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  **/
 @interface Bugfender : NSObject
 
+/** ******************************************************************** **
+ * @name Configuration
+ ** ******************************************************************** **/
+
 /**
- * Activates the Bugfender for an specific app.
+ * Activates the Bugfender for a specific app.
  * @param appToken The app token of the Bugfender application
  * @discussion This method needs to be called before any BFLog call, otherwise the `BFInvalidMethodCallException` exception will be thrown.
  **/
 + (void)activateLogger:(NSString*)appToken;
+
+/**
+ * Activates the Bugfender and enables all automatic functionalities.
+ * @param appToken The app token of the Bugfender application
+ * @discussion This method needs to be called before any BFLog call, otherwise the `BFInvalidMethodCallException` exception will be thrown.
+ **/
++ (void)enableAllWithToken:(NSString*)appToken;
 
 /**
  * Maximum space availalbe to store local logs. This value is represented in bytes. Default value is 5242880 (1024*1024*5 = 5MB).
@@ -93,8 +104,7 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
 + (NSUInteger)maximumLocalStorageSize;
 
 /**
- * Set the maximum space availalbe to store local logs. This value is represented in bytes.
- * @discussion If maximumLocalStorageSize is 0 (zero), then there is no limit and everything will be stored locally (use at your own risk!).
+ * Set the maximum space availalbe to store local logs. This value is represented in bytes. There's a limit of 50 MB.
  **/
 + (void)setMaximumLocalStorageSize:(NSUInteger)maximumLocalStorageSize;
 
@@ -107,6 +117,38 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * @return A string identifying the device.
  **/
 + (NSString*)deviceIdentifier;
+
+/**
+ * Synchronizes all logs with the server all the time, regardless if this device is enabled or not.
+ * @discussion This method is useful when the logs should be sent to the server
+ * regardless if the device is enabled in the Bugfender Console.
+ *
+ * Logs are synchronized continuously while forceEnabled is active.
+ *
+ * This command can be called anytime, and will take effect the next time the device is online.
+ * @param enabled Whether logs should be sent regardless of the Bugfender Console settings.
+ */
++(void) setForceEnabled:(BOOL)enabled;
+
+/**
+ * Gets the status of forceEnabled.
+ * @discussion See setForceEnabled:.
+ */
++(BOOL) forceEnabled;
+
+/**
+ * Logs all actions performed and screen changes in the application, such as button touches, swipes and gestures.
+ */
++(void)enableUIEventLogging;
+
+/**
+ * Logs all logs written via NSLog or ASL.
+ */
++(void)enableNSLogLogging;
+
+/** ******************************************************************** **
+ * @name Logging
+ ** ******************************************************************** **/
 
 /**
  * Bugfender interface for logging, which takes a string format with parameters as log message.
@@ -151,6 +193,21 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  **/
 + (void) logLineNumber:(NSInteger)lineNumber method:(NSString*)method file:(NSString*)file level:(BFLogLevel)level tag:(NSString*)tag message:(NSString*)message;
 
+/** ******************************************************************** **
+ * @name Issues
+ ** ******************************************************************** **/
+
+/** Creates an issue with the specified title and text.
+ * @discussion Creating an issue also sends all stored logs, even if the
+ * device is not enabled in the Bugfender console.
+ * @param title Title of the issue
+ * @param text Message body of the issue
+ */
++(void)sendIssueWithTitle:(NSString*)title text:(NSString*)text;
+
+/** ******************************************************************** **
+ * @name Commands
+ ** ******************************************************************** **/
 
 /**
  * Synchronizes all logs with the server once, regardless if this device is enabled or not.
@@ -163,28 +220,5 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * This command can be called anytime, and will take effect the next time the device is online.
  */
 + (void) forceSendOnce;
-
-/**
- * Synchronizes all logs with the server all the time, regardless if this device is enabled or not.
- * @discussion This method is useful when the logs should be sent to the server
- * regardless if the device is enabled in the Bugfender Console.
- *
- * Logs are synchronized continuously while forceEnabled is active.
- *
- * This command can be called anytime, and will take effect the next time the device is online.
- * @param enabled Whether logs should be sent regardless of the Bugfender Console settings.
- */
-+(void) setForceEnabled:(BOOL)enabled;
-
-/**
- * Gets the status of forceEnabled.
- * @discussion See setForceEnabled:.
- */
-+(BOOL) forceEnabled;
-
-/**
- * Logs all actions performed in the application, such as button touches, swipes and gestures.
- */
-+(void)enableUIEventLogging;
 
 @end
