@@ -194,18 +194,6 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
 + (void) logLineNumber:(NSInteger)lineNumber method:(NSString*)method file:(NSString*)file level:(BFLogLevel)level tag:(NSString*)tag message:(NSString*)message;
 
 /** ******************************************************************** **
- * @name Issues
- ** ******************************************************************** **/
-
-/** Creates an issue with the specified title and text.
- * @discussion Creating an issue also sends all stored logs, even if the
- * device is not enabled in the Bugfender console.
- * @param title Title of the issue
- * @param text Message body of the issue
- */
-+(void)sendIssueWithTitle:(NSString*)title text:(NSString*)text;
-
-/** ******************************************************************** **
  * @name Commands
  ** ******************************************************************** **/
 
