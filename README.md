@@ -15,7 +15,7 @@ If using CocoaPods:
 pod 'BugfenderSDK', '~> 0.3'
 ```
 
-If you prefer to install the SDK manually, drag `BugfenderSDK.framework` into your project.
+If you prefer to install the SDK manually, drag `BugfenderSDK.framework` into your project and [add -ObjC to your linker flags](https://developer.apple.com/library/mac/qa/qa1490/_index.html).
 
 Make Bugfender available project-wide by adding the following line to the `.pch` file:
 
@@ -30,28 +30,22 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
 {
     ...
     // Activate the remote logger with an App Key.
-    [Bugfender activateLogger:@"YOUR_API_KEY"];
+    [Bugfender enableAllWithToken:@"YOUR_API_KEY"];
     ...
 }
 ```
 
 ## 2. Send logs
 
-Use `BFLog` instead of `NSLog` and you're done.
+That's it! You don't have to do anything. Anything you write to `NSLog` will be received by Bugfender, plus user interactions will be logged automatically.
 
-You may also want to specify a logging level:
+You may also want to specify a logging level by using the following macros:
 
 - `BFLog(...)`: Default log.
 - `BFLogWarn(...)`: Warning log.
 - `BFLogErr(...)`: Error log.
 
 # Advanced features
-
-Bugfender can log some user interactions automatically, such as taps and gestures:
-
-```objective-c
-[Bugfender enableUIEventLogging];
-```
 
 In some special circumstances you may want to send logs, regardless of the enabled state of the device in the Bugfender console, for example in a custom exception handler. Use `forceSendOnce` to force sending the logs once, and use `setForceEnabled:` to force it for some period of time.
 
