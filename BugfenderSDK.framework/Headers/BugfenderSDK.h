@@ -13,6 +13,11 @@
 #define BFLibraryVersionNumber_0_3_1  4
 #define BFLibraryVersionNumber_0_3_2  5
 #define BFLibraryVersionNumber_0_3_3  6
+#define BFLibraryVersionNumber_0_3_4  7
+#define BFLibraryVersionNumber_0_3_5  8
+#define BFLibraryVersionNumber_0_3_6  9
+#define BFLibraryVersionNumber_0_3_7  10
+#define BFLibraryVersionNumber_0_3_8  11
 
 /**
  * Current Bugfender version number.
@@ -145,6 +150,15 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * Logs all logs written via NSLog or ASL.
  */
 +(void)enableNSLogLogging;
+
+/** ******************************************************************** **
+ * @name Device details
+ ** ******************************************************************** **/
++(void)setDeviceBOOL:(BOOL)b forKey:(NSString*)key;
++(void)setDeviceString:(NSString*)s forKey:(NSString*)key;
++(void)setDeviceInteger:(UInt64)i forKey:(NSString*)key;
++(void)setDeviceDouble:(double)d forKey:(NSString*)key;
++(void)removeDeviceKey:(NSString*)key;
 
 /** ******************************************************************** **
  * @name Logging
