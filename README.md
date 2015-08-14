@@ -15,7 +15,7 @@ If using CocoaPods:
 pod 'BugfenderSDK', '~> 0.3'
 ```
 
-If you prefer to install the SDK manually, drag `BugfenderSDK.framework` into your project and [add -ObjC to your linker flags](https://developer.apple.com/library/mac/qa/qa1490/_index.html).
+If you prefer to install the SDK manually, drag `BugfenderSDK.framework` into your project and [add -ObjC to your linker flags](https://developer.apple.com/library/mac/qa/qa1490/_index.html). Make sure you are linking `SystemConfiguration.framework` and `MobileCoreServices.framework` as well in Build Phases > Link Binary With Libraries.
 
 Make Bugfender available project-wide by adding the following line to the `.pch` file:
 
