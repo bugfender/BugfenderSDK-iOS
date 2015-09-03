@@ -23,7 +23,7 @@ Make Bugfender available project-wide by adding the following line to the `.pch`
 #import <BugfenderSDK/BugfenderSDK.h>
 ```
 
-Get an API key from the [Bugfender console](https://app.bugfender.com/). In your `AppDelegate` call [activateLogger](http://cocoadocs.org/docsets/BugfenderSDK/0.3.5/Classes/Bugfender.html#//api/name/activateLogger:) when the application starts, like this:
+Get an API key from the [Bugfender console](https://app.bugfender.com/). In your `AppDelegate` call [activateLogger](http://cocoadocs.org/docsets/BugfenderSDK/0.3.9/Classes/Bugfender.html#//api/name/activateLogger:) when the application starts, like this:
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

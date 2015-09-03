@@ -18,6 +18,7 @@
 #define BFLibraryVersionNumber_0_3_6  9
 #define BFLibraryVersionNumber_0_3_7  10
 #define BFLibraryVersionNumber_0_3_8  11
+#define BFLibraryVersionNumber_0_3_9  12
 
 /**
  * Current Bugfender version number.
@@ -150,6 +151,15 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * Logs all logs written via NSLog or ASL.
  */
 +(void)enableNSLogLogging;
+
+/**
+ * Sends an issue
+ * @discussion Sending an issue forces the logs of the current session being sent
+ * to the server, and marks the session so that it is highlighted in the web console.
+ * @param title Short description of the issue.
+ * @param text Full details of the issue.
+ */
++(void)sendIssueWithTitle:(NSString*)title text:(NSString*)text;
 
 /** ******************************************************************** **
  * @name Device details
