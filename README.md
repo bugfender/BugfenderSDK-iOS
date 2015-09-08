@@ -45,6 +45,20 @@ You may also want to specify a logging level by using the following macros:
 - `BFLogWarn(...)`: Warning log.
 - `BFLogErr(...)`: Error log.
 
+## 3. Send an Issue
+
+Bugfender allows you to send issues to the server. An issue is similar to a session but they are showed in the `issues` section and you can send issues any time from the app, even if the device is not enabled in the system. Issues are useful to keep track of important errors that you can detect in your code.
+
+For sending an issue you can use the following function:
+
+	+(void)sendIssueWithTitle:(NSString*)title text:(NSString*)text;
+
+*The `text` parameter has Markdown notation support on the server, so you can add some style to the text being sent.*
+
+Here you have an example on how to send an issue using Markdown for the text:
+
+	[Bugfender sendIssueWithTitle:@"App Error" text:@"We have found an **Error**, we need to check it"];
+
 # Advanced features
 
 In some special circumstances you may want to send logs, regardless of the enabled state of the device in the Bugfender console, for example in a custom exception handler. Use `forceSendOnce` to force sending the logs once, and use `setForceEnabled:` to force it for some period of time.

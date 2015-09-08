@@ -1,3 +1,10 @@
+# 0.3.10
+ - Fixed crash on iOS7 when NSLog logging is enabled
+
+# 0.3.9
+ - Added issues
+ - Option to send logs from the app
+ 
 # 0.3.8
  - Added device detail key-value storage
  - Fixed a crash when device disk was full
