@@ -14,19 +14,8 @@
 		425D16261B7E043F0084A862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425D16241B7E043F0084A862 /* Main.storyboard */; };
 		425D16281B7E043F0084A862 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425D16271B7E043F0084A862 /* Images.xcassets */; };
 		425D162B1B7E043F0084A862 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425D16291B7E043F0084A862 /* LaunchScreen.xib */; };
-		425D16371B7E043F0084A862 /* BugfenderExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 425D16361B7E043F0084A862 /* BugfenderExampleTests.m */; };
 		780FDEB59EEBEA91348C99C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAC41A12412C936B0A1B4FB /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		425D16311B7E043F0084A862 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 425D160C1B7E043F0084A862 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 425D16131B7E043F0084A862;
-			remoteInfo = BugfenderExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0EAC41A12412C936B0A1B4FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +32,6 @@
 		425D16251B7E043F0084A862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		425D16271B7E043F0084A862 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		425D162A1B7E043F0084A862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		425D16301B7E043F0084A862 /* BugfenderExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BugfenderExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		425D16351B7E043F0084A862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		425D16361B7E043F0084A862 /* BugfenderExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugfenderExampleTests.m; sourceTree = "<group>"; };
 		C789B5F32A6A95A8D54DB3FB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,13 +44,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		425D162D1B7E043F0084A862 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				425D16161B7E043F0084A862 /* BugfenderExample */,
-				425D16331B7E043F0084A862 /* BugfenderExampleTests */,
 				425D16151B7E043F0084A862 /* Products */,
 				EFA2BB683BB57B96094049B4 /* Pods */,
 				FFDE35A1EAE87F47788CA368 /* Frameworks */,
@@ -83,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				425D16141B7E043F0084A862 /* BugfenderExample.app */,
-				425D16301B7E043F0084A862 /* BugfenderExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,23 +87,6 @@
 			children = (
 				425D16181B7E043F0084A862 /* Info.plist */,
 				425D16191B7E043F0084A862 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		425D16331B7E043F0084A862 /* BugfenderExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				425D16361B7E043F0084A862 /* BugfenderExampleTests.m */,
-				425D16341B7E043F0084A862 /* Supporting Files */,
-			);
-			path = BugfenderExampleTests;
-			sourceTree = "<group>";
-		};
-		425D16341B7E043F0084A862 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				425D16351B7E043F0084A862 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -170,24 +130,6 @@
 			productReference = 425D16141B7E043F0084A862 /* BugfenderExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		425D162F1B7E043F0084A862 /* BugfenderExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 425D163D1B7E043F0084A862 /* Build configuration list for PBXNativeTarget "BugfenderExampleTests" */;
-			buildPhases = (
-				425D162C1B7E043F0084A862 /* Sources */,
-				425D162D1B7E043F0084A862 /* Frameworks */,
-				425D162E1B7E043F0084A862 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				425D16321B7E043F0084A862 /* PBXTargetDependency */,
-			);
-			name = BugfenderExampleTests;
-			productName = BugfenderExampleTests;
-			productReference = 425D16301B7E043F0084A862 /* BugfenderExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +141,6 @@
 				TargetAttributes = {
 					425D16131B7E043F0084A862 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					425D162F1B7E043F0084A862 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 425D16131B7E043F0084A862;
 					};
 				};
 			};
@@ -220,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				425D16131B7E043F0084A862 /* BugfenderExample */,
-				425D162F1B7E043F0084A862 /* BugfenderExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,13 +170,6 @@
 				425D16261B7E043F0084A862 /* Main.storyboard in Resources */,
 				425D162B1B7E043F0084A862 /* LaunchScreen.xib in Resources */,
 				425D16281B7E043F0084A862 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		425D162E1B7E043F0084A862 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,23 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		425D162C1B7E043F0084A862 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				425D16371B7E043F0084A862 /* BugfenderExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		425D16321B7E043F0084A862 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 425D16131B7E043F0084A862 /* BugfenderExample */;
-			targetProxy = 425D16311B7E043F0084A862 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		425D16241B7E043F0084A862 /* Main.storyboard */ = {
@@ -430,40 +344,6 @@
 			};
 			name = Release;
 		};
-		425D163E1B7E043F0084A862 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BugfenderExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BugfenderExample.app/BugfenderExample";
-			};
-			name = Debug;
-		};
-		425D163F1B7E043F0084A862 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BugfenderExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BugfenderExample.app/BugfenderExample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -481,15 +361,6 @@
 			buildConfigurations = (
 				425D163B1B7E043F0084A862 /* Debug */,
 				425D163C1B7E043F0084A862 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		425D163D1B7E043F0084A862 /* Build configuration list for PBXNativeTarget "BugfenderExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				425D163E1B7E043F0084A862 /* Debug */,
-				425D163F1B7E043F0084A862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
