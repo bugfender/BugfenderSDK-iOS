@@ -19,7 +19,6 @@
     "git": "https://github.com/bugfender/BugfenderSDK-iOS.git",
     "tag": "0.3.11"
   },
-  "private_header_files": ["Example/BugfenderExample/AppDelegate.h","Example/BugfenderExample/FirstViewController.h","Example/BugfenderExample/SecondViewController.h","Example/Pods/BugfenderSDK/BugfenderSDK.framework/Headers/BugfenderSDK.h","Example/Pods/Headers/Public/BugfenderSDK/BugfenderSDK/BugfenderSDK.h"],
   "ios": {
     "vendored_frameworks": "BugfenderSDK.framework",
     "frameworks": ["Foundation", "SystemConfiguration", "Security"]
