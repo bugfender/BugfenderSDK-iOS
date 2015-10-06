@@ -1,2 +1,2 @@
-platform :ios, '8.0'
-pod 'BugfenderSDK', '~>0.3'
+platform :ios, '9.0'
+pod 'BugfenderSDK', :path => '..'
