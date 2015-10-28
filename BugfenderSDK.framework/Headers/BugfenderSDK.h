@@ -24,6 +24,7 @@
 #define BFLibraryVersionNumber_0_3_12  15
 #define BFLibraryVersionNumber_0_3_13  16
 #define BFLibraryVersionNumber_0_3_14  17
+#define BFLibraryVersionNumber_0_3_15  18
 
 /**
  * Current Bugfender version number.
@@ -52,7 +53,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 #define BFLog2(logLevel, tagName, args, ...) ({\
 [Bugfender logLineNumber:__LINE__ \
                   method:[NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__] \
-                    file:[NSString stringWithFormat:@"%s",__FILE__] \
+                    file:[[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent] \
                    level:logLevel \
                      tag:tagName \
                   format:args, ##__VA_ARGS__];\
@@ -64,7 +65,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 #define BFLog2(logLevel, tagName, args, ...) ({\
 [Bugfender logLineNumber:__LINE__ \
                   method:[NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__] \
-                    file:[NSString stringWithFormat:@"%s",__FILE__] \
+                    file:[[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent] \
                    level:logLevel \
                      tag:tagName \
                   format:args, ##__VA_ARGS__];\
@@ -162,7 +163,7 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * @discussion Sending an issue forces the logs of the current session being sent
  * to the server, and marks the session so that it is highlighted in the web console.
  * @param title Short description of the issue.
- * @param text Full details of the issue.
+ * @param text Full details of the issue. Markdown format is accepted.
  */
 +(void)sendIssueWithTitle:(NSString*)title text:(NSString*)text;
 
