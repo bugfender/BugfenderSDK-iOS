@@ -100,6 +100,8 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * Activates the Bugfender for a specific app.
  * @param appToken The app token of the Bugfender application
  * @discussion This method needs to be called before any BFLog call, otherwise the `BFInvalidMethodCallException` exception will be thrown.
+ * @throws `NSInvalidArgumentException` if Bugfender has already been initialized
+    with a different app token.
  **/
 + (void)activateLogger:(NSString*)appToken;
 
@@ -109,6 +111,12 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * @discussion This method needs to be called before any BFLog call, otherwise the `BFInvalidMethodCallException` exception will be thrown.
  **/
 + (void)enableAllWithToken:(NSString*)appToken;
+
+/**
+ * Returns the app token.
+ * @returns The app token, or nil if Bugfender has not been initialized.
+ **/
++ (NSString*)token;
 
 /**
  * Maximum space availalbe to store local logs. This value is represented in bytes. Default value is 5242880 (1024*1024*5 = 5MB).
