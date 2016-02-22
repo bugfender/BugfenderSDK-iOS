@@ -61,12 +61,25 @@ Here you have an example on how to send an issue using Markdown for the text:
 
 # Advanced features
 
+## Having your app decide when to send logs
+
 In some special circumstances you may want to send logs, regardless of the enabled state of the device in the Bugfender console, for example in a custom exception handler. Use `forceSendOnce` to force sending the logs once, and use `setForceEnabled:` to force it for some period of time.
 
-You can get the Bugfender device identifier to show in your UI or send to your server:
+## Device associated data
+You can associate information to a device as if it were a dictionary:
 
 ```objective-c
-NSString *bugFenderDeviceIdentifier = [Bugfender deviceIdentifier];
+[Bugfender setDeviceString:@"john.smith@example.com" forKey:@"user email"];
+```
+
+You can find more information in our blog post [Associated device information](https://bugfender.com/blog/associated-device-information/).
+
+## Device  identifier
+
+Bugfender automatically generates an identifier for the application install in a device. You can retrieve it to show in your UI or send to your server:
+
+```objective-c
+NSString *bugfenderDeviceIdentifier = [Bugfender deviceIdentifier];
 ```
 
 To help your users find the device identifier, one easy way to do it is adding it to the app's user defaults, so it shows up in the app's section inside the device Settings.
@@ -76,6 +89,8 @@ To help your users find the device identifier, one easy way to do it is adding i
 [[NSUserDefaults standardUserDefaults] setObject:[Bugfender deviceIdentifier] forKey:@"bugfenderDeviceIDKey"];
 [[NSUserDefaults standardUserDefaults] synchronize];
 ```
+
+## Log buffer size
 
 Bugfender keeps up to 5 MB worth of log data in the device. This way Bugfender can work offline, and you can get some log data from the past when enabling a device. You can change that limit with `setMaximumLocalStorageSize`.
 
