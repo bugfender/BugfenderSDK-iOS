@@ -26,6 +26,8 @@
 #define BFLibraryVersionNumber_0_3_14  17
 #define BFLibraryVersionNumber_0_3_15  18
 #define BFLibraryVersionNumber_0_3_16  19
+#define BFLibraryVersionNumber_0_3_17  20
+#define BFLibraryVersionNumber_0_3_18  21
 
 /**
  * Current Bugfender version number.
@@ -179,10 +181,45 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
 /** ******************************************************************** **
  * @name Device details
  ** ******************************************************************** **/
+
+/**
+ * Sets a device detail with boolean type.
+ * @discussion Similarly to an NSDictionary, where you can set key-value pairs
+ * related to a Bugfender device.
+ * @param b A boolean value.
+ * @param key Key.
+ */
 +(void)setDeviceBOOL:(BOOL)b forKey:(NSString*)key;
+/**
+ * Sets a device detail with string type.
+ * @discussion Similarly to an NSDictionary, where you can set key-value pairs
+ * related to a Bugfender device.
+ * @param s A string value.
+ * @param key Key.
+ */
 +(void)setDeviceString:(NSString*)s forKey:(NSString*)key;
+/**
+ * Sets a device detail with integer type.
+ * @discussion Similarly to an NSDictionary, where you can set key-value pairs
+ * related to a Bugfender device.
+ * @param i An UInt64 value.
+ * @param key Key.
+ */
 +(void)setDeviceInteger:(UInt64)i forKey:(NSString*)key;
+/**
+ * Sets a device detail with double type.
+ * @discussion Similarly to an NSDictionary, where you can set key-value pairs
+ * related to a Bugfender device.
+ * @param d A double value.
+ * @param key Key.
+ */
 +(void)setDeviceDouble:(double)d forKey:(NSString*)key;
+/**
+ * Removes a device detail.
+ * @discussion Similarly to an NSDictionary, where you can remove an existent key-value pair
+ * related to a Bugfender device by indicating its key.
+ * @param key Key.
+ */
 +(void)removeDeviceKey:(NSString*)key;
 
 /** ******************************************************************** **
