@@ -28,6 +28,8 @@
 #define BFLibraryVersionNumber_0_3_16  19
 #define BFLibraryVersionNumber_0_3_17  20
 #define BFLibraryVersionNumber_0_3_18  21
+#define BFLibraryVersionNumber_0_3_19  22
+#define BFLibraryVersionNumber_0_3_20  23
 
 /**
  * Current Bugfender version number.
@@ -194,7 +196,7 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
  * Sets a device detail with string type.
  * @discussion Similarly to an NSDictionary, where you can set key-value pairs
  * related to a Bugfender device.
- * @param s A string value.
+ * @param s A string value. The maximum length allowed is 192 bytes.
  * @param key Key.
  */
 +(void)setDeviceString:(NSString*)s forKey:(NSString*)key;
