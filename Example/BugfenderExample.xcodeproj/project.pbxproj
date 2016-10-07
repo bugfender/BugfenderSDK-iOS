@@ -14,8 +14,19 @@
 		425D16261B7E043F0084A862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 425D16241B7E043F0084A862 /* Main.storyboard */; };
 		425D16281B7E043F0084A862 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425D16271B7E043F0084A862 /* Images.xcassets */; };
 		425D162B1B7E043F0084A862 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425D16291B7E043F0084A862 /* LaunchScreen.xib */; };
+		42F5B27F1DA6BC730011D4EF /* BugfenderExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F5B27E1DA6BC730011D4EF /* BugfenderExampleUITests.m */; };
 		780FDEB59EEBEA91348C99C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EAC41A12412C936B0A1B4FB /* libPods.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42F5B2811DA6BC730011D4EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 425D160C1B7E043F0084A862 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 425D16131B7E043F0084A862;
+			remoteInfo = BugfenderExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0EAC41A12412C936B0A1B4FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +44,9 @@
 		425D16271B7E043F0084A862 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		425D162A1B7E043F0084A862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		428EBDEB1BC44FAB006480D7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		42F5B27C1DA6BC730011D4EF /* BugfenderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BugfenderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F5B27E1DA6BC730011D4EF /* BugfenderExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugfenderExampleUITests.m; sourceTree = "<group>"; };
+		42F5B2801DA6BC730011D4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C789B5F32A6A95A8D54DB3FB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +59,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42F5B2791DA6BC730011D4EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				425D16161B7E043F0084A862 /* BugfenderExample */,
+				42F5B27D1DA6BC730011D4EF /* BugfenderExampleUITests */,
 				425D16151B7E043F0084A862 /* Products */,
 				EFA2BB683BB57B96094049B4 /* Pods */,
 				FFDE35A1EAE87F47788CA368 /* Frameworks */,
@@ -62,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				425D16141B7E043F0084A862 /* BugfenderExample.app */,
+				42F5B27C1DA6BC730011D4EF /* BugfenderExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +113,15 @@
 				425D16191B7E043F0084A862 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42F5B27D1DA6BC730011D4EF /* BugfenderExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42F5B27E1DA6BC730011D4EF /* BugfenderExampleUITests.m */,
+				42F5B2801DA6BC730011D4EF /* Info.plist */,
+			);
+			path = BugfenderExampleUITests;
 			sourceTree = "<group>";
 		};
 		EFA2BB683BB57B96094049B4 /* Pods */ = {
@@ -132,6 +164,24 @@
 			productReference = 425D16141B7E043F0084A862 /* BugfenderExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		42F5B27B1DA6BC730011D4EF /* BugfenderExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F5B2851DA6BC730011D4EF /* Build configuration list for PBXNativeTarget "BugfenderExampleUITests" */;
+			buildPhases = (
+				42F5B2781DA6BC730011D4EF /* Sources */,
+				42F5B2791DA6BC730011D4EF /* Frameworks */,
+				42F5B27A1DA6BC730011D4EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42F5B2821DA6BC730011D4EF /* PBXTargetDependency */,
+			);
+			name = BugfenderExampleUITests;
+			productName = BugfenderExampleUITests;
+			productReference = 42F5B27C1DA6BC730011D4EF /* BugfenderExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -143,6 +193,11 @@
 				TargetAttributes = {
 					425D16131B7E043F0084A862 = {
 						CreatedOnToolsVersion = 6.4;
+					};
+					42F5B27B1DA6BC730011D4EF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 425D16131B7E043F0084A862;
 					};
 				};
 			};
@@ -160,6 +215,7 @@
 			projectRoot = "";
 			targets = (
 				425D16131B7E043F0084A862 /* BugfenderExample */,
+				42F5B27B1DA6BC730011D4EF /* BugfenderExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +228,13 @@
 				425D16261B7E043F0084A862 /* Main.storyboard in Resources */,
 				425D162B1B7E043F0084A862 /* LaunchScreen.xib in Resources */,
 				425D16281B7E043F0084A862 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F5B27A1DA6BC730011D4EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +285,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42F5B2781DA6BC730011D4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F5B27F1DA6BC730011D4EF /* BugfenderExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42F5B2821DA6BC730011D4EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 425D16131B7E043F0084A862 /* BugfenderExample */;
+			targetProxy = 42F5B2811DA6BC730011D4EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		425D16241B7E043F0084A862 /* Main.storyboard */ = {
@@ -349,6 +428,39 @@
 			};
 			name = Release;
 		};
+		42F5B2831DA6BC730011D4EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = BugfenderExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Bugfender.BugfenderExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BugfenderExample;
+			};
+			name = Debug;
+		};
+		42F5B2841DA6BC730011D4EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = BugfenderExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Bugfender.BugfenderExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BugfenderExample;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,6 +481,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		42F5B2851DA6BC730011D4EF /* Build configuration list for PBXNativeTarget "BugfenderExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F5B2831DA6BC730011D4EF /* Debug */,
+				42F5B2841DA6BC730011D4EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
