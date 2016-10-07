@@ -3,8 +3,4 @@ script: cd Example && xcodebuild test -workspace BugfenderExample.xcworkspace -s
 osx_image: xcode8
 xcode_workspace: Example/BugfenderExample.xcworkspace
 xcode_scheme: BugfenderExample
-env:
-  matrix:
-    xcode_sdk: iphonesimulator8.4
-    xcode_sdk: iphonesimulator9.3
-    xcode_sdk: iphonesimulator10.0
+xcode_sdk: iphonesimulator10.0
