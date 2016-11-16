@@ -3,7 +3,7 @@ Bugfender SDK for iOS [![Build Status](https://travis-ci.org/bugfender/Bugfender
 
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender console](https://app.bugfender.com/). You'll need an account.
 
-BugfenderSDK works for iOS 6.0 and better.
+BugfenderSDK works for iOS 7.0 and better.
 
 # Getting started
 
@@ -30,14 +30,15 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
 {
     ...
     // Activate the remote logger with an App Key.
-    [Bugfender enableAllWithToken:@"YOUR_API_KEY"];
+    [Bugfender activateLogger:@"YOUR_API_KEY"];
+    [Bugfender enableUIEventLogging];
     ...
 }
 ```
 
 ## 2. Send logs
 
-That's it! You don't have to do anything. Anything you write to `NSLog` will be received by Bugfender, plus user interactions will be logged automatically.
+Write to `BFLog` just as you would use `NSLog`. Moreover, user interactions will be logged automatically.
 
 You may also want to specify a logging level by using the following macros:
 
