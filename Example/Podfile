@@ -1,2 +1,4 @@
 platform :ios, '9.0'
-pod 'BugfenderSDK', :path => '..'
+target "BugfenderExample" do
+  pod 'BugfenderSDK', :path => '..'
+end
