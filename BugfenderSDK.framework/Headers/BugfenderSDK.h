@@ -34,6 +34,7 @@
 #define BFLibraryVersionNumber_0_3_22  25
 #define BFLibraryVersionNumber_0_3_23  26
 #define BFLibraryVersionNumber_0_3_24  27
+#define BFLibraryVersionNumber_0_3_25  28
 
 /**
  * Current Bugfender version number.
@@ -170,9 +171,9 @@ FOUNDATION_EXPORT void __BFLog(NSInteger lineNumber, NSString *method, NSString 
 +(void)enableUIEventLogging;
 
 /**
- * Logs all logs written via NSLog or ASL.
+ * Logs all logs written via NSLog or ASL (not supported since iOS 10)
  */
-+(void)enableNSLogLogging;
++(void)enableNSLogLogging __attribute__((deprecated("not supported since iOS 10")));
 
 /**
  * Sends an issue
