@@ -35,6 +35,7 @@
 #define BFLibraryVersionNumber_0_3_23  26
 #define BFLibraryVersionNumber_0_3_24  27
 #define BFLibraryVersionNumber_0_3_25  28
+#define BFLibraryVersionNumber_0_3_26  29
 
 /**
  * Current Bugfender version number.
