@@ -53,8 +53,9 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
 {
     ...
     // Activate the remote logger with an App Key.
-    [Bugfender activateLogger:@"YOUR_API_KEY"];
-    [Bugfender enableUIEventLogging];
+    [Bugfender activateLogger:@"YOUR_APP_KEY"];
+    [Bugfender enableUIEventLogging]; // optional, log user interactions automatically
+    BFLog("Hello world!") // use BFLog as you would use NSLog
     ...
 }
 ```
