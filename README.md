@@ -10,9 +10,9 @@ BugfenderSDK works for iOS 8.0 and better.
 ## Using CocoaPods
 
 1. Create a Podfile if you don't have one: `pod init`
-1. Add this line to your Podfile: `pod 'Bugfender', '~> 1.4'`
+1. Add this line to your Podfile: `pod 'BugfenderSDK', '~> 1.4'`
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
-1. Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Swift/Bugfender.swift) helper file.
+1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Swift/Bugfender.swift) helper file to your project.
 
 ## Manual
 
@@ -21,19 +21,20 @@ If you prefer to install the SDK manually:
 1. Go to your **Project** > **Your Target** > **General** > **Linked Frameworks and Libraries** and drag `BugfenderSDK.framework` there.
 1. Make sure you have `SystemConfiguration.framework` and `MobileCoreServices.framework` there as well.
 1. [Add -ObjC to your linker flags](https://developer.apple.com/library/mac/qa/qa1490/_index.html).
+1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Swift/Bugfender.swift) helper file to your project.
 
 # Using Bugfender (Swift)
 
 In your AppDelegate class:
 
 ```Swift
-import Bugfender
+import BugfenderSDK
 ```
 
 And add the following to `application(_:didFinishLaunchingWithOptions:)`:
 
 ```Swift
-Bugfender.enable(withKey: "YOUR_APP_KEY")
+Bugfender.activateLogger("YOUR_APP_KEY")
 Bugfender.enableUIEventLogging() // optional, log user interactions automatically
 BFLog("Hello world!") // use BFLog as you would use NSLog
 ```

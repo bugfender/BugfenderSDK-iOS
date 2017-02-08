@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import BugfenderSDK
 
 extension Bugfender {
     public class func print(_ items: Any..., separator: String = " ", terminator: String = "\n", tag: String? = nil, level: BFLogLevel = .default, filename: String = #file, line: Int = #line, funcname: String = #function)
@@ -17,28 +18,22 @@ extension Bugfender {
     public class func error(_ items: Any..., separator: String = " ", terminator: String = "\n", tag: String? = nil, filename: String = #file, line: Int = #line, funcname: String = #function) {
         log(items: items, separator: separator, terminator: terminator, tag: tag, level: .error, filename: filename, line: line, funcname: funcname)
     }
-
+    
     public class func warning(_ items: Any..., separator: String = " ", terminator: String = "\n", tag: String? = nil, filename: String = #file, line: Int = #line, funcname: String = #function) {
         log(items: items, separator: separator, terminator: terminator, tag: tag, level: .warning, filename: filename, line: line, funcname: funcname)
     }
     
-    public class func log(items: [Any], separator: String = " ", terminator: String = "\n", tag: String? = nil, level: BFLogLevel = .default, filename: String = #file, line: Int = #line, funcname: String = #function)
+    private class func log(items: [Any], separator: String = " ", terminator: String = "\n", tag: String? = nil, level: BFLogLevel = .default, filename: String = #file, line: Int = #line, funcname: String = #function)
     {
         let message = items.map{String(describing: $0)}.joined(separator: separator)
-        
-        log(message, separator: separator, terminator: terminator, tag: tag, level: level, filename: filename, line: line, funcname: funcname)
-    }
-
-    public class func log(_ message: String, separator: String = " ", terminator: String = "\n", tag: String? = nil, level: BFLogLevel = .default, filename: String = #file, line: Int = #line, funcname: String = #function)
-    {
         let file = ("\(filename)" as NSString).lastPathComponent as String
         
-        Bugfender.log(withLineNumber: line, method: funcname, file: file, level: level, tag: tag, message: message)
+        Bugfender.log(lineNumber: line, method: funcname, file: file, level: level, tag: tag, message: message)
     }
 }
 
 public func BFLog(_ format: String, _ args: CVarArg..., tag: String? = nil, level: BFLogLevel = .default, filename: String = #file, line: Int = #line, funcname: String = #function)
 {
     let message = String(format: format, arguments: args)
-    Bugfender.log(message, tag: tag, filename: filename, line: line, funcname: funcname)
+    Bugfender.log(lineNumber: line, method: funcname, file: file, level: level, tag: tag, message: message)
 }
