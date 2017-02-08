@@ -35,5 +35,5 @@ extension Bugfender {
 public func BFLog(_ format: String, _ args: CVarArg..., tag: String? = nil, level: BFLogLevel = .default, filename: String = #file, line: Int = #line, funcname: String = #function)
 {
     let message = String(format: format, arguments: args)
-    Bugfender.log(lineNumber: line, method: funcname, file: file, level: level, tag: tag, message: message)
+    Bugfender.log(lineNumber: line, method: funcname, file: filename, level: level, tag: tag, message: message)
 }
