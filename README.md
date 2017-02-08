@@ -39,6 +39,12 @@ Bugfender.enableUIEventLogging() // optional, log user interactions automaticall
 BFLog("Hello world!") // use BFLog as you would use NSLog
 ```
 
+You may also want to specify a logging level by using the following helper functions:
+
+- `Bugfender.print(...)`: Default log.
+- `Bugfender.warning(...)`: Warning log.
+- `Bugfender.error(...)`: Error log.
+
 # Using Bugfender (Objective-C)
 
 Make Bugfender available project-wide by adding the following line to the `.pch` file:
