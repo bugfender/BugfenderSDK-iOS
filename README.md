@@ -6,6 +6,7 @@ Bugfender is a cloud service to collect mobile application logs. Developers can 
 BugfenderSDK works for iOS 8.0 and better.
 
 # Installing the SDK
+First of all you will need to add the framework to your project.
 
 ## Using CocoaPods
 
@@ -23,7 +24,10 @@ If you prefer to install the SDK manually:
 1. [Add -ObjC to your linker flags](https://developer.apple.com/library/mac/qa/qa1490/_index.html).
 1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Swift/Bugfender.swift) helper file to your project.
 
-# Using Bugfender (Swift)
+# Using Bugfender
+Once you have the framework in your project, here is how to use it.
+
+## Swift
 
 In your AppDelegate class:
 
@@ -45,7 +49,7 @@ You may also want to specify a logging level by using the following helper funct
 - `Bugfender.warning(...)`: Warning log.
 - `Bugfender.error(...)`: Error log.
 
-# Using Bugfender (Objective-C)
+## Objective-C
 
 Make Bugfender available project-wide by adding the following line to the `.pch` file:
 
@@ -66,10 +70,6 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
     ...
 }
 ```
-
-## 2. Send logs
-
-Write to `BFLog` just as you would use `NSLog`. Moreover, user interactions will be logged automatically.
 
 You may also want to specify a logging level by using the following macros:
 
