@@ -11,9 +11,10 @@ First of all you will need to add the framework to your project.
 ## Using CocoaPods
 
 1. Create a Podfile if you don't have one: `pod init`
-1. Add this line to your Podfile: `pod 'BugfenderSDK', '~> 1.4'`
+1. Add a line to your Podfile:
+   * Swift or mixed projects: `pod 'BugfenderSDK', '~> 1.4'`
+   * Objective-C projects: `pod 'BugfenderSDK/ObjC', '~> 1.4'` (doesn't require the Swift runtime)
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
-1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Swift/Bugfender.swift) helper file to your project.
 
 ## Manual
 
@@ -22,7 +23,7 @@ If you prefer to install the SDK manually:
 1. Go to your **Project** > **Your Target** > **General** > **Linked Frameworks and Libraries** and drag `BugfenderSDK.framework` there.
 1. Make sure you have `SystemConfiguration.framework` and `MobileCoreServices.framework` there as well.
 1. [Add -ObjC to your linker flags](https://developer.apple.com/library/mac/qa/qa1490/_index.html).
-1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Swift/Bugfender.swift) helper file to your project.
+1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Swift/Bugfender.swift) helper file to your project. Add an `import BugfenderSDK` statement at the top.
 
 # Using Bugfender
 Once you have the framework in your project, here is how to use it.
@@ -42,6 +43,8 @@ Bugfender.activateLogger("YOUR_APP_KEY")
 Bugfender.enableUIEventLogging() // optional, log user interactions automatically
 BFLog("Hello world!") // use BFLog as you would use NSLog
 ```
+
+Then you may use `BFLog` as you would normally use `NSLog`.
 
 You may also want to specify a logging level by using the following helper functions:
 
@@ -70,6 +73,8 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
     ...
 }
 ```
+
+Then you may use `BFLog` as you would normally use `NSLog`.
 
 You may also want to specify a logging level by using the following macros:
 
