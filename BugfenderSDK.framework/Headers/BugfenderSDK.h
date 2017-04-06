@@ -40,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_0_3_27  30
 #define BFLibraryVersionNumber_1_4_0  31
 #define BFLibraryVersionNumber_1_4_1  32
+#define BFLibraryVersionNumber_1_4_2  33
 
 /**
  * Current Bugfender version number.
@@ -54,8 +55,11 @@ extern NSString * const BFInvalidMethodCallException;
 
 typedef NS_ENUM(NSUInteger, BFLogLevel)
 {
+    /** Default/info log level */
     BFLogLevelDefault       = 0,
+    /** Warning log level */
     BFLogLevelWarning       = 1,
+    /** Error log level */
     BFLogLevelError         = 2,
 };
 
@@ -64,7 +68,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 #define BFLogErr(args, ...)  BFLog2(BFLogLevelError, nil, args, ##__VA_ARGS__)
 
 #define BFLog2(logLevel, tagName, fmt, ...) \
-[Bugfender logWithLineNumber:__LINE__ method:[NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__] file:[[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent] level:logLevel tag:tagName message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]]
+[Bugfender logWithLineNumber:__LINE__ method:[NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__] file:[[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent] level:logLevel tag:tagName message:fmt == nil ? @"" : [NSString stringWithFormat:fmt, ##__VA_ARGS__]]
 
 /**
  * Main Bugfender interface.
@@ -77,16 +81,16 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 /**
  * Activates the Bugfender for a specific app.
- * @param appToken The app token of the Bugfender application
- * @discussion This method needs to be called before any BFLog call, otherwise the `BFInvalidMethodCallException` exception will be thrown.
- * @throws `NSInvalidArgumentException` if Bugfender has already been initialized
-    with a different app token.
+ * @param appKey The app key of the Bugfender application, get it in bugfender.com
+ * @throws `NSInvalidArgumentException` if Bugfender has already been initialized with a different app key.
+ * @discussion This method needs to be called before any `BFLog` call, otherwise the
+ * `BFInvalidMethodCallException` exception will be thrown.
  **/
 + (void)activateLogger:(NSString*)appKey;
 
 /**
- * Returns the app token.
- * @returns The app token, or nil if Bugfender has not been initialized.
+ * Returns the app key.
+ * @returns The app key, or nil if Bugfender has not been initialized.
  **/
 + (nullable NSString*)appKey;
 
@@ -98,6 +102,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 /**
  * Set the maximum space availalbe to store local logs. This value is represented in bytes. There's a limit of 50 MB.
+ * @param maximumLocalStorageSize Maximum space availalbe to store local logs, in bytes.
  **/
 + (void)setMaximumLocalStorageSize:(NSUInteger)maximumLocalStorageSize;
 
@@ -131,12 +136,12 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 /**
  * Prints messages to console for debugging purposes.
- * @param enabled Whether printing to console is enabled or not.
+ * @param enabled Whether printing to console is enabled or not. By default it is enabled.
  */
 +(void) setPrintToConsole:(BOOL)enabled;
 
 /**
- * Gets the status of printToConsole. printToConsole prints messages to console. By default it's disabled.
+ * Gets the status of printToConsole. printToConsole prints messages to console. By default it is enabled.
  */
 +(BOOL) printToConsole;
 

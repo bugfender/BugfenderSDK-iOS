@@ -1,0 +1,28 @@
+#!/bin/sh
+# jazzy \
+#   --clean \
+#   --objc \
+#   --author Bugfender \
+#   --author_url https://bugfender.com \
+#   --github_url https://github.com/bugfender/BugfenderSDK-iOS \
+#   --github-file-prefix https://github.com/bugfender/BugfenderSDK-iOS/tree/1.4.1 \
+#   --module-version 1.4.1 \
+#   --module BugfenderSDK \
+#   --root-url https://bugfender.com/docs/swift/1.4.1/ \
+#   --umbrella-header BugfenderSDK/BugfenderSDK.h
+#   --framework-root . \
+#   --sdk iphone
+#   --output docs/swift_output \
+#   --theme docs/themes
+
+appledoc \
+  --output docs \
+  --project-name BugfenderSDK \
+  --project-version 1.4.1 \
+  --project-company Bugfender \
+  --company-id com.bugfender \
+  --create-html \
+  --no-create-docset \
+  --clean-output \
+  --verbose 4 \
+  BugfenderSDK.framework/Headers/BugfenderSDK.h
