@@ -70,7 +70,7 @@ import Foundation
     func BFLog(_ message: String, filename: String = #file, line: Int = #line, funcname: String = #function) {
         let file = ("\(filename)" as NSString).lastPathComponent as String
         
-        Bugfender.logLineNumber(line, method: funcname, file: file, level: BFLogLevel.default, tag: nil, message: message)
+        Bugfender.log(lineNumber:line, method: funcname, file: file, level: BFLogLevel.Default, tag: nil, message: message)
         #if DEBUG
             NSLog("[\(file):\(line)] \(funcname) - %@", message)
         #endif
