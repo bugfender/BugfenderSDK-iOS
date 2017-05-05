@@ -1,3 +1,7 @@
+# 1.4.3
+ - Stability update: fixed crash in very rare circumstances.
+ - Improvements when the sdk is deleting the old logs because the max storage size is reached.   
+
 # 1.4.2
  - Fixing CocoaPods when using static libraries in Objective-C
  - Now compatible with Swift 2.3, 3.0 and 3.1
