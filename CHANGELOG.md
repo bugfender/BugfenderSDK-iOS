@@ -1,3 +1,6 @@
+# 1.4.4
+- Improvements with the CPU consumption.
+
 # 1.4.3
  - Stability update: fixed crash in very rare circumstances.
  - Improvements when the sdk is deleting the old logs because the max storage size is reached.   
