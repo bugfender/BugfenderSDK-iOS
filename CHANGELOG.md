@@ -1,3 +1,6 @@
+# 1.4.5
+- Fixed issue with the latest release.
+
 # 1.4.4
 - Improvements with the CPU consumption.
 
