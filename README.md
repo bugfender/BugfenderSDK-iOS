@@ -23,7 +23,7 @@ If you prefer to install the SDK manually:
 1. Go to your **Project** > **Your Target** > **General** > **Linked Frameworks and Libraries** and drag `BugfenderSDK.framework` there.
 1. Make sure you have `SystemConfiguration.framework` and `MobileCoreServices.framework` there as well.
 1. [Add -ObjC to your linker flags](https://developer.apple.com/library/mac/qa/qa1490/_index.html).
-1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Swift/Bugfender.swift) helper file to your project. Add an `import BugfenderSDK` statement at the top.
+1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/swift/Bugfender.swift) helper file to your project. Add an `import BugfenderSDK` statement at the top.
 
 # Using Bugfender
 Once you have the framework in your project, here is how to use it.
