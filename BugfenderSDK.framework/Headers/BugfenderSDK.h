@@ -44,6 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_4_3  34
 #define BFLibraryVersionNumber_1_4_4  34 // Mistake: We released the version without incrementing the number.
 #define BFLibraryVersionNumber_1_4_5  36
+#define BFLibraryVersionNumber_1_4_6  37
 
 /**
  * Current Bugfender version number.
@@ -120,6 +121,13 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 + (NSString*)deviceIdentifier;
 
 /**
+ *
+ * The session identifier is constant while the application is running.
+ * @return A string identifying the current session.
+ */
++ (NSString *)sessionIdentifier;
+
+/**
  * Synchronizes all logs with the server all the time, regardless if this device is enabled or not.
  * @discussion This method is useful when the logs should be sent to the server
  * regardless if the device is enabled in the Bugfender Console.
@@ -148,10 +156,12 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  */
 +(BOOL) printToConsole;
 
+#if TARGET_OS_IOS
 /**
  * Logs all actions performed and screen changes in the application, such as button touches, swipes and gestures.
  */
 +(void)enableUIEventLogging;
+#endif
 
 /**
  * Sends an issue
@@ -159,8 +169,9 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * to the server, and marks the session so that it is highlighted in the web console.
  * @param title Short description of the issue.
  * @param text Full details of the issue. Markdown format is accepted.
+ * @return the issue identifier
  */
-+(void)sendIssueWithTitle:(NSString*)title text:(NSString*)text;
++ (NSString *)sendIssueWithTitle:(NSString *)title text:(NSString *)text;
 
 /** ******************************************************************** **
  * @name Device details
