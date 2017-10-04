@@ -1,3 +1,6 @@
+# 1.4.8
+- Fixed minor issues.
+
 # 1.4.7
 - Fixed minor issues.
 
