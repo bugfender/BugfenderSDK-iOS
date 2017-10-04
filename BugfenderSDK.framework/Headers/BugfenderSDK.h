@@ -45,6 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_4_4  34 // Mistake: We released the version without incrementing the number.
 #define BFLibraryVersionNumber_1_4_5  36
 #define BFLibraryVersionNumber_1_4_6  37
+#define BFLibraryVersionNumber_1_4_7  38
 
 /**
  * Current Bugfender version number.

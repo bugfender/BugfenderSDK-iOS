@@ -194,6 +194,7 @@
 				TargetAttributes = {
 					425D16131B7E043F0084A862 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 679S8RZAEG;
 					};
 					42F5B27B1DA6BC730011D4EF = {
 						CreatedOnToolsVersion = 8.0;
@@ -429,6 +430,7 @@
 			baseConfigurationReference = AFB06D4C73011E9DA834B7B0 /* Pods-BugfenderExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 679S8RZAEG;
 				INFOPLIST_FILE = BugfenderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugfender.$(PRODUCT_NAME:rfc1034identifier)";
@@ -441,6 +443,7 @@
 			baseConfigurationReference = EA0C42CBE9CDD35B5B5C4940 /* Pods-BugfenderExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 679S8RZAEG;
 				INFOPLIST_FILE = BugfenderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugfender.$(PRODUCT_NAME:rfc1034identifier)";

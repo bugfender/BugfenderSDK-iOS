@@ -1,3 +1,6 @@
+# 1.4.7
+- Fixed minor issues.
+
 # 1.4.6
 - Added method to get the session identifier. 
 - Now send issue method returns the issue identifier. 
