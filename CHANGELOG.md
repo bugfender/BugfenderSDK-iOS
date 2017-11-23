@@ -1,3 +1,7 @@
+# 1.4.9
+- Fixed crash when sendIssues is called with nil parameters.
+- Adding some other parameter validations.
+
 # 1.4.8
 - Fixed minor issues.
 
