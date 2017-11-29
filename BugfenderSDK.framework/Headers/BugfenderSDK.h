@@ -48,6 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_4_7  38
 #define BFLibraryVersionNumber_1_4_8  39
 #define BFLibraryVersionNumber_1_4_9  40
+#define BFLibraryVersionNumber_1_4_10 41
 
 /**
  * Current Bugfender version number.
@@ -85,6 +86,14 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 /** ******************************************************************** **
  * @name Configuration
  ** ******************************************************************** **/
+
+/**
+ * Sets the URL of the API
+ * @discussion Usage of this function is not necessary in the general use case. Please use exclusively when
+ * directed from technical support. This method must be called before activateLogger.
+ * @param url URL of the API to use
+ */
++ (void)setApiURL:(NSURL*)url;
 
 /**
  * Activates the Bugfender for a specific app.
