@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugfenderSDK'
-  s.version  = '1.4.9'
+  s.version  = '1.5.0'
   s.ios.deployment_target     = '8.0'
   s.license  = { :type => 'Commercial', :text => 'See https://bugfender.com/terms-of-service/' }
   s.summary  = 'Bugfender: a mobile remote logger'
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
                    CMD
   s.default_subspecs = "Swift"
   s.frameworks = "Foundation", "SystemConfiguration", "Security", "MobileCoreServices"
+  s.library = 'c++'
   s.subspec 'ObjC' do |x|
     x.vendored_library = 'libBugfenderSDKstatic.a'
     x.source_files = 'BugfenderSDK.h'
