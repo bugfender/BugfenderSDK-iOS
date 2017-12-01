@@ -1,3 +1,11 @@
+# 1.5.0
+- Added crash reporting
+- Added information when deleting logs unsent to the server
+- Added exponential back off if the server is not reachable
+
+# 1.4.10
+- Added method for setting API endpoint
+
 # 1.4.9
 - Fixed crash when sendIssues is called with nil parameters.
 - Adding some other parameter validations.
