@@ -1,1 +1,0 @@
-../../../../../../BugfenderSDK.framework/Headers/BugfenderSDK.h
