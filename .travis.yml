@@ -1,6 +1,3 @@
 language: objective-c
 script: cd Example && xcodebuild test -workspace BugfenderExample.xcworkspace -scheme BugfenderExample -destination 'platform=iOS Simulator,name=iPhone 6'
-osx_image: xcode8.3
-xcode_workspace: Example/BugfenderExample.xcworkspace
-xcode_scheme: BugfenderExample
-xcode_sdk: iphonesimulator10.3
+osx_image: xcode9.1
