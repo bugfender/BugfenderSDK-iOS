@@ -57,11 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
  **/
 FOUNDATION_EXPORT double const BFLibraryVersionNumber;
 
-/**
- * Exception thrown when calling any BFLog method without having activated previously the `Bugfender` interface.
- **/
-extern NSString * const BFInvalidMethodCallException;
-
+/** Defines the level of a log */
 typedef NS_ENUM(NSUInteger, BFLogLevel)
 {
     /** Default/info log level */
@@ -100,8 +96,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * Activates the Bugfender for a specific app.
  * @param appKey The app key of the Bugfender application, get it in bugfender.com
  * @throws `NSInvalidArgumentException` if Bugfender has already been initialized with a different app key.
- * @discussion This method needs to be called before any `BFLog` call, otherwise the
- * `BFInvalidMethodCallException` exception will be thrown.
+ * @discussion This method needs to be called before any `BFLog` call, otherwise they will be ignored.
  **/
 + (void)activateLogger:(NSString*)appKey;
 
@@ -181,16 +176,6 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  */
 +(void)enableCrashReporting;
 
-/**
- * Sends an issue
- * @discussion Sending an issue forces the logs of the current session being sent
- * to the server, and marks the session so that it is highlighted in the web console.
- * @param title Short description of the issue.
- * @param text Full details of the issue. Markdown format is accepted.
- * @return the issue identifier
- */
-+ (NSString *)sendIssueWithTitle:(NSString *)title text:(NSString *)text;
-
 /** ******************************************************************** **
  * @name Device details
  ** ******************************************************************** **/
@@ -268,6 +253,16 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * This command can be called anytime, and will take effect the next time the device is online.
  */
 + (void) forceSendOnce;
+
+/**
+ * Sends an issue
+ * @discussion Sending an issue forces the logs of the current session being sent
+ * to the server, and marks the session so that it is highlighted in the web console.
+ * @param title Short description of the issue.
+ * @param text Full details of the issue. Markdown format is accepted.
+ * @return the issue identifier
+ */
++ (NSString *)sendIssueWithTitle:(NSString *)title text:(NSString *)text;
 
 @end
 NS_ASSUME_NONNULL_END
