@@ -13,6 +13,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  local_dir: docs
+  local_dir: $TRAVIS_BUILD_DIR/docs
   on:
     branch: master
