@@ -1,0 +1,6 @@
+objc: true
+author: Bugfender
+author_url: https://bugfender.com
+github_url: https://github.com/bugfender/BugfenderSDK-iOS
+module: BugfenderSDK
+sdk: iphonesimulator

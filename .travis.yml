@@ -2,7 +2,16 @@ language: objective-c
 before_install:
  - gem install cocoapods -v '1.4.0.rc.1'
 script:
+ - pod lib lint
+ - ./generate-docs
  - cd Example
  - pod install
  - xcodebuild test -workspace BugfenderExample.xcworkspace -scheme BugfenderExample -destination 'platform=iOS Simulator,name=iPhone 6'
 osx_image: xcode9.2
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  local_dir: docs
+  on:
+    branch: master
