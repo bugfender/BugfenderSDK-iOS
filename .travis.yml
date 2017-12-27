@@ -1,3 +1,6 @@
 language: objective-c
-script: cd Example && xcodebuild test -workspace BugfenderExample.xcworkspace -scheme BugfenderExample -destination 'platform=iOS Simulator,name=iPhone 6'
-osx_image: xcode9.1
+script:
+ - cd Example
+ - pod install
+ - xcodebuild test -workspace BugfenderExample.xcworkspace -scheme BugfenderExample -destination 'platform=iOS Simulator,name=iPhone 6'
+osx_image: xcode9.2
