@@ -40,6 +40,7 @@ And add the following to `application(_:didFinishLaunchingWithOptions:)`:
 ```Swift
 Bugfender.activateLogger("YOUR_APP_KEY")
 Bugfender.enableUIEventLogging() // optional, log user interactions automatically
+Bugfender.enableCrashReporting() // optional, log crashes automatically
 BFLog("Hello world!") // use BFLog as you would use NSLog
 ```
 
@@ -68,6 +69,7 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
     // Activate the remote logger with an App Key.
     [Bugfender activateLogger:@"YOUR_APP_KEY"];
     [Bugfender enableUIEventLogging]; // optional, log user interactions automatically
+    [Bugfender enableCrashReporting]; // optional, log crashes automatically
     BFLog("Hello world!") // use BFLog as you would use NSLog
     ...
 }
