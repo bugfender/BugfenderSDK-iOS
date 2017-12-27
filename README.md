@@ -1,4 +1,4 @@
-Bugfender SDK for iOS [![Available in CocoaPods](https://img.shields.io/cocoapods/v/BugfenderSDK.svg)](https://cocoapods.org/pods/BugfenderSDK) [![CocoaDocs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/BugfenderSDK/) 
+Bugfender SDK for iOS [![Available in CocoaPods](https://img.shields.io/cocoapods/v/BugfenderSDK.svg)](https://cocoapods.org/pods/BugfenderSDK) [![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](http://cocoadocs.org/docsets/BugfenderSDK/) 
 ===================
 
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender console](https://app.bugfender.com/). You'll need an account.
@@ -12,8 +12,8 @@ First of all you will need to add the framework to your project.
 
 1. Create a Podfile if you don't have one: `pod init`
 1. Add a line to your Podfile:
-   * Swift or mixed projects: `pod 'BugfenderSDK', '~> 1.4'`
-   * Objective-C projects: `pod 'BugfenderSDK/ObjC', '~> 1.4'` (doesn't require the Swift runtime)
+   * Swift or mixed projects: `pod 'BugfenderSDK', '~> 1.5'`
+   * Objective-C projects: `pod 'BugfenderSDK/ObjC', '~> 1.5'` (doesn't require the Swift runtime)
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
 ## Manual
