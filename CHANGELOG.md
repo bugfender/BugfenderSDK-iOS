@@ -1,3 +1,6 @@
+# 1.5.1
+- Improved efficiency of background cleanup process
+
 # 1.5.0
 - Added crash reporting
 - Added information when deleting logs unsent to the server
