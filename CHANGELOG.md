@@ -1,3 +1,7 @@
+# 1.5.2
+- Implement refresh device status
+- Fixed issue with the device key-values
+
 # 1.5.1
 - Improved efficiency of background cleanup process
 
