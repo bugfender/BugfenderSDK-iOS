@@ -1,3 +1,6 @@
+# 1.5.3
+- Fixed issue with some crashes was not sent.
+
 # 1.5.2
 - Implement refresh device status
 - Fixed issue with the device key-values
