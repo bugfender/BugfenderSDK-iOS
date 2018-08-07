@@ -1,3 +1,6 @@
+# 1.5.5
+- Addressing an issue in which access to the iOS keychain in the background may cause a crash 
+
 # 1.5.4
 - Fixed when receiving a big number of logs per seconds the SDK may use a lot of RAM and the app may crash. New implementation will ignore new Log operations if it receives a memory warning until the Log queue is reduced.
 
