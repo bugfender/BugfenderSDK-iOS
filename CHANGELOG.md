@@ -1,3 +1,6 @@
+# 1.5.6
+- Fixed an issue in which gap logs were reporting wrong begin/end dates 
+
 # 1.5.5
 - Addressing an issue in which access to the iOS keychain in the background may cause a crash 
 - Fixed SDK sending wrong timestamp in crash
