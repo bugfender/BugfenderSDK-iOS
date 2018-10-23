@@ -147,7 +147,9 @@ Bugfender keeps up to 5 MB worth of log data in the device. This way Bugfender c
 Getting feedback from the final users is one of the most important things for an app developer. Good user feedback allows you detect errors in your app and helps you to understand better your product. 
 
 Starting from version 1.6 Bugfender provides a new feature to easily collect app feedback from final users. It takes only two minutes and a few lines of code too integrate. You can think about the User Feedback as an special kind of Issue, everytime your users submit their feedback you will get a new issue in Bugfender. 
+
 ![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/feature/add-docs/Docs/User-feedbac-default.png)
+
 The easiest way to implemente the Bugfender User Feedback is using the customizable User Feedback View Controller. It provides a convenient view controller with two textfields, one short for the subject and another bigger for the feedback. Both textfields grow autommatically. 
 
 ## Using default UI 
@@ -182,12 +184,14 @@ Additionally, if you require more customization you can configure the view contr
 // Access the root view controller.  
 BFUserFeedbackViewController *feedbackViewController = nvc.feedbackViewController;
 
-// Change the background color 
-feedbackViewController.mainBackgroundColor = UIColor.greenColor; 
+// Change the background colors
+feedbackViewController.mainBackgroundColor = [UIColor lightGrayColor];
+feedbackViewController.secondaryBackgroundColor = [UIColor whiteColor];
 
 // Change the font of the hint text 
-feedbackViewController.hintFont = [UIFont systemFontOfSize:14 weight:UIFontWeightHeavy];
+feedbackViewController.hintFont = [UIFont fontWithName:@"Avenir" size:14];
 ```
+![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/feature/add-docs/Docs/User-feedback-custom.png)
 
 For a complete list of customizable attributes you can inspect "BFUserFeedbackViewController.h". 
 
