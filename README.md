@@ -146,15 +146,15 @@ Bugfender keeps up to 5 MB worth of log data in the device. This way Bugfender c
 
 Getting feedback from the final users is one of the most important things for an app developer. Good user feedback allows you detect errors in your app and helps you to understand better your product. 
 
-Starting from version 1.6 Bugfender provides a new feature to easily collect app feedback from final users. It takes only two minutes and a few lines of code too integrate. You can think about the User Feedback as an special kind of Issue, everytime your users submit their feedback you will get a new issue in Bugfender. 
+Starting from version 1.6, Bugfender provides a new feature to easily collect app feedback from final users. It takes only two minutes and a few lines of code to integrate. You can think about the User Feedback as an special kind of Issue, every time your users submit their feedback you will get a new issue in Bugfender. 
 
 ![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/feature/add-docs/Docs/User-feedbac-default.png)
 
-The easiest way to implemente the Bugfender User Feedback is using the customizable User Feedback View Controller. It provides a convenient view controller with two textfields, one short for the subject and another bigger for the feedback. Both textfields grow autommatically. 
+The easiest way to implement Bugfender User Feedback is using the customizable User Feedback View Controller. It provides a convenient view controller with two text fields, one short for the subject and another bigger for the feedback. Both text fields grow autommatically. 
 
 ## Using default UI 
 
-Using the convenient UI provided by Bugfender requires only to request a new View Controller to Bugfender and present it modally. All you need is to call the following method and complete the required params with the title and placeholders for your UI.
+Using the convenient UI provided by Bugfender requires only creating a new View Controller and presenting it modally. All you need is to call the following method and complete the required parameters with the title and placeholders for your UI.
 
 ```
 // Instantiate new User Feedback 
@@ -168,7 +168,7 @@ BFUserFeedbackNavigationController *nvc = [Bugfender userFeedbackViewControllerW
                                             if (feedbackSent) {
                                                 // Say thanks!
                                             } else {
-                                                // User decided not sending feedback
+                                                // User decided to not send feedback
                                             }
                                         }];
 
@@ -176,9 +176,9 @@ BFUserFeedbackNavigationController *nvc = [Bugfender userFeedbackViewControllerW
 [self presentViewController:nvc animated:YES completion:nil];
 ```
 
-Additionally, if you require more customization you can configure the view controller prior to present it. 
+Additionally, if you require more customization you can configure the view controller prior to presenting it. 
 
-*Notice that Bugfender returns BFUserFeedbackNavigationController which is a subclass of navigation controller. You need to access the view controller using the public property feedbackViewController.*
+*Please note BFUserFeedbackNavigationController is a subclass of navigation controller. You need to access the view controller using the public property feedbackViewController.*
 
 ```
 // Access the root view controller.  
@@ -193,11 +193,11 @@ feedbackViewController.hintFont = [UIFont fontWithName:@"Avenir" size:14];
 ```
 ![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/feature/add-docs/Docs/User-feedback-custom.png)
 
-For a complete list of customizable attributes you can inspect "BFUserFeedbackViewController.h". 
+For a complete list of customizable attributes you can inspect "BFUserFeedbackViewController.h" or [read the docs](http://bugfender.github.io/BugfenderSDK-iOS/).
 
-## Using custom UI 
+## Using a custom UI
 
-If you need further customization than provided by BFUserFeedbackViewController you can implement your own UI. All you have to do is collect your user feedback in the convenient textfields and send it to Bugfender using the provided method for it. 
+If you need further customization than provided by BFUserFeedbackViewController you can implement your own UI. All you have to do is collect your user feedback as you wish and send it to Bugfender using `sendUserFeedback`:
 
 ```
 [Bugfender sendUserFeedbackWithSubject:@"Title of the feedback" message:@"message of the feedback"];
