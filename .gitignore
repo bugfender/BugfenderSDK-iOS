@@ -29,4 +29,3 @@ DerivedData
 # Bugfender after prepare pod
 BugfenderSDK.h
 libBugfenderSDKstatic.a
-/docs
