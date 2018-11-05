@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugfenderSDK'
-  s.version  = '1.5.6'
+  s.version  = '1.6.0'
   s.ios.deployment_target     = '8.0'
   s.license  = { :type => 'Commercial', :text => 'See https://bugfender.com/terms-of-service/' }
   s.summary  = 'Bugfender: a mobile remote logger'
@@ -22,10 +22,10 @@ Pod::Spec.new do |s|
   s.library = 'c++'
   s.subspec 'ObjC' do |x|
     x.vendored_library = 'libBugfenderSDKstatic.a'
-    x.source_files = 'BugfenderSDK.h'
+    x.source_files = 'BugfenderSDK.h', 'BFUserFeedbackViewController.h', 'BFUserFeedbackNavigationController.h'
   end
   s.subspec 'Swift' do |x|
     x.vendored_library = 'libBugfenderSDKstatic.a'
-    x.source_files = 'swift/*.swift', 'BugfenderSDK.h'
+    x.source_files = 'swift/*.swift', 'BugfenderSDK.h', 'BFUserFeedbackViewController.h', 'BFUserFeedbackNavigationController.h'
   end
 end

@@ -5,6 +5,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <BugfenderSDK/BFUserFeedbackNavigationController.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 #define BFLibraryVersionNumber_0_1_0  0
@@ -56,6 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_5_4  46
 #define BFLibraryVersionNumber_1_5_5  47
 #define BFLibraryVersionNumber_1_5_6  48
+#define BFLibraryVersionNumber_1_6_0  49
 
 /**
  * Current Bugfender version number.
@@ -80,6 +83,8 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 #define BFLog2(logLevel, tagName, fmt, ...) \
 [Bugfender logWithLineNumber:__LINE__ method:[NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__] file:[[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent] level:logLevel tag:tagName message:fmt == nil ? @"" : [NSString stringWithFormat:fmt, ##__VA_ARGS__]]
+
+
 
 /**
  * Main Bugfender interface.
@@ -260,6 +265,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  */
 + (void) forceSendOnce;
 
+#pragma mark - Issues
 /**
  * Sends an issue
  * @discussion Sending an issue forces the logs of the current session being sent
@@ -270,5 +276,38 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  */
 + (NSString *)sendIssueWithTitle:(NSString *)title text:(NSString *)text;
 
+#pragma mark - User Feedback
+
+/**
+ Provides a View Controller to gather the feedback of the users and sent it to Bugfender.
+ The returning BFUserFeedbackNavigationController has to be presented modally and it has it's own Send and Cancel buttons
+ 
+ Additionally, it is possible to customize the aspect of the screen accessing BFUserFeedbackNavigationController.feedbackViewController
+ 
+ @param title Title for the navigation bar
+ @param hint Short text at the beginning
+ @param subjectPlaceholder placeholder in the subject textfield
+ @param messagePlaceholder placeholder in the message textfield
+ @param sendButtonTitle title for the send button in the navigation bar
+ @param cancelButtonTitle title for the cancel button
+ @return BFUserFeedbackNavigationController containing a BFUserFeedbackViewController as root view controller
+ */
++ (BFUserFeedbackNavigationController *)userFeedbackViewControllerWithTitle:(NSString *)title
+                                                                       hint:(NSString *)hint
+                                                         subjectPlaceholder:(NSString *)subjectPlaceholder
+                                                         messagePlaceholder:(NSString *)messagePlaceholder
+                                                            sendButtonTitle:(NSString *)sendButtonTitle
+                                                          cancelButtonTitle:(NSString *)cancelButtonTitle
+                                                                 completion:(void (^ _Nullable )(BOOL feedbackSent))completionBlock;
+
+/**
+ Allows to create custom UI to gather user feedback and send to Bugfender.
+
+ @param subject subject of the feedback
+ @param message message of the feedback
+ */
++ (void)sendUserFeedbackWithSubject:(NSString *)subject message:(NSString *)message;
+
 @end
+
 NS_ASSUME_NONNULL_END
