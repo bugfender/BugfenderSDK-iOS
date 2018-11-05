@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
   }
   s.prepare_command = <<-CMD
                         cp BugfenderSDK.framework/Headers/BugfenderSDK.h BugfenderSDK.h
+                        cp BugfenderSDK.framework/Headers/BFUserFeedbackViewController.h BFUserFeedbackViewController.h
+                        cp BugfenderSDK.framework/Headers/BFUserFeedbackNavigationController.h BFUserFeedbackNavigationController.h
                         cp BugfenderSDK.framework/BugfenderSDK libBugfenderSDKstatic.a
                    CMD
   s.default_subspecs = "Swift"
