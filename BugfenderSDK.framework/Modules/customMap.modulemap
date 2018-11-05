@@ -1,0 +1,6 @@
+framework module BugfenderSDK {
+  umbrella header "BugfenderSDK.h"
+  
+  module * { export * }
+  export *
+}

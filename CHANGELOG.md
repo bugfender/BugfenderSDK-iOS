@@ -1,3 +1,7 @@
+# 1.6.0
+- Featuring the new Bugfender User Feedback. A fast and easy way to gather feedback from the users
+- Fixed swift bridges sending the full path of the files instead the filename 
+
 # 1.5.6
 - Fixed an issue in which gap logs were reporting wrong begin/end dates 
 
