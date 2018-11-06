@@ -11,9 +11,15 @@ First of all you will need to add the framework to your project.
 ## Using CocoaPods
 
 1. Create a Podfile if you don't have one: `pod init`
-1. Add a line to your Podfile:
-   * Swift or mixed projects: `pod 'BugfenderSDK', '~> 1.5'`
-   * Objective-C projects: `pod 'BugfenderSDK/ObjC', '~> 1.5'` (doesn't require the Swift runtime)
+1. Add Bugfender to your Podfile:
+   * Swift or mixed projects:
+   ```
+   pod 'BugfenderSDK', '~> 1.6'
+   ```
+   * Objective-C projects: 
+   ```
+   pod 'BugfenderSDK/ObjC', '~> 1.6' // Doesn't require the Swift runtime
+   ``` 
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
 ## Manual
