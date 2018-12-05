@@ -1,3 +1,7 @@
+# 1.6.1
+- Fixed crash when using the Bugfender User Feedback in Swift 
+- Improved return key type in the User Feedback textfields  
+
 # 1.6.0
 - Featuring the new Bugfender User Feedback. A fast and easy way to gather feedback from the users
 - Fixed swift bridges sending the full path of the files instead the filename 
