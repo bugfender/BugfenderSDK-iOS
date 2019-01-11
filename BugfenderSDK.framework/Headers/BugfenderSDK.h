@@ -60,6 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_5_6  48
 #define BFLibraryVersionNumber_1_6_0  49
 #define BFLibraryVersionNumber_1_6_1  50
+#define BFLibraryVersionNumber_1_6_2  51
 
 /**
  * Current Bugfender version number.
@@ -244,7 +245,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * @param method The method where the log has happened.
  * @param file The file where the log has happened.
  * @param level Log level.
- * @param tag Tag or tags to be applied to the log line.
+ * @param tag Tag to be applied to the log line.
  * @param message Message to be logged. The message will be logged verbatim, no interpretation will be performed.
  * @discussion Prefer to use the BFLog or BFLog2 macros in order to get file name and line number filled in automatically
  **/
