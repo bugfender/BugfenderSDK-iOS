@@ -1,3 +1,11 @@
+# 1.6.2
+- Improved the memory footprint of BugfenderSDK. The SDK, in general, will need less memory to perform normal operations
+- Improved the behaviour of the SDK heartbeat for apps which are never fully closed
+- Fixed crash when a device was trying to send an abnormally big amount of logs to the server 
+- Logs have been limited to 32000 characters in order to avoid memory issues in devices with low resources available
+- Updated docs regarding to the ussage of the tags 
+- Other minor performance issues 
+
 # 1.6.1
 - Fixed crash when using the Bugfender User Feedback in Swift 
 - Improved return key type in the User Feedback textfields  
