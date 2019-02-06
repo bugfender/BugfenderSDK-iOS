@@ -6,6 +6,7 @@
 
 #import <Foundation/Foundation.h>
 #import <BugfenderSDK/BFUserFeedbackNavigationController.h>
+#import <BugfenderSDK/BFUserFeedbackViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -61,6 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_6_0  49
 #define BFLibraryVersionNumber_1_6_1  50
 #define BFLibraryVersionNumber_1_6_2  51
+#define BFLibraryVersionNumber_1_6_3  52
 
 /**
  * Current Bugfender version number.

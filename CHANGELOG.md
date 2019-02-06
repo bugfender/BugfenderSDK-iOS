@@ -1,3 +1,6 @@
+# 1.6.3
+- Fixed threading issue that may lead to a crash under stress conditions
+
 # 1.6.2
 - Improved the memory footprint of BugfenderSDK. The SDK, in general, will need less memory to perform normal operations
 - Improved the behaviour of the SDK heartbeat for apps which are never fully closed
