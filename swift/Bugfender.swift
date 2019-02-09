@@ -2,7 +2,7 @@
 //  Bugfender.swift
 //  Bugfender
 //
-//  This is a helper file for easier logging with Swift.
+//  This is a helper file for easier logging with Swift, use when building a Swift project and Bugfender is imported as static library
 //  Copyright © 2017 Bugfender. All rights reserved.
 //
 
