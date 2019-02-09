@@ -22,13 +22,24 @@ First of all you will need to add the framework to your project.
    ``` 
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
+## Using Carthage
+
+1. Add to your Cartfile:
+   ```
+   github "bugfender/BugfenderSDK-iOS" ~>1.6
+   ```
+1. Save the file and run `carthage update`
+1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project). Important: do **not** import as Embedded Framework.
+1. Import `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
+1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/swift-manual/Bugfender.swift) helper file to your project.
+
 ## Manual
 
 If you prefer to install the SDK manually:
 
 1. Go to your **Project** > **Your Target** > **General** > **Linked Frameworks and Libraries** and drag `BugfenderSDK.framework` there.
 1. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
-1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/swift/Bugfender.swift) helper file to your project. Add an `import BugfenderSDK` statement at the top.
+1. _(If using Swift)_ Import [Bugfender.swift](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/swift-manual/Bugfender.swift) helper file to your project.
 
 # Using Bugfender
 Once you have the framework in your project, here is how to use it.
