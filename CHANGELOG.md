@@ -1,3 +1,8 @@
+# 1.6.4
+- Fixed an async task that may block a background thread 
+- Improved how user defined key-values synchronize with the server 
+- Fixed race condition that may lead to a heap corruption in low connectivity conditions
+
 # 1.6.3
 - Fixed threading issue that may lead to a crash under stress conditions
 

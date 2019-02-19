@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class BFUserFeedbackViewController;
+#import "BFUserFeedbackViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

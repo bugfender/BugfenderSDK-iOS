@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import BugfenderSDK
 
 #if swift(>=3.1)
     extension Bugfender {
