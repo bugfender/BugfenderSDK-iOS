@@ -5,7 +5,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <BugfenderSDK/BFUserFeedbackNavigationController.h>
+@class BFUserFeedbackNavigationController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 #define BFLibraryVersionNumber_0_1_0  0
