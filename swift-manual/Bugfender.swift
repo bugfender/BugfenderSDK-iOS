@@ -38,6 +38,20 @@ import BugfenderSDK
         let message = String(format: format, arguments: args)
         Bugfender.log(lineNumber: line, method: funcname, file: filename, level: level, tag: tag, message: message)
     }
+    
+    public func bfprint(_ items: Any..., separator: String = " ", terminator: String = "", tag: String? = nil, level: BFLogLevel = .default, filename: String = #file, line: Int = #line, funcname: String = #function)
+    {
+        var message = ""
+        var prefix = ""
+        for item in items {
+            message.write(prefix)
+            print(item, separator: "", terminator: "", to: &message)
+            prefix = separator
+        }
+        message.write(terminator)
+        let file = (filename as NSString).lastPathComponent
+        Bugfender.log(lineNumber: line, method: funcname, file: file, level: level, tag: tag, message: message)
+    }
 #elseif swift(>=3.0)
     extension Bugfender {
         public class func print(_ items: Any..., separator: String = " ", terminator: String = "\n", tag: String? = nil, level: BFLogLevel = .default, filename: String = #file, line: Int = #line, funcname: String = #function)
