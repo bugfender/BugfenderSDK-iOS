@@ -58,7 +58,7 @@ And add the following to `application(_:didFinishLaunchingWithOptions:)`:
 Bugfender.activateLogger("YOUR_APP_KEY")
 Bugfender.enableUIEventLogging() // optional, log user interactions automatically
 Bugfender.enableCrashReporting() // optional, log crashes automatically
-BFLog("Hello world!") // use BFLog as you would use NSLog
+bfprint("Hello world!") // use bfprint() as you would use print()
 ```
 
 Then you may use `BFLog` as you would normally use `NSLog`.
