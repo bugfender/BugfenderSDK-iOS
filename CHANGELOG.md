@@ -1,3 +1,8 @@
+# 1.6.5
+- The device identifier, the session identifier and sending an issue (issue, crash or user feedback) will return now URLs to the Bugfender's Dashboard. This can be used to create automations and to integrate BugfenderSDK with third party tools
+- Fixed race condition that may prevent some crashes to be correctly displayed in the Bugfender's Dashboard
+- Added new method allowing developers to manually send crash reports to Bugfender
+
 # 1.6.4
 - Fixed an async task that may block a background thread 
 - Improved how user defined key-values synchronize with the server 

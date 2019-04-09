@@ -5,8 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class BFUserFeedbackNavigationController;
-
+#import <BugfenderSDK/BFUserFeedbackNavigationController.h>
 NS_ASSUME_NONNULL_BEGIN
 
 #define BFLibraryVersionNumber_0_1_0  0
@@ -63,6 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_6_2  51
 #define BFLibraryVersionNumber_1_6_3  52
 #define BFLibraryVersionNumber_1_6_4  53
+#define BFLibraryVersionNumber_1_6_5  54
 
 /**
  * Current Bugfender version number.
@@ -108,6 +108,14 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 + (void)setApiURL:(NSURL*)url;
 
 /**
+ * Sets the URL of the Bugfender Dashboard
+ * @discussion Usage of this function is not necessary in the general use case. Please use exclusively when
+ * directed from technical support. This method must be called before activateLogger.
+ * @param url base URL of the Bugfender's dashboard
+ */
++ (void)setBaseURL:(NSURL*)url;
+
+/**
  * Activates the Bugfender for a specific app.
  * @param appKey The app key of the Bugfender application, get it in bugfender.com
  * @throws `NSInvalidArgumentException` if Bugfender has already been initialized with a different app key.
@@ -141,14 +149,32 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * The device identifier is constant while the application is installed in the device.
  * @return A string identifying the device.
  **/
-+ (NSString*)deviceIdentifier;
++ (NSString*)deviceIdentifier __deprecated_msg("Use deviceIdentifierUrl instead.");
+
+/**
+ * Returns a URL linking to the current device in bugfender.
+ * @discussion This url can be sent to your server and used to create integrations with other services. Also can be stored to
+ * keep a relationship between a Bugfender device and a user or some other important event in your application.
+ *
+ * The device identifier is constant while the application is installed in the device.
+ * @return URL linking to the device in Bugfender
+ **/
++ (NSURL *)deviceIdentifierUrl;
 
 /**
  *
  * The session identifier is constant while the application is running.
  * @return A string identifying the current session.
  */
-+ (NSString *)sessionIdentifier;
++ (NSString *)sessionIdentifier __deprecated_msg("Use sessionIdentifierUrl instead.");
+
+/**
+ *
+ * The session identifier url is constant while the application is running.
+ * @discussion This url can be sent to your server and used to create integrations with other services.
+ * @return A URL linking to the current session in Bugfender.
+ */
++ (NSURL *)sessionIdentifierUrl;
 
 /**
  * Synchronizes all logs with the server all the time, regardless if this device is enabled or not.
@@ -278,7 +304,29 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * @param text Full details of the issue. Markdown format is accepted.
  * @return the issue identifier
  */
-+ (NSString *)sendIssueWithTitle:(NSString *)title text:(NSString *)text;
++ (NSString *)sendIssueWithTitle:(NSString *)title text:(NSString *)text __deprecated_msg("Use sendIssueReturningUrlWithTitle:text: instead.");
+
+/**
+ * Sends an issue
+ * @discussion Sending an issue forces the logs of the current session being sent
+ * to the server, and marks the session so that it is highlighted in the web console.
+ * @param title Short description of the issue.
+ * @param text Full details of the issue. Markdown format is accepted.
+ * @return an URL linking to the issue in Bugfender
+ */
++ (NSURL *)sendIssueReturningUrlWithTitle:(NSString *)title text:(NSString *)text;
+
+#pragma mark - Crashes
+
+/**
+ * Sends a crash
+ * @discussion This method will send immediately a crash to the server
+ * it doesn't take into account if crash reporting is enabled or not
+ * @param title Short description of the crash.
+ * @param text Full details of the crarsh.
+ * @return an URL linking to the crash in Bugfender
+ */
++ (NSURL *)sendCrashWithTitle:(NSString *)title text:(NSString *)text;
 
 #pragma mark - User Feedback
 
@@ -302,7 +350,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
                                                          messagePlaceholder:(NSString *)messagePlaceholder
                                                             sendButtonTitle:(NSString *)sendButtonTitle
                                                           cancelButtonTitle:(NSString *)cancelButtonTitle
-                                                                 completion:(void (^ _Nullable )(BOOL feedbackSent))completionBlock;
+                                                                 completion:(void (^ _Nullable )(BOOL feedbackSent, NSURL * _Nullable url))completionBlock;
 
 /**
  Allows to create custom UI to gather user feedback and send to Bugfender.
@@ -310,7 +358,16 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  @param subject subject of the feedback
  @param message message of the feedback
  */
-+ (void)sendUserFeedbackWithSubject:(NSString *)subject message:(NSString *)message;
++ (void)sendUserFeedbackWithSubject:(NSString *)subject message:(NSString *)message __deprecated_msg("Use sendUserFeedbackReturningUrlWithSubject:message: instead.");
+
+/**
+ Allows to create custom UI to gather user feedback and send to Bugfender.
+ 
+ @param subject subject of the feedback
+ @param message message of the feedback
+ @return URL linking to Bugfender
+ */
++ (NSURL *)sendUserFeedbackReturningUrlWithSubject:(NSString *)subject message:(NSString *)message;
 
 @end
 

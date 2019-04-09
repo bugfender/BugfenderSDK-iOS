@@ -74,7 +74,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Pass a block if you want to be notified after feedback was sent (or not)
  */
-@property (nonatomic, copy) void (^completionBlock)(BOOL feedbackSent);
+@property (nonatomic, copy) void (^completionBlock)(BOOL feedbackSent, NSURL * _Nullable url);
 
 @end
 

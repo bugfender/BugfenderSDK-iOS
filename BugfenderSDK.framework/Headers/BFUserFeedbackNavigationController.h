@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
                                                          messagePlaceholder:(NSString *)messagePlaceholder
                                                             sendButtonTitle:(NSString *)sendButtonTitle
                                                           cancelButtonTitle:(NSString *)cancelButtonTitle
-                                                                 completion:(void (^)(BOOL feedbackSent))completionBlock;
+                                                                 completion:(void (^)(BOOL feedbackSent, NSURL * _Nullable url))completionBlock;
 
 
 @end

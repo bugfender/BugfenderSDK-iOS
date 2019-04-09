@@ -1,6 +1,6 @@
 framework module BugfenderSDK {
-  umbrella header "BugfenderSDK.h"
-  header "BFUserFeedbackNavigationController.h"
-  module * { export * }
-  export *
+    umbrella header "BugfenderSDK.h"
+    
+    module * { export * }
+    export *
 }
