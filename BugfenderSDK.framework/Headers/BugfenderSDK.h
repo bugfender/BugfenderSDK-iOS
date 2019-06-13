@@ -63,6 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_6_3  52
 #define BFLibraryVersionNumber_1_6_4  53
 #define BFLibraryVersionNumber_1_6_5  54
+#define BFLibraryVersionNumber_1_6_6  55
 
 /**
  * Current Bugfender version number.
@@ -79,11 +80,20 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
     BFLogLevelWarning       = 1,
     /** Error log level */
     BFLogLevelError         = 2,
+    /** Trace log level */
+    BFLogLevelTrace         = 3,
+    /** Info log level */
+    BFLogLevelInfo          = 4,
+    /** Fatal log level */
+    BFLogLevelFatal         = 5
 };
 
 #define BFLog(args, ...)     BFLog2(BFLogLevelDefault, nil, args, ##__VA_ARGS__)
 #define BFLogWarn(args, ...) BFLog2(BFLogLevelWarning, nil, args, ##__VA_ARGS__)
 #define BFLogErr(args, ...)  BFLog2(BFLogLevelError, nil, args, ##__VA_ARGS__)
+#define BFLogTrace(args, ...)  BFLog2(BFLogLevelTrace, nil, args, ##__VA_ARGS__)
+#define BFLogInfo(args, ...)  BFLog2(BFLogLevelInfo, nil, args, ##__VA_ARGS__)
+#define BFLogFatal(args, ...)  BFLog2(BFLogLevelFatal, nil, args, ##__VA_ARGS__)
 
 #define BFLog2(logLevel, tagName, fmt, ...) \
 [Bugfender logWithLineNumber:__LINE__ method:[NSString stringWithFormat:@"%s",__PRETTY_FUNCTION__] file:[[NSString stringWithFormat:@"%s",__FILE__] lastPathComponent] level:logLevel tag:tagName message:fmt == nil ? @"" : [NSString stringWithFormat:fmt, ##__VA_ARGS__]]

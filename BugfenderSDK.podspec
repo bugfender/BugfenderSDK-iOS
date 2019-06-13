@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugfenderSDK'
-  s.version  = '1.6.5'
+  s.version  = '1.6.6'
   s.ios.deployment_target     = '8.0'
   s.license  = { :type => 'Commercial', :text => 'See https://bugfender.com/terms-of-service/' }
   s.summary  = 'Bugfender: a mobile remote logger'
