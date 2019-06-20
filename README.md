@@ -101,7 +101,6 @@ You may also want to specify a logging level by using the following macros:
 - `BFLogErr(...)`: Error log.
 
 # Advanced features
-Check out the full documentation at [CocoaDocs](http://cocoadocs.org/docsets/BugfenderSDK/).
 
 ## Sending issues
 
@@ -158,6 +157,26 @@ Bugfender keeps up to 5 MB worth of log data in the device. This way Bugfender c
 // Setting maximum cache size to 1 Mb
 [Bugfender setMaximumLocalStorageSize:1024*1024];
 ```
+
+## Get Device Link
+
+Sometimes you want to integrate Bugfender with a third party tool, for this the SDK provides a method that returns the URL for the current device, so you can send it to the third party tool to easily go to the logs of the device from the other tool.
+
+
+```objective-c
++ (NSURL *)deviceIdentifierUrl;
+```
+
+## Get Session Link
+
+Sometimes you want to integrate Bugfender with a third party tool, for this the SDK provides a method that returns the URL for the sesssion, so you can send it to the third party tool to easily go to the logs of the current session from the other tool.
+
+
+```objective-c
++ (NSURL *)sessionIdentifierUrl;
+```
+
+
 
 # Collecting User feedback 
 
