@@ -26,7 +26,7 @@ First of all you will need to add the framework to your project.
 
 1. Add to your Cartfile:
    ```
-   github "bugfender/BugfenderSDK-iOS" ~>1.6
+   binary "https://github.com/bugfender/BugfenderSDK-iOS/blob/master/BugfenderSDK.json" ~>1.6
    ```
 1. Save the file and run `carthage update`
 1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project). Important: do **not** import as Embedded Framework.
