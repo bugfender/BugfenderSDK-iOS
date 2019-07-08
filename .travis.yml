@@ -1,6 +1,6 @@
 language: objective-c
 before_install:
- - gem install cocoapods -v '1.4.0.rc.1'
+ - gem install cocoapods -v '1.6.1'
  - gem install jazzy -v '0.9.0'
 script:
  - pod lib lint
