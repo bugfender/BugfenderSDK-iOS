@@ -10,6 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * BFUserFeedbackViewController provides a basic and configurable view controller to gather feedback from the users
+ */
 @interface BFUserFeedbackViewController : UITableViewController {
     
 }
@@ -34,8 +37,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) NSString *hint;
 
+/**
+ * Font from the hint
+ */
 @property (nonatomic, strong) UIFont *hintFont;
 
+/**
+ * Font color from the hint
+ */
 @property (nonatomic, strong) UIColor *hintFontColor;
 
 #pragma mark - Subject
@@ -46,10 +55,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) UIFont *subjectFont;
 
+/**
+ * Font color from the subject textfield
+ */
 @property (nonatomic, strong) UIColor *subjectFontColor;
 
+/**
+ * Font color for the placeholder of the subject textfield
+ */
 @property (nonatomic, strong) UIColor *subjectPlaceholderFontColor;
 
+/**
+ * Subject placeholder
+ */
 @property (nonatomic, strong) NSString *subjectPlaceholder;
 
 #pragma mark - Message
@@ -59,16 +77,31 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) UIFont *messageFont;
 
+/**
+ * Message font color
+ */
 @property (nonatomic, strong) UIColor *messageFontColor;
 
+/**
+ * Message placeholder font color
+ */
 @property (nonatomic, strong) UIColor *messagePlaceholderFontColor;
 
+/**
+ * Message placeholder
+ */
 @property (nonatomic, strong) NSString *messagePlaceholder;
 
 #pragma mark - Actions
 
+/**
+ * Hide view controller
+ */
 - (void)dismiss;
 
+/**
+ * Send feedback to Bugfender
+ */
 - (void)sendFeedback;
 
 /**

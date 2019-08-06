@@ -11,12 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ * Navigation View Controller containing a BFUserFeedbackNavigationController as rootViewController
+ */
 @interface BFUserFeedbackNavigationController : UINavigationController
 
 
 
 /**
- Root View Controller containing a table with the textfields used to gather feedback
+ * Root View Controller containing a table with the textfields used to gather feedback
  */
 @property (nonatomic, strong) BFUserFeedbackViewController *feedbackViewController;
 

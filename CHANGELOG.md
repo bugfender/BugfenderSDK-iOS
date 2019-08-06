@@ -1,3 +1,7 @@
+# 1.7.0
+- Fixed an issue in which retrieving the session identifier right after activateLogger might result in a null identifier under certain conditions and this could provocate a crash in swift projects
+- Changed pulic api so URL dependant identifiers are nullable properties now 
+
 # 1.6.6
 - Added new log levels 
 
