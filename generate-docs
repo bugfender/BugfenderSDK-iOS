@@ -2,5 +2,6 @@
 jazzy \
   --clean \
   --umbrella-header BugfenderSDK.framework/Headers/BugfenderSDK.h \
-  --framework-root . \
-  --output docs
+  --framework-root ./BugfenderSDK.framework \
+  --output docs \
+  --sdk iphonesimulator
