@@ -14,11 +14,11 @@ First of all you will need to add the framework to your project.
 1. Add Bugfender to your Podfile:
    * Swift or mixed projects:
    ```
-   pod 'BugfenderSDK', '~> 1.6'
+   pod 'BugfenderSDK', '~> 1.7'
    ```
    * Objective-C projects: 
    ```
-   pod 'BugfenderSDK/ObjC', '~> 1.6' // Doesn't require the Swift runtime
+   pod 'BugfenderSDK/ObjC', '~> 1.7' // Doesn't require the Swift runtime
    ``` 
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
@@ -26,7 +26,7 @@ First of all you will need to add the framework to your project.
 
 1. Add to your Cartfile:
    ```
-   binary "https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/BugfenderSDK.json" ~>1.6
+   binary "https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/BugfenderSDK.json" ~>1.7
    ```
 1. Save the file and run `carthage update`
 1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project). Important: do **not** import as Embedded Framework.
