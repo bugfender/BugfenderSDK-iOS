@@ -1,6 +1,6 @@
 # 1.8.0
-- Added xcframework to support to Project Catalyst
-- Bugfender is now a dynamic library
+- Added xcframework to support Project Catalyst
+- Bugfender is now a dynamic library and swift files are included inside. No need to manually add the swift bridge anymore
 
 # 1.7.0
 - Fixed an issue in which retrieving the session identifier right after activateLogger might result in a null identifier under certain conditions and this could provocate a crash in swift projects
