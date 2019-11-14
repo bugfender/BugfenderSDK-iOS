@@ -13,7 +13,7 @@ First of all you will need to add the framework to your project.
 1. Create a Podfile if you don't have one: `pod init`
 1. Add Bugfender to your Podfile:
    ```
-   pod 'BugfenderSDK', '~> 1.7'
+   pod 'BugfenderSDK', '~> 1.8'
    ```
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
