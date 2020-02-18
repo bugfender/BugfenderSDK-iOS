@@ -1,9 +1,14 @@
+# 1.8.0
+- Added xcframework to support Project Catalyst
+- Bugfender is now a dynamic library and swift files are included inside. No need to manually add the swift bridge anymore
+- Bugfender will return a specific -1004 error when trying to send logs to an app that was deleted in the server
+
 # 1.7.0
 - Fixed an issue in which retrieving the session identifier right after activateLogger might result in a null identifier under certain conditions and this could provocate a crash in swift projects
-- Changed pulic api so URL dependant identifiers are nullable properties now 
+- Changed pulic api so URL dependant identifiers are nullable properties now
 
 # 1.6.6
-- Added new log levels 
+- Added new log levels
 
 # 1.6.5
 - The device identifier, the session identifier and sending an issue (issue, crash or user feedback) will return now URLs to the Bugfender's Dashboard. This can be used to create automations and to integrate BugfenderSDK with third party tools
@@ -21,24 +26,24 @@
 # 1.6.2
 - Improved the memory footprint of BugfenderSDK. The SDK, in general, will need less memory to perform normal operations
 - Improved the behaviour of the SDK heartbeat for apps which are never fully closed
-- Fixed crash when a device was trying to send an abnormally big amount of logs to the server 
+- Fixed crash when a device was trying to send an abnormally big amount of logs to the server
 - Logs have been limited to 32000 characters in order to avoid memory issues in devices with low resources available
-- Updated docs regarding to the ussage of the tags 
-- Other minor performance issues 
+- Updated docs regarding to the ussage of the tags
+- Other minor performance issues
 
 # 1.6.1
-- Fixed crash when using the Bugfender User Feedback in Swift 
+- Fixed crash when using the Bugfender User Feedback in Swift
 - Improved return key type in the User Feedback textfields  
 
 # 1.6.0
 - Featuring the new Bugfender User Feedback. A fast and easy way to gather feedback from the users
-- Fixed swift bridges sending the full path of the files instead the filename 
+- Fixed swift bridges sending the full path of the files instead the filename
 
 # 1.5.6
-- Fixed an issue in which gap logs were reporting wrong begin/end dates 
+- Fixed an issue in which gap logs were reporting wrong begin/end dates
 
 # 1.5.5
-- Addressing an issue in which access to the iOS keychain in the background may cause a crash 
+- Addressing an issue in which access to the iOS keychain in the background may cause a crash
 - Fixed SDK sending wrong timestamp in crash
 
 # 1.5.4
@@ -73,8 +78,8 @@
 - Fixed minor issues.
 
 # 1.4.6
-- Added method to get the session identifier. 
-- Now send issue method returns the issue identifier. 
+- Added method to get the session identifier.
+- Now send issue method returns the issue identifier.
 
 # 1.4.5
 - Fixed issue with the latest release.
@@ -153,7 +158,7 @@
 # 0.3.9
  - Added issues
  - Option to send logs from the app
- 
+
 # 0.3.8
  - Added device detail key-value storage
  - Fixed a crash when device disk was full
@@ -165,4 +170,3 @@
  - Automated logging of NSLog
  - Automated UIEvent logging
  - Efficiency and stability improvements
-

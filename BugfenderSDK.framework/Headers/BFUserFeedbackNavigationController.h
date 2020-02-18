@@ -6,7 +6,8 @@
 //  Copyright © 2018 Mobile Jazz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#if TARGET_OS_IOS
+
 #import "BFUserFeedbackViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -49,3 +50,4 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+#endif

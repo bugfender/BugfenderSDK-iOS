@@ -5,7 +5,12 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#if TARGET_OS_IOS
+
 #import "BFUserFeedbackNavigationController.h"
+
+#endif
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -66,6 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_6_5  54
 #define BFLibraryVersionNumber_1_6_6  55
 #define BFLibraryVersionNumber_1_7_0  56
+#define BFLibraryVersionNumber_1_8_0  57
 
 /**
  * Current Bugfender version number.
@@ -76,7 +82,7 @@ FOUNDATION_EXPORT double const BFLibraryVersionNumber;
 /** Defines the level of a log */
 typedef NS_ENUM(NSUInteger, BFLogLevel)
 {
-    /** Default/info log level */
+    /** Default/Degug log level */
     BFLogLevelDefault       = 0,
     /** Warning log level */
     BFLogLevelWarning       = 1,
@@ -342,6 +348,8 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  */
 + (nullable NSURL *)sendCrashWithTitle:(NSString *)title text:(NSString *)text;
 
+#if TARGET_OS_IOS
+
 #pragma mark - User Feedback
 
 /**
@@ -365,6 +373,8 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
                                                             sendButtonTitle:(NSString *)sendButtonTitle
                                                           cancelButtonTitle:(NSString *)cancelButtonTitle
                                                                  completion:(void (^ _Nullable )(BOOL feedbackSent, NSURL * _Nullable url))completionBlock;
+
+#endif
 
 /**
  Allows to create custom UI to gather user feedback and send to Bugfender.
