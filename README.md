@@ -21,7 +21,7 @@ First of all you will need to add the framework to your project.
 
 1. Add to your Cartfile:
    ```
-   binary "https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/BugfenderSDK.json" ~>1.7
+   binary "https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/BugfenderSDK.json" ~>1.8
    ```
 1. Save the file and run `carthage update`
 1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
@@ -54,7 +54,7 @@ Bugfender.enableCrashReporting() // optional, log crashes automatically
 bfprint("Hello world!") // use bfprint() as you would use print()
 ```
 
-Then you may use `BFLog` as you would normally use `NSLog`.
+Then you may use `BFLog` as you would normally use `NSLog` or `print`.
 
 You may also want to specify a logging level by using the following helper functions:
 
@@ -101,18 +101,17 @@ Bugfender allows you to send issues to the server. An issue is similar to a sess
 
 For sending an issue you can use the following function:
 
-```objective-c
-+(void)sendIssueWithTitle:(NSString*)title text:(NSString*)text;
+```swift
+Bugfender.sendIssueReturningUrl(withTitle: "Issue title", text: "Description of the issue")
+
 ```
 
-*The `text` parameter has Markdown notation support on the server, so you can add some style to the text being sent.*
-
-Here you have an example on how to send an issue using Markdown for the text:
+*Nothice that `text` supports Markdown notation on the server. You can add some style to the text.*
 
 ```swift
 Bugfender.sendIssueReturningUrl(withTitle: "App Error", text: "We have found an **Error**, we need to check it")
 ```
-Notice: this method returns an URL pointing to the issue in the Dashboard of Bugfender. You can use that URL to create automations.
+Send issue returns an URL pointing to the issue in the Dashboard of Bugfender. You can use that URL to create automations.
 
 ## Having your app decide when to send logs
 
@@ -138,22 +137,21 @@ Bugfender.setMaximumLocalStorageSize(1024*1024)
 
 ## Get Device Link
 
-Sometimes you want to integrate Bugfender with a third party tool, for this the SDK provides a method that returns the URL for the current device, so you can send it to the third party tool to easily go to the logs of the device from the other tool.
+Sometimes you want to integrate Bugfender with a third party tool. For this purpose, the SDK provides a method that returns the URL for the current device. You can send it to the third party tool and easily navigate back to the logs of the device from the other tool.
 
 
-```objective-c
-+ (NSURL *)deviceIdentifierUrl;
+```swift
+Bugfender.deviceIdentifierUrl();
 ```
 
 ## Get Session Link
 
-Sometimes you want to integrate Bugfender with a third party tool, for this the SDK provides a method that returns the URL for the sesssion, so you can send it to the third party tool to easily go to the logs of the current session from the other tool.
+Sometimes you want to integrate Bugfender with a third party tool. For this purpose, the SDK provides a method that returns the URL for the session. You can send it to the third party tool to easily go to the logs of the current session from the other tool.
 
 
 ```objective-c
-+ (NSURL *)sessionIdentifierUrl;
+Bugfender.sessionIdentifierUrl();
 ```
-
 
 
 # Collecting User feedback
