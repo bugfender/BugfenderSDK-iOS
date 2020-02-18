@@ -179,7 +179,7 @@ let nvc = Bugfender.userFeedbackViewController(withTitle: "Navigation bar title"
                                                cancelButtonTitle: "Cancel") { (feedbackSent, url) in
     if (feedbackSent) {
         // Say thanks!
-        // feedbackUrl is a direct link to the dashboard
+        // url is a direct link to the dashboard
         // Use it to create automations or send it to your server
     } else {
         // User decided to not send feedback
