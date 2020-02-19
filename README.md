@@ -160,7 +160,7 @@ Getting feedback from the final users is one of the most important things for an
 
 Starting from version 1.6, Bugfender provides a new feature to easily collect app feedback from final users. It takes only two minutes and a few lines of code to integrate. You can think about the User Feedback as a special kind of Issue, every time your users submit their feedback you will get a new issue in Bugfender.
 
-![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Docs/User-feedbac-default.png)
+![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/docs/User-feedback-default.png)
 
 The easiest way to implement Bugfender User Feedback is using the customizable User Feedback View Controller. It provides a convenient view controller with two text fields, one short for the subject and another bigger for the feedback. Both text fields grow autommatically.
 
@@ -205,7 +205,7 @@ feedbackViewController.secondaryBackgroundColor = UIColor.white
 // Change the font of the hint text
 feedbackViewController.hintFont = UIFont(name: "Avenir", size: 14)!
 ```
-![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/Docs/User-feedback-custom.png)
+![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/docs/User-feedback-custom.png)
 
 For a complete list of customizable attributes you can inspect "BFUserFeedbackViewController.h" or [read the docs](http://bugfender.github.io/BugfenderSDK-iOS/).
 
