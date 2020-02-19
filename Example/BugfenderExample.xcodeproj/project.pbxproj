@@ -15,7 +15,7 @@
 		425D16281B7E043F0084A862 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425D16271B7E043F0084A862 /* Images.xcassets */; };
 		425D162B1B7E043F0084A862 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425D16291B7E043F0084A862 /* LaunchScreen.xib */; };
 		42F5B27F1DA6BC730011D4EF /* BugfenderExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F5B27E1DA6BC730011D4EF /* BugfenderExampleUITests.m */; };
-		F6E79E7B92A60F05BF76AABB /* libPods-BugfenderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2478C60D32A2F3870765B4C2 /* libPods-BugfenderExample.a */; };
+		7AA07BCB03E9502122EF15AA /* libPods-BugfenderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A66C19CE7503E5A15C1F7D99 /* libPods-BugfenderExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2478C60D32A2F3870765B4C2 /* libPods-BugfenderExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BugfenderExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CF345EF58A49A00F067A4E /* Pods-BugfenderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugfenderExample.release.xcconfig"; path = "Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample.release.xcconfig"; sourceTree = "<group>"; };
 		425D16141B7E043F0084A862 /* BugfenderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugfenderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		425D16181B7E043F0084A862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		425D16191B7E043F0084A862 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,8 +46,8 @@
 		42F5B27C1DA6BC730011D4EF /* BugfenderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BugfenderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F5B27E1DA6BC730011D4EF /* BugfenderExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BugfenderExampleUITests.m; sourceTree = "<group>"; };
 		42F5B2801DA6BC730011D4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFB06D4C73011E9DA834B7B0 /* Pods-BugfenderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugfenderExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample.debug.xcconfig"; sourceTree = "<group>"; };
-		EA0C42CBE9CDD35B5B5C4940 /* Pods-BugfenderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugfenderExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample.release.xcconfig"; sourceTree = "<group>"; };
+		7B5A5C5CE8BE46CBD4D9B20A /* Pods-BugfenderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugfenderExample.debug.xcconfig"; path = "Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A66C19CE7503E5A15C1F7D99 /* libPods-BugfenderExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BugfenderExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6E79E7B92A60F05BF76AABB /* libPods-BugfenderExample.a in Frameworks */,
+				7AA07BCB03E9502122EF15AA /* libPods-BugfenderExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 				42F5B27D1DA6BC730011D4EF /* BugfenderExampleUITests */,
 				425D16151B7E043F0084A862 /* Products */,
 				FFDE35A1EAE87F47788CA368 /* Frameworks */,
-				8D6D0166F86944FB9348ABE0 /* Pods */,
+				4B7922D5D13515E552AD9943 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,20 +124,21 @@
 			path = BugfenderExampleUITests;
 			sourceTree = "<group>";
 		};
-		8D6D0166F86944FB9348ABE0 /* Pods */ = {
+		4B7922D5D13515E552AD9943 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AFB06D4C73011E9DA834B7B0 /* Pods-BugfenderExample.debug.xcconfig */,
-				EA0C42CBE9CDD35B5B5C4940 /* Pods-BugfenderExample.release.xcconfig */,
+				7B5A5C5CE8BE46CBD4D9B20A /* Pods-BugfenderExample.debug.xcconfig */,
+				05CF345EF58A49A00F067A4E /* Pods-BugfenderExample.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		FFDE35A1EAE87F47788CA368 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				428EBDEB1BC44FAB006480D7 /* MobileCoreServices.framework */,
-				2478C60D32A2F3870765B4C2 /* libPods-BugfenderExample.a */,
+				A66C19CE7503E5A15C1F7D99 /* libPods-BugfenderExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,12 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 425D163A1B7E043F0084A862 /* Build configuration list for PBXNativeTarget "BugfenderExample" */;
 			buildPhases = (
-				15F564AC1820C57844865413 /* [CP] Check Pods Manifest.lock */,
+				44C1EDE5A60AE86E91760A4B /* [CP] Check Pods Manifest.lock */,
 				425D16101B7E043F0084A862 /* Sources */,
 				425D16111B7E043F0084A862 /* Frameworks */,
 				425D16121B7E043F0084A862 /* Resources */,
-				5934755436F315B1403686D8 /* [CP] Embed Pods Frameworks */,
-				DB57E181888EA4C6E8547A86 /* [CP] Copy Pods Resources */,
+				B0F11AE48CD01E05F9DD6F3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,16 +243,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15F564AC1820C57844865413 /* [CP] Check Pods Manifest.lock */ = {
+		44C1EDE5A60AE86E91760A4B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BugfenderExample-checkManifestLockResult.txt",
 			);
@@ -261,34 +265,22 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5934755436F315B1403686D8 /* [CP] Embed Pods Frameworks */ = {
+		B0F11AE48CD01E05F9DD6F3D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample-frameworks.sh",
+				"${PODS_ROOT}/../../BugfenderSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BugfenderSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB57E181888EA4C6E8547A86 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -430,7 +422,7 @@
 		};
 		425D163B1B7E043F0084A862 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFB06D4C73011E9DA834B7B0 /* Pods-BugfenderExample.debug.xcconfig */;
+			baseConfigurationReference = 7B5A5C5CE8BE46CBD4D9B20A /* Pods-BugfenderExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 679S8RZAEG;
@@ -443,7 +435,7 @@
 		};
 		425D163C1B7E043F0084A862 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA0C42CBE9CDD35B5B5C4940 /* Pods-BugfenderExample.release.xcconfig */;
+			baseConfigurationReference = 05CF345EF58A49A00F067A4E /* Pods-BugfenderExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 679S8RZAEG;
