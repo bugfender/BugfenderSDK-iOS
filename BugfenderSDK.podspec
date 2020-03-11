@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/bugfender/BugfenderSDK-iOS.git',
     :tag => s.version.to_s
   }
-  s.swift_versions = ['3.0', '3.1', '4.0', '4.2', '5.0', '5.1']
+  s.swift_versions = ['5.1']
   s.frameworks = "Foundation", "SystemConfiguration", "Security", "MobileCoreServices"
   s.library = 'c++'
   s.vendored_framework = 'BugfenderSDK.framework'
