@@ -1,3 +1,6 @@
+# 1.9.0
+- Support for CocoaPods 1.9.0 and xcframework
+
 # 1.8.0
 - Added xcframework to support Project Catalyst
 - Bugfender is now a dynamic library and swift files are included inside. No need to manually add the swift bridge anymore

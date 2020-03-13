@@ -15,5 +15,6 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5.1']
   s.frameworks = "Foundation", "SystemConfiguration", "Security", "MobileCoreServices"
   s.library = 'c++'
-  s.vendored_framework = 'BugfenderSDK.framework'
+  s.vendored_frameworks = 'BugfenderSDK.xcframework'
+  s.cocoapods_version = '>= 1.9'
 end
