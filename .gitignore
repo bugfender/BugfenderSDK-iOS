@@ -19,7 +19,3 @@ DerivedData
 .DS_Store
 
 Pods/
-
-# Bugfender after prepare pod
-BugfenderSDK.h
-libBugfenderSDKstatic.a
