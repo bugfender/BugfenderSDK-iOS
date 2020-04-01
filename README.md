@@ -6,6 +6,7 @@ Bugfender is a cloud service to collect mobile application logs. Developers can 
 BugfenderSDK 1.9 works for iOS 10.0 and newer. For iOS 8 support you can still use the BugfenderSDK 1.8.
 
 **Updating from BugfenderSDK prior to 1.8:**
+
 BugfenderSDK is a dynamic framework now and you will need to check the embed option when adding it to your project manually or using Carthage. Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted.
 
 # Installing the SDK
