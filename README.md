@@ -3,7 +3,11 @@ Bugfender SDK for iOS [![Build Status](https://travis-ci.org/bugfender/Bugfender
 
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender console](https://app.bugfender.com/). You'll need an account.
 
-BugfenderSDK works for iOS 8.0 and better.
+BugfenderSDK 1.9 works for iOS 10.0 and newer. For iOS 8 support you can still use the BugfenderSDK 1.8.
+
+**Updating from BugfenderSDK prior to 1.8:**
+
+BugfenderSDK is a dynamic framework now and you will need to check the embed option when adding it to your project manually or using Carthage. Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted.
 
 # Installing the SDK
 First of all you will need to add the framework to your project.
@@ -13,25 +17,27 @@ First of all you will need to add the framework to your project.
 1. Create a Podfile if you don't have one: `pod init`
 1. Add Bugfender to your Podfile:
    ```
-   pod 'BugfenderSDK', '~> 1.8'
+   pod 'BugfenderSDK', '~> 1.9'
    ```
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
 ## Using Carthage
-
+*Carthage doesn't support Mac Catalyst at the moment. Should you need it, use the manual installation or CocoaPods*
 1. Add to your Cartfile:
    ```
-   github "bugfender/BugfenderSDK-iOS" ~>1.8
+   github "bugfender/BugfenderSDK-iOS" ~>1.9
    ```
 1. Save the file and run `carthage update`
 1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
+1. Make sure to select the option "Embed framework"
 1. Import `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
-## Manual and Project Catalyst
+## Manual
 
-If you prefer to install the SDK manually or support project Catalyst in your app you can use the provided xcframework:
+If you prefer to install the SDK manually you can use the provided xcframework in the corresponding [release](https://github.com/bugfender/BugfenderSDK-iOS/releases).
 
-1. Go to your **Project** > **Your Target** > **General** > **Linked Frameworks and Libraries** and drag `BugfenderSDK.xcframework` there.
+1. Go to your **Project** > **Your Target** > **General** > **Frameworks, Libraries, and Embedded Content** and drag `BugfenderSDK.xcframework` there.
+1. Make sure to select the option "Embed framework"
 1. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
 
 # Using Bugfender
