@@ -29,7 +29,7 @@ First of all you will need to add the framework to your project.
    ```
 1. Save the file and run `carthage update`
 1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
-1. Make sure to select the option "Embed framework"
+1. Make sure to select the option "Embed framework" (or list the framework in `input.xcfilelist`).
 1. Import `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
 *Notice:* Carthage will complain if you use Bugfender SDK 1.9 (which is Swift 5.2) in a different Swift version. As of Swift 5 this shouldn't be an issue because [Swift has ABI stability](https://swift.org/blog/abi-stability-and-more/).
@@ -47,7 +47,7 @@ If you prefer to install the SDK manually you can use the provided xcframework i
 1. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
 
 # Using Bugfender
-Once you have the framework in your project, here is how to use it.
+Once you have the framework in your project, using it is as easy as using `BFLog()` instead of `NSLog()` or `bfprint()` instead `print()`.
 
 ## Swift
 
