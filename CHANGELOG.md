@@ -1,3 +1,6 @@
+# 1.9.1
+- Fix: returning URLs from device/issue/session missing path segment 
+
 # 1.9.0
 - Support for CocoaPods 1.9.0 and xcframework
 
