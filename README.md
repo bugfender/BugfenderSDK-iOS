@@ -1,4 +1,4 @@
-Bugfender SDK for iOS [![Build Status](https://travis-ci.org/bugfender/BugfenderSDK-iOS.svg?branch=master)](https://travis-ci.org/bugfender/BugfenderSDK-iOS) [![Available in CocoaPods](https://img.shields.io/cocoapods/v/BugfenderSDK.svg)](https://cocoapods.org/pods/BugfenderSDK) [![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](https://bugfender.github.io/BugfenderSDK-iOS/)
+Bugfender SDK for iOS [![Build Status](https://travis-ci.org/bugfender/BugfenderSDK-iOS.svg?branch=master)](https://travis-ci.org/bugfender/BugfenderSDK-iOS) [![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](https://bugfender.github.io/BugfenderSDK-iOS/)
 ===================
 
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender console](https://app.bugfender.com/). You'll need an account.
@@ -29,8 +29,14 @@ First of all you will need to add the framework to your project.
    ```
 1. Save the file and run `carthage update`
 1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
-1. Make sure to select the option "Embed framework"
+1. Make sure to select the option "Embed framework" (or list the framework in `input.xcfilelist`).
 1. Import `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
+
+*Notice:* Carthage will complain if you use Bugfender SDK 1.9 (which is Swift 5.2) in a different Swift version. As of Swift 5 this shouldn't be an issue because [Swift has ABI stability](https://swift.org/blog/abi-stability-and-more/).
+
+This is a [known bug in Carthage](https://github.com/Carthage/Carthage/issues/2887). In the meantime, you can work this around by using the Bugfender SDK version that matches the Swift version in your project (Bugfender SDK 1.8 matches Swift 5.1). Prior to Bugfender 1.8 the SDK was pure ObjC, but you had to add a Swift helper manually.
+
+Alternatively, you can just use the CocoaPods (recommended) or manual installation steps.
 
 ## Manual
 
@@ -41,7 +47,7 @@ If you prefer to install the SDK manually you can use the provided xcframework i
 1. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
 
 # Using Bugfender
-Once you have the framework in your project, here is how to use it.
+Once you have the framework in your project, using it is as easy as using `BFLog()` instead of `NSLog()` or `bfprint()` instead `print()`.
 
 ## Swift
 
