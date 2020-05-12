@@ -8,7 +8,7 @@ BugfenderSDK 1.9 works for iOS 10.0 and newer. For iOS 8 support you can still u
 **Updating from BugfenderSDK prior to 1.8 and ObjC only projects:**
 
 BugfenderSDK is now a dynamic framework and you will need to check the "embed framework" option when adding it to your project manually or using Carthage.
-<br /> Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted, however, swift must be available in your project. Again, if you installing Bugfender manually or using Carthage ensure that *Build Settings -> Always Embed Swift Standard Libraries* is set to *YES*.
+<br /> Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted, however, swift must be available in your project. Again, if you are installing Bugfender manually or using Carthage ensure that *Build Settings -> Always Embed Swift Standard Libraries* is set to *YES*.
 
 # Installing the SDK
 First of all you will need to add the framework to your project.
