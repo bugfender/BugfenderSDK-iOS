@@ -1,5 +1,8 @@
+# 1.9.2
+- Feature: added a new overrideDeviceName(String) that allows to customize the name of the device.
+
 # 1.9.1
-- Fix: returning URLs from device/issue/session missing path segment 
+- Fix: returning URLs from device/issue/session missing path segment
 
 # 1.9.0
 - Support for CocoaPods 1.9.0 and xcframework

@@ -74,6 +74,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_8_0  57
 #define BFLibraryVersionNumber_1_9_0  58
 #define BFLibraryVersionNumber_1_9_1  59
+#define BFLibraryVersionNumber_1_9_2  60
 
 /**
  * Current Bugfender version number.
@@ -242,6 +243,13 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 /** ******************************************************************** **
  * @name Device details
  ** ******************************************************************** **/
+
+/**
+ * Sets the name for the device. If the Device Name is not set, then the  iOS standard device name will be automatically sent
+ * @note This method has to be called prior to activate logger. Otherwise, an exception will be thrown.
+ * @param deviceName Device name that will be .
+ */
++(void)overrideDeviceName:(NSString *)deviceName;
 
 /**
  * Sets a device detail with boolean type.
