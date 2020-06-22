@@ -23,7 +23,6 @@ First of all you will need to add the framework to your project.
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
 ## Using Carthage
-*Carthage doesn't support Mac Catalyst at the moment. Should you need it, use the manual installation or CocoaPods*
 1. Add to your Cartfile:
    ```
    github "bugfender/BugfenderSDK-iOS" ~>1.9
@@ -33,11 +32,9 @@ First of all you will need to add the framework to your project.
 1. Make sure to select the option "Embed framework" (or list the framework in `input.xcfilelist`).
 1. Import `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
-*Notice:* Carthage will complain if you use Bugfender SDK 1.9 (which is Swift 5.2) in a different Swift version. As of Swift 5 this shouldn't be an issue because [Swift has ABI stability](https://swift.org/blog/abi-stability-and-more/).
+*Please note:* make sure to use Carthage v0.35.0 or newer, there is a bug in prior versions that will sometimes complain about "Incompatible Swift version".
 
-This is a [known bug in Carthage](https://github.com/Carthage/Carthage/issues/2887). In the meantime, you can work this around by using the Bugfender SDK version that matches the Swift version in your project (Bugfender SDK 1.8 matches Swift 5.1). Prior to Bugfender 1.8 the SDK was pure ObjC, but you had to add a Swift helper manually.
-
-Alternatively, you can just use the CocoaPods (recommended) or manual installation steps.
+*Mac Catalyst:* Carthage doesn't support Mac Catalyst at the moment. Should you need it, use the manual installation or CocoaPods.
 
 ## Manual
 
