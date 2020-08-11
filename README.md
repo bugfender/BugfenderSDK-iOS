@@ -22,6 +22,22 @@ First of all you will need to add the framework to your project.
    ```
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
+## Using Swift Package Manager (beta)
+
+1. In Xcode go to the target's `General` tab and press on the icon to add a new library <img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm1.png?raw=true" width="400" >
+
+1. In the popover choose `Add Other` and then `Add Package Dependency...`
+<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm2.png?raw=true" width="300" >
+
+1. Paste the GitHub url from the Bugfender iOS repository `https://github.com/bugfender/BugfenderSDK-iOS` in the textfield and press `Next`
+<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm3.png?raw=true" width="400" >
+
+1. Choose `Branch` option and type `beta`. Then press Next
+<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm4.png?raw=true" width="400" >
+1. Xcode will download the Bugfender files and you will be prompted with the following menu. Ensure BugfenderSDK is selected and press Finish
+<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm5.png?raw=true" width="400" >
+
+
 ## Using Carthage
 1. Add to your Cartfile:
    ```
