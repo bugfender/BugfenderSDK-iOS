@@ -12,7 +12,6 @@ let package = Package(
             name: "BugfenderSDK",
             targets: ["BugfenderSDK"])
     ],
-    dependencies: [],
     targets: [
         .binaryTarget(
             name: "BugfenderSDK",
