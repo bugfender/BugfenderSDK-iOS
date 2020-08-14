@@ -38,8 +38,8 @@ First of all you will need to add the framework to your project.
 5. Xcode will download the Bugfender files and you will be prompted with the following menu. Ensure BugfenderSDK is selected and press Finish
 <img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm5.png?raw=true" width="400" >
 
-6. Drag the 'Bugfender.xcframework' from 'Referenced Binaries' to the 'Frameworks, Libraries and Embedded Content' pane. Make sure 'Embed and Sign' are selected.  
-<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm6.png?raw=true" width="400" >
+6. Drag the `Bugfender.xcframework` from `Referenced Binaries` to the `Frameworks, Libraries and Embedded Content` pane. Make sure `Embed and Sign` are selected.  
+<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm6.png?raw=true" width="600" >
 
 ## Using Carthage
 1. Add to your Cartfile:
