@@ -3,13 +3,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "BugfenderSDK",
+    name: "BugfenderPackage",
     platforms: [
         .iOS("10")
     ],
     products: [
         .library(
-            name: "BugfenderSDK",
+            name: "BugfenderLibrary",
             targets: ["BugfenderSDK"])
     ],
     targets: [
