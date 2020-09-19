@@ -22,7 +22,7 @@ First of all you will need to add the framework to your project.
    ```
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
-## Using Swift Package Manager (beta)
+## Using Swift Package Manager
 
 1. In Xcode go to the target's `General` tab and press on the icon to add a new library <img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm1.png?raw=true" width="400" >
 

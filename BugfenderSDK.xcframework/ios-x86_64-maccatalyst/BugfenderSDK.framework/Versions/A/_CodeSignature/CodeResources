@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		LJUrr9x13xL8Jem1KVkj4D5jVW0=
+		2aeajngGgVSNdIbgFtVC4/IjcWM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -29,56 +29,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q7CRYbHE98inIgc+Gc9B+KRqm01YTrZTsCjgzqAROMc=
+			2pZZ5rhdlH844vNDJlYPWRAL0kDScmq6wUg8TD+UUOw=
 			</data>
 		</dict>
 		<key>Headers/BugfenderSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F37q7B2rJQGVh/CePp/qNULfc9FJnBzgnamoUHe3IEQ=
+			ZSqnNeRWMQwkKO19+hJEn2h/JcKVSKiNOcaEuqUSlb8=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pZCZh7NRGKoz0H+KJOVdk/DVFDeR6cr5/6yTaUgtt5U=
+			Uw2RpHJxWNWeRZteZtaRjaw2uxK91gyncDeO3ecswWQ=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6G4IKlwdLBs7GV7TdYVDYBLJx+SRy2c/YbY88Gi51XI=
+			eUoQr2demUqjUvrU5IJLrA3Cum6ho+3xlWbsWPHl8Hg=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9lXU5ioSCrcvcLF49OCBk/6xsk3gkSG7VgtSZ54CyG8=
+			W93GIJymj3Z9n2B3NzopjDZ+r0+aF0fmMhJ/RWrYuIc=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pZCZh7NRGKoz0H+KJOVdk/DVFDeR6cr5/6yTaUgtt5U=
+			Uw2RpHJxWNWeRZteZtaRjaw2uxK91gyncDeO3ecswWQ=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6G4IKlwdLBs7GV7TdYVDYBLJx+SRy2c/YbY88Gi51XI=
+			eUoQr2demUqjUvrU5IJLrA3Cum6ho+3xlWbsWPHl8Hg=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9lXU5ioSCrcvcLF49OCBk/6xsk3gkSG7VgtSZ54CyG8=
+			W93GIJymj3Z9n2B3NzopjDZ+r0+aF0fmMhJ/RWrYuIc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lOzKKHWe+ll7+xof35x56pmxUiZwy92zr9tnvh2d0k0=
+			lZsLBcZXDhZQfcGskwdmePOjros33ESQmELpsWdPHXg=
 			</data>
 		</dict>
 	</dict>
