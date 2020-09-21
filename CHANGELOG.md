@@ -1,3 +1,6 @@
+# 1.10.0
+- Bugfender was compiled with Xcode 12 and is SPM compatible now
+
 # 1.9.2
 - Feature: added a new overrideDeviceName(String) that allows to customize the name of the device.
 
