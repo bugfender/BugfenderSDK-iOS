@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugfenderSDK'
-  s.version  = '1.9.3'
+  s.version  = '1.10.0'
   s.ios.deployment_target     = '10.0'
   s.license  = { :type => 'Commercial', :text => 'See https://bugfender.com/terms-of-service/' }
   s.summary  = 'Bugfender: a mobile remote logger'
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.frameworks = "Foundation", "SystemConfiguration", "Security", "MobileCoreServices"
   s.library = 'c++'
   s.vendored_frameworks = 'BugfenderSDK.xcframework'
-  s.cocoapods_version = '>= 1.9'
+  s.cocoapods_version = '>= 1.10.0'
 end
