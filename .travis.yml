@@ -5,7 +5,7 @@ addons:
     - carthage
     update: true
 before_install:
- - gem install cocoapods --pre
+ - gem install cocoapods
  - gem install jazzy -v '0.9.0'
 script:
  - pod lib lint
@@ -14,7 +14,7 @@ script:
  - ./generate-docs
  - cd Example
  - pod install
- - xcodebuild test -workspace BugfenderExample.xcworkspace -scheme BugfenderExample -destination 'platform=iOS Simulator,name=iPhone 6'
+ - xcodebuild test -workspace BugfenderExample.xcworkspace -scheme BugfenderExample -destination 'platform=iOS Simulator,name=iPhone 11'
 osx_image: xcode12
 deploy:
   provider: pages
