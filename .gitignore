@@ -19,3 +19,5 @@ DerivedData
 .DS_Store
 
 Pods/
+BugfenderSDK.framework.zip
+BugfenderSDK.xcframework.zip
