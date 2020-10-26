@@ -22,55 +22,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		54WJQZ7zHKW6GMS+Br+aitOE1oc=
+		JYqehIsoTRD2BGX974MbwpPCy6s=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Y7oyxz4KvHEsZRqAlF6Y2/Xi7ew=
+		hPoY9Wmotkoo9zAZeqtO3PEPTzU=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Y0UZJKlmS06jmV68ZG0/l4qt034=
+		wklXn/d3JRdQxYPu2oUoHNUSnhk=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WaRsZfx2TdfsrgnSaTchlLfNTeE=
+		9IrBhJK5+nDk1zm7WOX/sm7p8OY=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Y7oyxz4KvHEsZRqAlF6Y2/Xi7ew=
+		hPoY9Wmotkoo9zAZeqtO3PEPTzU=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		Y0UZJKlmS06jmV68ZG0/l4qt034=
+		wklXn/d3JRdQxYPu2oUoHNUSnhk=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		WaRsZfx2TdfsrgnSaTchlLfNTeE=
+		9IrBhJK5+nDk1zm7WOX/sm7p8OY=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aEJU3kVB2zOTgLIa5sAzS/kYxes=
+		zjQqA2jRJYEuN/HQouoqz+qYSXE=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6185y8K9QhHbWPNWAikg9fprZ/0=
+		bL2V/lfqdWhy1V2PYceVLo9hA5Q=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		akS6t+i6nCxnZsR6HT7qpS/1Hb0=
+		97vUfUMrS3zON53x/j23YdAvJ0U=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		aEJU3kVB2zOTgLIa5sAzS/kYxes=
+		zjQqA2jRJYEuN/HQouoqz+qYSXE=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		6185y8K9QhHbWPNWAikg9fprZ/0=
+		bL2V/lfqdWhy1V2PYceVLo9hA5Q=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		akS6t+i6nCxnZsR6HT7qpS/1Hb0=
+		97vUfUMrS3zON53x/j23YdAvJ0U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,132 +127,132 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Y7oyxz4KvHEsZRqAlF6Y2/Xi7ew=
+			hPoY9Wmotkoo9zAZeqtO3PEPTzU=
 			</data>
 			<key>hash2</key>
 			<data>
-			H/RyBggnbwg5ODDz6ZF6MGTLUK02nQOezVAYWAJpDrI=
+			7tDrN6WVrel9hcdIZxGh4Q/LavUWdfmIwm/vUJCpNqQ=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y0UZJKlmS06jmV68ZG0/l4qt034=
+			wklXn/d3JRdQxYPu2oUoHNUSnhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			plRZufssHA5qVLCHbzqrysO5tKYJGrRLzsNQ9SVDark=
+			Mu5mPMfUZVshEMvVoWgKj1y6wGUM10+AL8JK986bBw8=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WaRsZfx2TdfsrgnSaTchlLfNTeE=
+			9IrBhJK5+nDk1zm7WOX/sm7p8OY=
 			</data>
 			<key>hash2</key>
 			<data>
-			IW6ADDkgeN0U3XCMpABoDXbYeZo10JtIJLmfhkgj39s=
+			WzZVh6sDtjOGyORJLGmXUxh2jWrnOFZX+T4FA/qxJRg=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y7oyxz4KvHEsZRqAlF6Y2/Xi7ew=
+			hPoY9Wmotkoo9zAZeqtO3PEPTzU=
 			</data>
 			<key>hash2</key>
 			<data>
-			H/RyBggnbwg5ODDz6ZF6MGTLUK02nQOezVAYWAJpDrI=
+			7tDrN6WVrel9hcdIZxGh4Q/LavUWdfmIwm/vUJCpNqQ=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y0UZJKlmS06jmV68ZG0/l4qt034=
+			wklXn/d3JRdQxYPu2oUoHNUSnhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			plRZufssHA5qVLCHbzqrysO5tKYJGrRLzsNQ9SVDark=
+			Mu5mPMfUZVshEMvVoWgKj1y6wGUM10+AL8JK986bBw8=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WaRsZfx2TdfsrgnSaTchlLfNTeE=
+			9IrBhJK5+nDk1zm7WOX/sm7p8OY=
 			</data>
 			<key>hash2</key>
 			<data>
-			IW6ADDkgeN0U3XCMpABoDXbYeZo10JtIJLmfhkgj39s=
+			WzZVh6sDtjOGyORJLGmXUxh2jWrnOFZX+T4FA/qxJRg=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aEJU3kVB2zOTgLIa5sAzS/kYxes=
+			zjQqA2jRJYEuN/HQouoqz+qYSXE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/sW4mypTMOUjwq3yhGgcS2yyEU4TVafRcNgFT7JhIyk=
+			2POKUwkTnkb4HrLhx1E1W6wmm1tP1N9Y1VUgSmX3Xjc=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6185y8K9QhHbWPNWAikg9fprZ/0=
+			bL2V/lfqdWhy1V2PYceVLo9hA5Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			V2t2HsoLaQZG1g9nnJBdT+HZx29DkLDtkwcJgQEJ7u4=
+			EpB3MJxnqwW3wz/i71uYY394kWeSppWvk477F0dpsJ8=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			akS6t+i6nCxnZsR6HT7qpS/1Hb0=
+			97vUfUMrS3zON53x/j23YdAvJ0U=
 			</data>
 			<key>hash2</key>
 			<data>
-			kFCP4AGYofLWrlujsBjpc+J5N4+Ag390NlJ04pPNXrI=
+			4Y7EGmduaZosvSbP8hgFcGAtkGLpB28bkEMPk5jn6sE=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aEJU3kVB2zOTgLIa5sAzS/kYxes=
+			zjQqA2jRJYEuN/HQouoqz+qYSXE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/sW4mypTMOUjwq3yhGgcS2yyEU4TVafRcNgFT7JhIyk=
+			2POKUwkTnkb4HrLhx1E1W6wmm1tP1N9Y1VUgSmX3Xjc=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6185y8K9QhHbWPNWAikg9fprZ/0=
+			bL2V/lfqdWhy1V2PYceVLo9hA5Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			V2t2HsoLaQZG1g9nnJBdT+HZx29DkLDtkwcJgQEJ7u4=
+			EpB3MJxnqwW3wz/i71uYY394kWeSppWvk477F0dpsJ8=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			akS6t+i6nCxnZsR6HT7qpS/1Hb0=
+			97vUfUMrS3zON53x/j23YdAvJ0U=
 			</data>
 			<key>hash2</key>
 			<data>
-			kFCP4AGYofLWrlujsBjpc+J5N4+Ag390NlJ04pPNXrI=
+			4Y7EGmduaZosvSbP8hgFcGAtkGLpB28bkEMPk5jn6sE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
