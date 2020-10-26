@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BugfenderSDK",
-            url: "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.9.3/BugfenderSDK.xcframework.zip",
-            checksum: "99616fae3dfc5a0513c2105e8ae9a7934945e3a7a4598fab992aef4452c124c2"
+            url: "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.10.0/BugfenderSDK.xcframework.zip",
+            checksum: "3fd533eac972d4eae42da0169918f349f90f15dd6d6847aa12308e40768f9fee"
         )
     ]
 )
