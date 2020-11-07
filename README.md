@@ -3,7 +3,7 @@ Bugfender SDK for iOS [![Build Status](https://travis-ci.org/bugfender/Bugfender
 
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender console](https://app.bugfender.com/). You'll need an account.
 
-BugfenderSDK 1.9 works for iOS 10.0 and newer. For iOS 8 support you can still use the BugfenderSDK 1.8.
+BugfenderSDK 1.10 works for iOS 10.0 and newer. For iOS 8 support you can still use the BugfenderSDK 1.8.
 
 **Updating from BugfenderSDK prior to 1.8 and ObjC only projects:**
 
@@ -18,7 +18,7 @@ First of all you will need to add the framework to your project.
 1. Create a Podfile if you don't have one: `pod init`
 1. Add Bugfender to your Podfile:
    ```
-   pod 'BugfenderSDK', '~> 1.9'
+   pod 'BugfenderSDK', '~> 1.10'
    ```
 1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
@@ -41,7 +41,7 @@ First of all you will need to add the framework to your project.
 ## Using Carthage
 1. Add to your Cartfile:
    ```
-   github "bugfender/BugfenderSDK-iOS" ~>1.9
+   github "bugfender/BugfenderSDK-iOS" ~>1.10
    ```
 1. Save the file and run `carthage update`
 1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).

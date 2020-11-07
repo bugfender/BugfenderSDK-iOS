@@ -130,7 +130,6 @@
 				7B5A5C5CE8BE46CBD4D9B20A /* Pods-BugfenderExample.debug.xcconfig */,
 				05CF345EF58A49A00F067A4E /* Pods-BugfenderExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -194,7 +193,7 @@
 				TargetAttributes = {
 					425D16131B7E043F0084A862 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 679S8RZAEG;
+						DevelopmentTeam = 9YHGX7ST8H;
 					};
 					42F5B27B1DA6BC730011D4EF = {
 						CreatedOnToolsVersion = 8.0;
@@ -208,6 +207,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -272,7 +272,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BugfenderExample/Pods-BugfenderExample-frameworks.sh",
-				"${PODS_ROOT}/../../BugfenderSDK.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/BugfenderSDK/BugfenderSDK.framework/BugfenderSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -425,7 +425,7 @@
 			baseConfigurationReference = 7B5A5C5CE8BE46CBD4D9B20A /* Pods-BugfenderExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 679S8RZAEG;
+				DEVELOPMENT_TEAM = 9YHGX7ST8H;
 				INFOPLIST_FILE = BugfenderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugfender.$(PRODUCT_NAME:rfc1034identifier)";
@@ -438,7 +438,7 @@
 			baseConfigurationReference = 05CF345EF58A49A00F067A4E /* Pods-BugfenderExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 679S8RZAEG;
+				DEVELOPMENT_TEAM = 9YHGX7ST8H;
 				INFOPLIST_FILE = BugfenderExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugfender.$(PRODUCT_NAME:rfc1034identifier)";
