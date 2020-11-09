@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
   s.library = 'c++'
   s.vendored_frameworks = 'BugfenderSDK.xcframework'
   s.cocoapods_version = '>= 1.10.0'
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 arm64e armv7 armv7s x86_64' }
 end
