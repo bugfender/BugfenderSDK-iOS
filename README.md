@@ -32,7 +32,7 @@ First of all you will need to add the framework to your project.
 3. Paste the GitHub url from the Bugfender iOS repository `https://github.com/bugfender/BugfenderSDK-iOS` in the textfield and press `Next`
 <img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm3.png?raw=true" width="400" >
 
-4. Choose `Branch` option and type `beta`. Then press Next
+4. Leave the first option checked and press `Next`
 <img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/beta/readme-images/spm/spm4.png?raw=true" width="400" >
 
 5. Xcode will download the Bugfender files and you will be prompted with the following menu. Ensure BugfenderSDK is selected and press Finish
