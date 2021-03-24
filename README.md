@@ -38,7 +38,7 @@ First of all you will need to add the framework to your project.
 5. Xcode will download the Bugfender files and you will be prompted with the following menu. Ensure BugfenderSDK is selected and press Finish
 <img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/master/readme-images/spm/spm5.png?raw=true" width="400" >
 
-6. Import `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
+6. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
 *There is a [known issue](https://bugs.swift.org/browse/SR-13343) in Xcode12 failing to launch apps in a physical device when debugging. At the moment of writing this docs, the issue is still not fixed in Xcode12.3 Beta. The issue should not affect release or simulator versions. But, if you get a `No code signature found` or `A valid provisioning profile for this executable was not found` we recommend to use the [workaround proposed by the PSPDFKit](https://pspdfkit.com/guides/ios/current/knowledge-base/library-not-found-swiftpm/) team.*
 
@@ -50,7 +50,7 @@ First of all you will need to add the framework to your project.
 1. Save the file and run `carthage update`
 1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
 1. Make sure to select the option "Embed framework" (or list the framework in `input.xcfilelist`).
-1. Import `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
+1. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
 *Please note:* make sure to use Carthage v0.35.0 or newer, there is a bug in prior versions that will sometimes complain about "Incompatible Swift version".
 
@@ -62,17 +62,41 @@ If you prefer to install the SDK manually you can use the provided xcframework i
 
 1. Go to your **Project** > **Your Target** > **General** > **Frameworks, Libraries, and Embedded Content** and drag `BugfenderSDK.xcframework` there.
 1. Make sure to select the option "Embed framework"
-1. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `MobileCoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
+1. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
 
 # Using Bugfender
 Once you have the framework in your project, using it is as easy as using `BFLog()` instead of `NSLog()` or `bfprint()` instead `print()`.
 
 ## Swift
 
+If your application uses SwiftUI and doesn't have an AppDelegate, you might need to create one like this:
+
+```Swift
+@main
+struct YourAppNameApp: App {
+
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        // your Bugfender init code here
+
+        return true
+    }
+}
+```
+
 In your AppDelegate class:
 
 ```Swift
-import BugfenderSDK
+@_exported import BugfenderSDK
 ```
 
 And add the following to `application(_:didFinishLaunchingWithOptions:)`:
