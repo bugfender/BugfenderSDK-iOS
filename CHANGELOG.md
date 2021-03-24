@@ -1,3 +1,7 @@
+# 1.10.1
+- Bugfix: fixed potential crash or missing logs when app is in background mode in combination with protected data classes
+- More efficient API calls
+
 # 1.10.0
 - Bugfender was compiled with Xcode 12 and is SPM compatible now
 - Additionally dynamic framework and static libraries without simulator arm slice are provided for retrocompatiblity but they should be avoided
