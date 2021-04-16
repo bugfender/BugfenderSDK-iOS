@@ -1,4 +1,7 @@
 # 1.10.1
+- Bugfix: fixed potential crash when setting custom device data
+
+# 1.10.1
 - Bugfix: fixed potential crash or missing logs when app is in background mode in combination with protected data classes
 - More efficient API calls
 

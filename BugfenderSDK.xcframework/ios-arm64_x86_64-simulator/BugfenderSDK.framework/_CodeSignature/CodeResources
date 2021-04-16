@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/BugfenderSDK.h</key>
 		<data>
-		Orq2Uf68Ch+a2w0Syqm8dtRNQBY=
+		w+BzScPI5J+dDRgnCR7jpTIeS+g=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -116,11 +116,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Orq2Uf68Ch+a2w0Syqm8dtRNQBY=
+			w+BzScPI5J+dDRgnCR7jpTIeS+g=
 			</data>
 			<key>hash2</key>
 			<data>
-			8CtTqiX6zQYrpyFyOMPFZ0q/gRiF9+rHmWfeO5dqBsc=
+			jNkKjIDHk7zF/CICnGlW819Qsxb8nfNP6Lsb+W1kIFU=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
