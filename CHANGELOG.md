@@ -1,4 +1,4 @@
-# 1.10.1
+# 1.10.2
 - Bugfix: fixed potential crash when setting custom device data
 
 # 1.10.1
