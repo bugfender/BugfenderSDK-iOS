@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BFUserFeedbackNavigationController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/BFUserFeedbackNavigationController" class="dashAnchor"></a>
+    <a title="BFUserFeedbackNavigationController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">BugfenderSDK Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/bugfender/BugfenderSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">BugfenderSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BFUserFeedbackNavigationController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BFUserFeedbackNavigationController.html">BFUserFeedbackNavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BFUserFeedbackViewController.html">BFUserFeedbackViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Bugfender.html">Bugfender</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@BFLibraryVersionNumber">BFLibraryVersionNumber</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BFLogLevel.html">BFLogLevel</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BFUserFeedbackNavigationController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">BFUserFeedbackNavigationController</span> <span class="p">:</span> <span class="nc">UINavigationController</span></code></pre>
+
+                </div>
+              </div>
+            <p>Navigation View Controller containing a BFUserFeedbackNavigationController as rootViewController</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BFUserFeedbackNavigationController(py)feedbackViewController"></a>
+                    <a name="//apple_ref/objc/Property/feedbackViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BFUserFeedbackNavigationController(py)feedbackViewController">feedbackViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Root View Controller containing a table with the textfields used to gather feedback</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">)</span>
+    <span class="n"><a href="../Classes/BFUserFeedbackViewController.html">BFUserFeedbackViewController</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">feedbackViewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)BFUserFeedbackNavigationController(cm)userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:"></a>
+                    <a name="//apple_ref/objc/Method/+userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)BFUserFeedbackNavigationController(cm)userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:">+userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides a View Controller to gather the feedback of the users and sent it to Bugfender.
+The returning BFUserFeedbackNavigationController has to be presented modally and it has it&rsquo;s own Send and Cancel buttons</p>
+
+<p>Additionally, it is possible to customize the aspect of the screen accessing BFUserFeedbackNavigationController.feedbackViewController</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">BFUserFeedbackNavigationController</span> <span class="o">*</span><span class="p">)</span>
+    <span class="nf">userFeedbackViewControllerWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
+                                   <span class="nf">hint</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">hint</span>
+                     <span class="nf">subjectPlaceholder</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">subjectPlaceholder</span>
+                     <span class="nf">messagePlaceholder</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">messagePlaceholder</span>
+                        <span class="nf">sendButtonTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">sendButtonTitle</span>
+                      <span class="nf">cancelButtonTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">cancelButtonTitle</span>
+                             <span class="nf">completion</span><span class="p">:</span>
+                                 <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">,</span> <span class="n">NSURL</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span>
+                                     <span class="n">completionBlock</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Title for the navigation bar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hint</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Short text at the beginning</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subjectPlaceholder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>placeholder in the subject textfield</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messagePlaceholder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>placeholder in the message textfield</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sendButtonTitle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>title for the send button in the navigation bar</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cancelButtonTitle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>title for the cancel button</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>BFUserFeedbackNavigationController containing a BFUserFeedbackViewController as root view controller</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://bugfender.com" target="_blank" rel="external">Bugfender</a>. All rights reserved. (Last updated: 2021-05-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
