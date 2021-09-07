@@ -1,3 +1,7 @@
+# 1.10.3
+- Bugfix: user feedback dialog navigation bar sometimes not styling properly
+- Bugfix: crashes sometimes reported in the wrong session when the application crashes multiple times in a row
+
 # 1.10.2
 - Bugfix: fixed potential crash when setting custom device data
 
