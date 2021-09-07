@@ -1,14 +1,9 @@
-Bugfender SDK for iOS [![Build Status](https://travis-ci.org/bugfender/BugfenderSDK-iOS.svg?branch=master)](https://travis-ci.org/bugfender/BugfenderSDK-iOS) [![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](https://bugfender.github.io/BugfenderSDK-iOS/)
+Bugfender SDK for iOS [![Build Status](https://travis-ci.com/bugfender/BugfenderSDK-iOS.svg?branch=master)](https://travis-ci.com/bugfender/BugfenderSDK-iOS) [![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](https://bugfender.github.io/BugfenderSDK-iOS/)
 ===================
 
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender console](https://app.bugfender.com/). You'll need an account.
 
 BugfenderSDK 1.10 works for iOS 10.0 and newer. For iOS 8 support you can still use the BugfenderSDK 1.8.
-
-**Updating from BugfenderSDK prior to 1.8 and ObjC only projects:**
-
-BugfenderSDK is now a dynamic framework and you will need to check the "embed framework" option when adding it to your project manually or using Carthage.
-<br /> Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted, however, swift must be available in your project. Again, if you are installing Bugfender manually or using Carthage ensure that *Build Settings -> Always Embed Swift Standard Libraries* is set to *YES*.
 
 # Installing the SDK
 First of all you will need to add the framework to your project.
@@ -43,18 +38,15 @@ First of all you will need to add the framework to your project.
 *There is a [known issue](https://bugs.swift.org/browse/SR-13343) in Xcode12 failing to launch apps in a physical device when debugging. At the moment of writing this docs, the issue is still not fixed in Xcode12.3 Beta. The issue should not affect release or simulator versions. But, if you get a `No code signature found` or `A valid provisioning profile for this executable was not found` we recommend to use the [workaround proposed by the PSPDFKit](https://pspdfkit.com/guides/ios/current/knowledge-base/library-not-found-swiftpm/) team.*
 
 ## Using Carthage
+1. Update to at least Carthage 0.38.0
 1. Add to your Cartfile:
    ```
    github "bugfender/BugfenderSDK-iOS" ~>1.10
    ```
-1. Save the file and run `carthage update`
-1. Import `Carthage/Build/iOS/BugfenderSDK.framework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
+1. Save the file and run `carthage update --use-xcframeworks`
+1. Import `Carthage/Build/BugfenderSDK.xcframework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
 1. Make sure to select the option "Embed framework" (or list the framework in `input.xcfilelist`).
 1. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
-
-*Please note:* make sure to use Carthage v0.35.0 or newer, there is a bug in prior versions that will sometimes complain about "Incompatible Swift version".
-
-*Mac Catalyst:* Carthage doesn't support Mac Catalyst at the moment. Should you need it, use the manual installation or CocoaPods.
 
 ## Manual
 
@@ -270,4 +262,9 @@ If you need further customization than provided by BFUserFeedbackViewController 
 ```swift
 let feedbackUrl = Bugfender.sendUserFeedbackReturningUrl(withSubject: "Title of the feedback", message: "message of the feedback")
 ```
-The returned URL is a direct link to the Bugfender's dashboard. Use it to create automations or to keep a reference in your servers,
+The returned URL is a direct link to the Bugfender's dashboard. Use it to create automations or to keep a reference in your servers.
+
+## Updating from BugfenderSDK prior to 1.8 and ObjC only projects
+
+BugfenderSDK is now a dynamic framework and you will need to check the "embed framework" option when adding it to your project manually or using Carthage.
+<br /> Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted, however, Swift must be available in your project. If you are installing Bugfender manually or using Carthage ensure that *Build Settings -> Always Embed Swift Standard Libraries* is set to *YES*.
