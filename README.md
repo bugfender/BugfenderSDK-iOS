@@ -1,7 +1,7 @@
 Bugfender SDK for iOS [![Build Status](https://travis-ci.com/bugfender/BugfenderSDK-iOS.svg?branch=master)](https://travis-ci.com/bugfender/BugfenderSDK-iOS) [![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.svg)](https://bugfender.github.io/BugfenderSDK-iOS/)
 ===================
 
-Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender console](https://app.bugfender.com/). You'll need an account.
+Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender dashboard](https://dashboard.bugfender.com/). You'll need an account.
 
 BugfenderSDK 1.10 works for iOS 10.0 and newer. For iOS 8 support you can still use the BugfenderSDK 1.8.
 
