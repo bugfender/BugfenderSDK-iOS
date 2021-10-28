@@ -1,3 +1,6 @@
+# 1.10.4
+ - Add upload symbols script to Bugfender Pod
+
 # 1.10.3
 - Bugfix: user feedback dialog navigation bar sometimes not styling properly
 - Bugfix: crashes sometimes reported in the wrong session when the application crashes multiple times in a row

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		JStV6uPhuvMzQSfM/gwLt0UqDyE=
+		vzRLKVAOiD3oaiYmT9zcfup6JIY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -36,7 +36,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u7qgmqLScQa4CCJhisp1pwpl7du4OjQbTA/yTpcRvAc=
+			+BgpkXMZ6eMtCjza3/loKydaDfhKwYiebEAullHgwkc=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
@@ -57,7 +57,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YeC6Tm9NNqvBQMglHXYof8kpWTvtm0lLXcDj77eUHqg=
+			gfVSPPY3VJty6RKV8QH4aOyY6quvyORHcs7DjXOK9kM=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftdoc</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YeC6Tm9NNqvBQMglHXYof8kpWTvtm0lLXcDj77eUHqg=
+			gfVSPPY3VJty6RKV8QH4aOyY6quvyORHcs7DjXOK9kM=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			37J1m/RyCqSrXp64ZbBsWQjiKgiZighFOZgQiW7nIZs=
+			8DvQ2uhb73qdkmkEmtrCY/ccX5Dok4jUvIzF5wfKhoE=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -120,7 +120,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			37J1m/RyCqSrXp64ZbBsWQjiKgiZighFOZgQiW7nIZs=
+			8DvQ2uhb73qdkmkEmtrCY/ccX5Dok4jUvIzF5wfKhoE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -134,7 +134,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fwiaW4OGU6AZEorUzd67rnmO6O0BZp2ZjkeTpPlFKpo=
+			hrtiEZBXvX0soYiz1mSqsTl2LjCDgzLBAX7akCqwhhY=
 			</data>
 		</dict>
 	</dict>

@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/BugfenderSDK.h</key>
 		<data>
-		yBQwk106CiO+DLuTfwzKNaMkuII=
+		8gGijtJCHBWqXtxd1dbfp3yrg+I=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		b/027VjzNXvLiYP3o7AqBbatwrg=
+		UFt/3CGXgujR08p/CB12xJ43rAw=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		fsdnlxHP+NZ542yTHFtDy5NRrL4=
+		AghYxkHPx8fp19wuO6CKOo7e3x4=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		L0zoyWPbFKQ+TkYp+olCplxJZCY=
+		3oPTbuPA8x41YLnZMoCACzc7X1E=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		L0zoyWPbFKQ+TkYp+olCplxJZCY=
+		3oPTbuPA8x41YLnZMoCACzc7X1E=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		fsdnlxHP+NZ542yTHFtDy5NRrL4=
+		AghYxkHPx8fp19wuO6CKOo7e3x4=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		fsdnlxHP+NZ542yTHFtDy5NRrL4=
+		AghYxkHPx8fp19wuO6CKOo7e3x4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yBQwk106CiO+DLuTfwzKNaMkuII=
+			8gGijtJCHBWqXtxd1dbfp3yrg+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			u7qgmqLScQa4CCJhisp1pwpl7du4OjQbTA/yTpcRvAc=
+			+BgpkXMZ6eMtCjza3/loKydaDfhKwYiebEAullHgwkc=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm.swiftdoc</key>
@@ -161,11 +161,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fsdnlxHP+NZ542yTHFtDy5NRrL4=
+			AghYxkHPx8fp19wuO6CKOo7e3x4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KOw4ldCgJEYOf6zUfeZYAN3MPmpKNjNz6Ion0jSRLAk=
+			CgOtANqs5jaiRd2eHXEVbQHmxb6fKyaZEo6tpcxV6x4=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -194,11 +194,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L0zoyWPbFKQ+TkYp+olCplxJZCY=
+			3oPTbuPA8x41YLnZMoCACzc7X1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			JKXqdpPYfBpYU+gxYaWnyZifd0PX9IMdAkfUES6dKgU=
+			NkNlnrnpnoDyFy1UcREn2QwsKJTvTVERHerKDxQaFz8=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64.swiftdoc</key>
@@ -227,11 +227,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L0zoyWPbFKQ+TkYp+olCplxJZCY=
+			3oPTbuPA8x41YLnZMoCACzc7X1E=
 			</data>
 			<key>hash2</key>
 			<data>
-			JKXqdpPYfBpYU+gxYaWnyZifd0PX9IMdAkfUES6dKgU=
+			NkNlnrnpnoDyFy1UcREn2QwsKJTvTVERHerKDxQaFz8=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -260,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fsdnlxHP+NZ542yTHFtDy5NRrL4=
+			AghYxkHPx8fp19wuO6CKOo7e3x4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KOw4ldCgJEYOf6zUfeZYAN3MPmpKNjNz6Ion0jSRLAk=
+			CgOtANqs5jaiRd2eHXEVbQHmxb6fKyaZEo6tpcxV6x4=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/armv7.swiftdoc</key>
@@ -293,11 +293,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fsdnlxHP+NZ542yTHFtDy5NRrL4=
+			AghYxkHPx8fp19wuO6CKOo7e3x4=
 			</data>
 			<key>hash2</key>
 			<data>
-			KOw4ldCgJEYOf6zUfeZYAN3MPmpKNjNz6Ion0jSRLAk=
+			CgOtANqs5jaiRd2eHXEVbQHmxb6fKyaZEo6tpcxV6x4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
