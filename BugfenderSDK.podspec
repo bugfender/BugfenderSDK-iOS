@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'BugfenderSDK'
-  s.version  = '1.10.3'
+  s.version  = '1.10.4'
   s.ios.deployment_target     = '10.0'
   s.license  = { :type => 'Commercial', :text => 'See https://bugfender.com/terms-of-service/' }
   s.summary  = 'Bugfender: a mobile remote logger'
@@ -18,4 +18,9 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'BugfenderSDK.xcframework'
   s.cocoapods_version = '>= 1.10.0'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 arm64e armv7 armv7s x86_64' }
+  s.preserve_paths = ['upload-symbols.sh']
+  s.prepare_command = <<-PREPARE_COMMAND_END
+    cp -f ./xcode-upload-symbols/upload-symbols.sh ./upload-symbols.sh
+  PREPARE_COMMAND_END
+
 end
