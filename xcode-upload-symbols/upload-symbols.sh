@@ -4,7 +4,7 @@ set -e
 token=${1:-$BUGFENDER_SYMBOLICATION_TOKEN}
 if [ -z "$token" ]; then
     echo 'Symbolication Token is required'
-    exit 0 # Do not fail, we don't want to break people's BC builds
+    exit 1
 fi
 url=${BUGFENDER_SYMBOLICATION_URL:-https://dashboard.bugfender.com/}
 [[ "$url" != */ ]] && url="$url/"
@@ -16,7 +16,7 @@ dsympath="$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME"
 if [ -f "$dsympath" ] && [ ! -s "$dsympath" ]; then
     echo 'dSYM path leads to an empty file'
     echo 'Check that you are not hitting https://developer.apple.com/forums/thread/659187'
-    exit 0 # Do not fail, we don't want to break people's BC builds
+    exit 1
 fi
 if [ -z "$(find "$dsympath" -type f)" ]; then
     echo 'No files found inside dSYM bundle'
@@ -49,5 +49,5 @@ fi
 if [ "$statuscode" -ne 200 ]; then
     message=$(echo "$resp" | tail -n1)
     echo "Upload failed with code $statuscode and message: $message"
-    exit 0 # Do not fail, we don't want to break people's BC builds
+    exit 1
 fi
