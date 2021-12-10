@@ -1,3 +1,6 @@
+# 1.10.5
+ - Fix: upload symbols script was not working properly
+
 # 1.10.4
  - Add upload symbols script to Bugfender Pod
 
