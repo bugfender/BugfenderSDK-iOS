@@ -15,7 +15,7 @@ script:
  - cd Example
  - pod install
  - xcodebuild test -workspace BugfenderExample.xcworkspace -scheme BugfenderExample -destination 'platform=iOS Simulator,name=iPhone 11'
-osx_image: xcode12
+osx_image: xcode13.4
 deploy:
   provider: pages
   skip_cleanup: true

@@ -6,6 +6,6 @@ framework module BugfenderSDK {
 }
 
 module BugfenderSDK.Swift {
-    header "BugfenderSDK-Swift.h"
-    requires objc
+  header "BugfenderSDK-Swift.h"
+  requires objc
 }

@@ -81,6 +81,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_10_3  64
 #define BFLibraryVersionNumber_1_10_4  65
 #define BFLibraryVersionNumber_1_10_5  66
+#define BFLibraryVersionNumber_1_10_6  67
 
 /**
  * Current Bugfender version number.
@@ -175,7 +176,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * The device identifier is constant while the application is installed in the device.
  * @note This string can not be changed, but can be shown to the user or sent to your server, in order to
  * keep a relationship between a Bugfender device and a user or some other important event in your application.
- * 
+ *
  * @return A string identifying the device.
  **/
 + (NSString*)deviceIdentifier __deprecated_msg("Use deviceIdentifierUrl instead.");
@@ -326,7 +327,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  *
  * Logs are synchronized only once. After that, the logs are again sent according to the enabled flag
  * in the Bugfender Console.
- * 
+ *
  * This command can be called anytime, and will take effect the next time the device is online.
  */
 + (void) forceSendOnce;
@@ -371,9 +372,9 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 /**
  Provides a View Controller to gather the feedback of the users and sent it to Bugfender.
  The returning BFUserFeedbackNavigationController has to be presented modally and it has it's own Send and Cancel buttons
- 
+
  Additionally, it is possible to customize the aspect of the screen accessing BFUserFeedbackNavigationController.feedbackViewController
- 
+
  @param title Title for the navigation bar
  @param hint Short text at the beginning
  @param subjectPlaceholder placeholder in the subject textfield
@@ -402,7 +403,7 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 /**
  Allows to create custom UI to gather user feedback and send to Bugfender.
- 
+
  @param subject subject of the feedback
  @param message message of the feedback
  @return URL linking to Bugfender

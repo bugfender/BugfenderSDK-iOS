@@ -1,3 +1,7 @@
+# 1.10.6
+- Fix: Possible crash due to corrupted crash log
+- Feature: iOS device name is not gathered anymore, it has been replaced by the device model.
+
 # 1.10.5
  - Fix: upload symbols script was not working properly
 

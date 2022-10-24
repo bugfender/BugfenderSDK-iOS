@@ -22,3 +22,5 @@ Pods/
 BugfenderSDK.framework.zip
 BugfenderSDK.xcframework.zip
 static-lib.zip
+
+.idea/
