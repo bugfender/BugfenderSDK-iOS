@@ -1,3 +1,7 @@
+# 1.11.0
+- Feature: Add `enableUIEventLoggingWithIgnoredViewTags` method that allows to avoid generating logs for some views
+- Changed `setMaximumLocalStorageSize` to not throw an Exception if the value provided is out of range.
+
 # 1.10.6
 - Fix: Possible crash due to corrupted crash log
 - Feature: iOS device name is not gathered anymore, it has been replaced by the device model.

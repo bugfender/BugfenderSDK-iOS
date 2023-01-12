@@ -82,6 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_10_4  65
 #define BFLibraryVersionNumber_1_10_5  66
 #define BFLibraryVersionNumber_1_10_6  67
+#define BFLibraryVersionNumber_1_11_0  68
 
 
 /**
@@ -168,7 +169,8 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
 
 /**
  * Set the maximum space available to store local logs. This value is represented in bytes. There's a limit of 50 MB.
- * @param maximumLocalStorageSize Maximum space availalbe to store local logs, in bytes.
+ * @param maximumLocalStorageSize Maximum size in bytes. Range accepted is from 1 MB to 50 MB. If the value provider
+ * is below this range it will be set to 1 MB, if is above the range it will be set to 50 MB
  **/
 + (void)setMaximumLocalStorageSize:(NSUInteger)maximumLocalStorageSize;
 
@@ -241,6 +243,13 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * Logs all actions performed and screen changes in the application, such as button touches, swipes and gestures.
  */
 +(void)enableUIEventLogging;
+
+/**
+ * Logs all actions performed and screen changes in the application, such as button touches, swipes and gestures.
+ * @param ignoredViewsTags Tags of views that should not be observed and logged by Bugfender
+ */
++ (void)enableUIEventLoggingWithIgnoredViewsTags:(NSArray<NSNumber *> *)ignoredViewsTags;
+
 #endif
 
 /**

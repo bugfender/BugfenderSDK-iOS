@@ -3,7 +3,10 @@ Bugfender SDK for iOS [![Build Status](https://travis-ci.com/bugfender/Bugfender
 
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender dashboard](https://dashboard.bugfender.com/). You'll need an account.
 
-BugfenderSDK 1.10 works for iOS 10.0 and newer. For iOS 8 support you can still use the BugfenderSDK 1.8.
+Supported iOS versions:
+ * BugfenderSDK 1.11 works for iOS 11.0 and newer.
+ * For iOS 10 support you can use BugfenderSDK 1.10.5.
+ * For iOS 8 support you can use BugfenderSDK 1.8.
 
 # Installing the SDK
 First of all you will need to add the framework to your project.
@@ -11,11 +14,11 @@ First of all you will need to add the framework to your project.
 ## Using CocoaPods
 
 1. Create a Podfile if you don't have one: `pod init`
-1. Add Bugfender to your Podfile:
+2. Add Bugfender to your Podfile:
    ```
-   pod 'BugfenderSDK', '~> 1.10'
+   pod 'BugfenderSDK', '~> 1.11'
    ```
-1. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
+3. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
 ## Using Swift Package Manager
 
@@ -39,22 +42,22 @@ First of all you will need to add the framework to your project.
 
 ## Using Carthage
 1. Update to at least Carthage 0.38.0
-1. Add to your Cartfile:
+2. Add to your Cartfile:
    ```
-   github "bugfender/BugfenderSDK-iOS" ~>1.10
+   github "bugfender/BugfenderSDK-iOS" ~>1.11
    ```
-1. Save the file and run `carthage update --use-xcframeworks`
-1. Import `Carthage/Build/BugfenderSDK.xcframework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
-1. Make sure to select the option "Embed framework" (or list the framework in `input.xcfilelist`).
-1. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
+3. Save the file and run `carthage update --use-xcframeworks`
+4. Import `Carthage/Build/BugfenderSDK.xcframework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
+5. Make sure to select the option "Embed framework" (or list the framework in `input.xcfilelist`).
+6. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
 ## Manual
 
 If you prefer to install the SDK manually you can use the provided xcframework in the corresponding [release](https://github.com/bugfender/BugfenderSDK-iOS/releases).
 
 1. Go to your **Project** > **Your Target** > **General** > **Frameworks, Libraries, and Embedded Content** and drag `BugfenderSDK.xcframework` there.
-1. Make sure to select the option "Embed framework"
-1. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
+2. Make sure to select the option "Embed framework"
+3. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
 
 # Symbolicating crash reports
 Bugfender provides a script is able to upload dSYM bundles to [Bugfender](https://bugfender.com).
