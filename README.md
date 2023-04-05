@@ -4,8 +4,8 @@ Bugfender SDK for iOS [![Build Status](https://travis-ci.com/bugfender/Bugfender
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender dashboard](https://dashboard.bugfender.com/). You'll need an account.
 
 Supported iOS versions:
- * BugfenderSDK 1.11 works for iOS 11.0 and newer.
- * For iOS 10 support you can use BugfenderSDK 1.10.5.
+ * BugfenderSDK 1.12 works for iOS 11.0 and newer.
+ * For iOS 10 support you can use BugfenderSDK 1.10.6.
  * For iOS 8 support you can use BugfenderSDK 1.8.
 
 # Installing the SDK
@@ -16,7 +16,7 @@ First of all you will need to add the framework to your project.
 1. Create a Podfile if you don't have one: `pod init`
 2. Add Bugfender to your Podfile:
    ```
-   pod 'BugfenderSDK', '~> 1.11'
+   pod 'BugfenderSDK', '~> 1.12'
    ```
 3. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
 
@@ -44,7 +44,7 @@ First of all you will need to add the framework to your project.
 1. Update to at least Carthage 0.38.0
 2. Add to your Cartfile:
    ```
-   github "bugfender/BugfenderSDK-iOS" ~>1.11
+   github "bugfender/BugfenderSDK-iOS" ~>1.12
    ```
 3. Save the file and run `carthage update --use-xcframeworks`
 4. Import `Carthage/Build/BugfenderSDK.xcframework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).

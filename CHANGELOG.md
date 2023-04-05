@@ -1,3 +1,7 @@
+# 1.12.0
+- Feature: Add `enableNSLogLogging` & `enableNSLogLoggingWithInterceptor` method that allows to automatically capture logs written via NSLog or OSLog.
+- Internal: Changes on library initialization.
+
 # 1.11.0
 - Feature: Add `enableUIEventLoggingWithIgnoredViewTags` method that allows to avoid generating logs for some views
 - Changed `setMaximumLocalStorageSize` to not throw an Exception if the value provided is out of range.

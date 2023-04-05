@@ -4,6 +4,18 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/BFDefaultLogInterceptor.h</key>
+		<data>
+		+hC/EOWAFKPDC8rMcAX/f5qxl5U=
+		</data>
+		<key>Headers/BFInterceptedLog.h</key>
+		<data>
+		QH3b+qd8tZSyizvAzyTS48u6d/g=
+		</data>
+		<key>Headers/BFLogInterceptor.h</key>
+		<data>
+		2dcMAChRJzzww2DpbNusTI6md4Q=
+		</data>
 		<key>Headers/BFUserFeedbackNavigationController.h</key>
 		<data>
 		hAWbFL8iuwQL5UMr54zGYl/NqH0=
@@ -18,11 +30,11 @@
 		</data>
 		<key>Headers/BugfenderSDK.h</key>
 		<data>
-		W57VDU+yAMFtbyiv3KamkTIkbUY=
+		Beas5GtaHUCBQMfYxwyKApZuPck=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		OqdM/52/h1dP9tdXV4pOKXuvcOg=
+		WvXo1NoDqYLJuwrmpJUEd9MUx5A=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -71,6 +83,27 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/BFDefaultLogInterceptor.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cY+0HbZGoswNfPDG9BwIpv6tvHViJXW53iCUyDxUGdg=
+			</data>
+		</dict>
+		<key>Headers/BFInterceptedLog.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bYdB3Ffa0QJ1HlYJmdnZTaXxocXiir8W1wnP+Jv2jks=
+			</data>
+		</dict>
+		<key>Headers/BFLogInterceptor.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MEUWNn81uy6uk9U8tc61PMPIocAB31+xv8+1uUO8X5E=
+			</data>
+		</dict>
 		<key>Headers/BFUserFeedbackNavigationController.h</key>
 		<dict>
 			<key>hash2</key>
@@ -96,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MDmBZdP+0tXxC6WNMHSdFnNEM+/OQln4X+dnBgWQfuc=
+			Yg1xj88A7NPdlCp3PHSRi7CJOnX6gGGZ/kTrELqG7Js=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>

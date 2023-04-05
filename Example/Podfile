@@ -1,4 +1,6 @@
 platform :ios, '11.0'
 target "BugfenderExample" do
-  pod 'BugfenderSDK', :path => '..'
+  # For local testing
+#  pod 'BugfenderSDK', :path => '..'
+  pod 'BugfenderSDK', '~> 1.12'
 end
