@@ -16,5 +16,7 @@
   "1.10.5" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.10.5/BugfenderSDK.framework.zip",
   "1.10.6" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.10.6/BugfenderSDK.framework.zip",
   "1.11.0" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.11.0/BugfenderSDK.framework.zip",
-  "1.12.0" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.12.0/BugfenderSDK.framework.zip"
+  "1.12.0" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.12.0/BugfenderSDK.framework.zip",
+  "1.12.1" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.12.1/BugfenderSDK.framework.zip"
+
 }

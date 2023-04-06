@@ -1,3 +1,6 @@
+# 1.12.1
+- This release fixes problems with Cocoapods and static library in the previous release.
+
 # 1.12.0
 - Feature: Add `enableNSLogLogging` & `enableNSLogLoggingWithInterceptor` method that allows to automatically capture logs written via NSLog or OSLog.
 - Internal: Changes on library initialization.
