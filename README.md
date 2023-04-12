@@ -65,7 +65,7 @@ Bugfender provides a script is able to upload dSYM bundles to [Bugfender](https:
 ## Obtain the script
 If you are uising CocoaPods the script is already distributed with the Pod from version 1.10.4
 
-If you are using any other installation method you can download [the script](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/feature/upload-symbols-podspec/xcode-upload-symbols/upload-symbols.sh) and copy it into a location inside your project.
+If you are using any other installation method you can download [the script](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/xcode-upload-symbols/upload-symbols.sh) and copy it into a location inside your project.
 
 ## Set up Xcode to automatically upload dSYM bundles
 For that we need to create a new Run Script on our Build Phases following this steps:
