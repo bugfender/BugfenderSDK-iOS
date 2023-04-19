@@ -3,16 +3,25 @@ Bugfender iOS Symbols Upload Script
 
 Used to automatically upload dSYM bundles to [Bugfender](https://bugfender.com).
 
-## Usage
-The script is meant to be called from XCode build environment.
+Our upload script is meant to be executed locally from the Xcode build environment. It may not yet function in Xcode Cloud.
 
-For that we need to create a new Run Script on our Build Phases following this steps:
+## Enable Symbol Creation
 
-1. Go to your App settings.
+1. Open project settings.
 
 1. Select your main target from the *TARGETS* list on the left.
 
-1. Go to *Build Phases* tab.
+1. Select the *Build Settings* tab.
+
+1. Ensure that `Debug Information Format` is set to `DWARF with dSYM File`.
+
+## Configure Build to Upload Symbols
+
+1. Open project settings.
+
+1. Select your main target from the *TARGETS* list on the left.
+
+1. Select the *Build Phases* tab.
 
 1. Open menu under the `+` sign and select *New Run Script Phase*.
 
