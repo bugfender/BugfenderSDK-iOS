@@ -63,29 +63,12 @@ If you prefer to install the SDK manually you can use the provided xcframework i
 Bugfender provides a script is able to upload dSYM bundles to [Bugfender](https://bugfender.com).
 
 ## Obtain the script
-If you are uising CocoaPods the script is already distributed with the Pod from version 1.10.4
+The script is distributed if you are using Cocoapods or Swift Package Manager.
 
 If you are using any other installation method you can download [the script](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/xcode-upload-symbols/upload-symbols.sh) and copy it into a location inside your project.
 
 ## Set up Xcode to automatically upload dSYM bundles
-For that we need to create a new Run Script on our Build Phases following this steps:
-* Go to your App settings.
-* Select your main target from the *TARGETS* list on the left.
-* Go to *Build Phases* tab.
-* Open menu under the `+` sign and select *New Run Script Phase*.
-* Under the shell portion of *Run Script* add a script call to the script.
-    * If you are using CocoaPods:
-      ```sh
-      ${PODS_ROOT}/BugfenderSDK/upload-symbols.sh <bugfender_symbolication_token>
-      ```   
-    * If you copied the script manually:
-      ```sh
-      <path_to_the_script>/upload-symbols.sh <bugfender_symbolication_token>
-      ```   
-* The **bugfender symbolication token** can be obtained from the Bugfender Dashboard and needs to be specified either as a first argument to the script or setting the `BUGFENDER_SYMBOLICATION_TOKEN` environment variable.
-* Done!
-
-![XCode Build Phases](/xcode-upload-symbols/xcode.png)
+User the [following instructions](https://github.com/bugfender/BugfenderSDK-iOS/blob/master/xcode-upload-symbols/README.md) to configure your project.
 
 
 # Using Bugfender
