@@ -9,22 +9,8 @@ fi
 url=${BUGFENDER_SYMBOLICATION_URL:-https://dashboard.bugfender.com/}
 [[ "$url" != */ ]] && url="$url/"
 
-function getValue() {
-    local value=$(/usr/libexec/PlistBuddy -c "Print $1" "$INFOPLIST_FILE")
-    # Assuming that nobody uses version string that actually looks
-    # like variable substitution (i.e. `$(<value>)`)
-    if [[ "$value" == \$\(*\) ]]; then
-        local envValue=${value:2:${#value}-3} # Cut off $() wrapping
-        envValue=${!envValue} # Get env var by name
-        if [ -n "$envValue" ]; then
-            value="$envValue"
-        fi
-    fi
-    echo "$value"
-}
-
-version="$(getValue 'CFBundleShortVersionString')"
-build="$(getValue 'CFBundleVersion')"
+version=$MARKETING_VERSION
+build=$CURRENT_PROJECT_VERSION
 
 dsympath="$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME"
 if [ -f "$dsympath" ] && [ ! -s "$dsympath" ]; then
