@@ -242,7 +242,7 @@ Starting from version 1.6, Bugfender provides a new feature to easily collect ap
 
 The easiest way to implement Bugfender User Feedback is using the customizable User Feedback View Controller. It provides a convenient view controller with two text fields, one short for the subject and another bigger for the feedback. Both text fields grow autommatically.
 
-## Using default UI
+## Using the default UI
 
 Using the convenient UI provided by Bugfender requires only creating a new View Controller and presenting it modally. All you need is to call the following method and complete the required parameters with the title and placeholders for your UI.
 
@@ -286,6 +286,60 @@ feedbackViewController.hintFont = UIFont(name: "Avenir", size: 14)!
 ![](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/docs/User-feedback-custom.png)
 
 For a complete list of customizable attributes you can inspect "BFUserFeedbackViewController.h" or [read the docs](http://bugfender.github.io/BugfenderSDK-iOS/).
+
+## Using SwiftUI
+
+Here is an example using the `BFUserFeedbackNavigationController` in SwiftUI:
+
+```swift
+struct SwiftUIView: View {
+    @State private var showFeedbackScreen = false
+
+    var body: some View {
+        VStack {
+            Text("Hello World!")
+            Button("Show Feedback screen") {
+                showFeedbackScreen = true
+            }
+        }.sheet(isPresented: $showFeedbackScreen) {
+            FeedbackView() { sent, feedbackUrl in
+                if sent == true,
+                    let url = feedbackUrl{
+                    BFLog("Sent feedback to URL: \(url.absoluteString)")
+                } else {
+                    BFLog("User rejected to send feedback")
+                }
+            }
+        }.navigationBarTitle(Text("Swift UI Test"))
+    }
+}
+
+struct SwiftUIView_Previews: PreviewProvider {
+    static var previews: some View {
+        SwiftUIView()
+    }
+}
+
+struct FeedbackView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = BFUserFeedbackNavigationController
+
+    let completion: (_ feedbackSent: Bool, _ feedbackUrl: URL?) -> Void
+
+    func makeUIViewController(context: Context) -> BFUserFeedbackNavigationController {
+        BFUserFeedbackNavigationController.userFeedbackViewController(
+            withTitle: "This title",
+            hint: "This hint",
+            subjectPlaceholder: "This subject",
+            messagePlaceholder: "This message",
+            sendButtonTitle: "Send",
+            cancelButtonTitle: "Cancel") { sent, feedbackUrl in
+                completion(sent, feedbackUrl)
+            }
+    }
+
+    func updateUIViewController(_ uiViewController: BFUserFeedbackNavigationController, context: Context) {}
+}
+```
 
 ## Using a custom UI
 
