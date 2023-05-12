@@ -68,7 +68,7 @@ The script is distributed if you are using Cocoapods or Swift Package Manager.
 If you are using any other installation method you can download [the script](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/xcode-upload-symbols/upload-symbols.sh) and copy it into a location inside your project.
 
 ## Set up Xcode to automatically upload dSYM bundles
-User the [following instructions](https://github.com/bugfender/BugfenderSDK-iOS/blob/master/xcode-upload-symbols/README.md) to configure your project.
+Use the [following instructions](https://github.com/bugfender/BugfenderSDK-iOS/blob/master/xcode-upload-symbols/README.md) to configure your project.
 
 
 # Using Bugfender
