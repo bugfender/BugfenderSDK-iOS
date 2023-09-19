@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Enumerations  Reference</title>
+    <title>Protocols  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Section/Enumerations" class="dashAnchor"></a>
-    <a title="Enumerations  Reference"></a>
+    <a name="//apple_ref/objc/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">BugfenderSDK 1.12.2 Docs</a> (89% documented)</p>
@@ -30,7 +30,7 @@
       <p id="breadcrumbs">
         <a href="index.html">BugfenderSDK Reference</a>
         <img id="carat" src="img/carat.png" alt=""/>
-        Enumerations  Reference
+        Protocols  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -85,8 +85,8 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Enumerations</h1>
-            <p>The following enumerations are available globally.</p>
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
 
           </section>
           <section class="section task-group-section">
@@ -95,9 +95,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@BFLogLevel"></a>
-                    <a name="//apple_ref/objc/Enum/BFLogLevel" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@BFLogLevel">BFLogLevel</a>
+                    <a name="/c:objc(pl)BFLogInterceptor"></a>
+                    <a name="//apple_ref/objc/Protocol/BFLogInterceptor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)BFLogInterceptor">BFLogInterceptor</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -105,20 +105,20 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines the level of a log</p>
+                        <p>Intercept a log entry from NSLog/OSLog and allow to modify it or to block it.</p>
 
-                        <a href="Enums/BFLogLevel.html" class="slightly-smaller">See more</a>
+                        <a href="Protocols/BFLogInterceptor.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">BFLogLevel</span> <span class="o">:</span> <span class="n">NSUInteger</span> <span class="p">{}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">BFLogInterceptor</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">BFLogLevel</span> <span class="p">:</span> <span class="kt">UInt</span><span class="p">,</span> <span class="kd">@unchecked</span> <span class="kt">Sendable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">BFLogInterceptor</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>

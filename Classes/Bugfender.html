@@ -8,20 +8,28 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/Bugfender" class="dashAnchor"></a>
     <a title="Bugfender Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">BugfenderSDK Docs</a> (100% documented)</p>
-        <p class="header-right"><a href="https://github.com/bugfender/BugfenderSDK-iOS"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p><a href="../index.html">BugfenderSDK 1.12.2 Docs</a> (89% documented)</p>
+        <p class="header-right"><a href="https://github.com/bugfender/BugfenderSDK-iOS"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">BugfenderSDK Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         Bugfender Class Reference
       </p>
     </div>
@@ -31,6 +39,12 @@
           <li class="nav-group-name">
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)BFDefaultLogInterceptor">BFDefaultLogInterceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BFInterceptedLog.html">BFInterceptedLog</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Classes/BFUserFeedbackNavigationController.html">BFUserFeedbackNavigationController</a>
               </li>
@@ -58,6 +72,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BFLogInterceptor.html">BFLogInterceptor</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -66,7 +88,13 @@
             <h1>Bugfender</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">Bugfender</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">Bugfender</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">Bugfender</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -78,9 +106,11 @@
               <div class="task-name-container">
                 <a name="/Configuration"></a>
                 <a name="//apple_ref/objc/Section/Configuration" class="dashAnchor"></a>
-                <a href="#/Configuration">
-                  <h3 class="section-name">Configuration</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Configuration"></a>
+                  <h3 class="section-name"><span>Configuration</span>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -88,7 +118,7 @@
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setApiURL:"></a>
                     <a name="//apple_ref/objc/Method/+setApiURL:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setApiURL:">+setApiURL:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setApiURL:">+setApiURL:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -102,8 +132,7 @@
     Usage of this function is not necessary in the general use case. Please use exclusively when
 directed from technical support.
 
-</div>
-<div class="aside aside-warning">
+</div><div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     This method must be called before activateLogger.
 
@@ -114,12 +143,12 @@ directed from technical support.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setApiURL</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setApiURL</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setApiURL</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setApiURL</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -150,7 +179,7 @@ directed from technical support.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setBaseURL:"></a>
                     <a name="//apple_ref/objc/Method/+setBaseURL:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setBaseURL:">+setBaseURL:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setBaseURL:">+setBaseURL:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -164,8 +193,7 @@ directed from technical support.
     Usage of this function is not necessary in the general use case. Please use exclusively when
 directed from technical support.
 
-</div>
-<div class="aside aside-warning">
+</div><div class="aside aside-warning">
     <p class="aside-title">Warning</p>
     This method must be called before activateLogger.
 
@@ -176,12 +204,12 @@ directed from technical support.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setBaseURL</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setBaseURL</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">url</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setBaseURL</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setBaseURL</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -212,7 +240,7 @@ directed from technical support.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)activateLogger:"></a>
                     <a name="//apple_ref/objc/Method/+activateLogger:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)activateLogger:">+activateLogger:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)activateLogger:">+activateLogger:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -225,8 +253,7 @@ directed from technical support.
     <p class="aside-title">Warning</p>
     If Bugfender has already been initialized with a different app key <code>NSInvalidArgumentException</code> will be thrown.
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     This method needs to be called before any <code>BFLog</code> call, otherwise they will be ignored.
 
@@ -237,12 +264,12 @@ directed from technical support.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">activateLogger</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appKey</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">activateLogger</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">appKey</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">activateLogger</span><span class="p">(</span><span class="n">_</span> <span class="nv">appKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">activateLogger</span><span class="p">(</span><span class="n">_</span> <span class="nv">appKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -288,12 +315,12 @@ directed from technical support.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">appKey</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">appKey</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">appKey</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">appKey</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -329,12 +356,12 @@ directed from technical support.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="n">maximumLocalStorageSize</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="n">maximumLocalStorageSize</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">maximumLocalStorageSize</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">maximumLocalStorageSize</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
 
                         </div>
                       </div>
@@ -346,7 +373,7 @@ directed from technical support.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setMaximumLocalStorageSize:"></a>
                     <a name="//apple_ref/objc/Method/+setMaximumLocalStorageSize:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setMaximumLocalStorageSize:">+setMaximumLocalStorageSize:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setMaximumLocalStorageSize:">+setMaximumLocalStorageSize:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -361,12 +388,12 @@ directed from technical support.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setMaximumLocalStorageSize</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">maximumLocalStorageSize</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setMaximumLocalStorageSize</span><span class="p">:(</span><span class="n">NSUInteger</span><span class="p">)</span><span class="nv">maximumLocalStorageSize</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setMaximumLocalStorageSize</span><span class="p">(</span><span class="n">_</span> <span class="nv">maximumLocalStorageSize</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setMaximumLocalStorageSize</span><span class="p">(</span><span class="n">_</span> <span class="nv">maximumLocalStorageSize</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -382,7 +409,8 @@ directed from technical support.
                               </td>
                               <td>
                                 <div>
-                                  <p>Maximum space availalbe to store local logs, in bytes.</p>
+                                  <p>Maximum size in bytes. Range accepted is from 1 MB to 50 MB. If the value provider
+is below this range it will be set to 1 MB, if is above the range it will be set to 50 MB</p>
                                 </div>
                               </td>
                             </tr>
@@ -397,13 +425,18 @@ directed from technical support.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)deviceIdentifier"></a>
                     <a name="//apple_ref/objc/Method/+deviceIdentifier" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)deviceIdentifier">+deviceIdentifier</a>
+                    <a class="token discouraged" href="#/c:objc(cs)Bugfender(cm)deviceIdentifier">+deviceIdentifier</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use deviceIdentifierUrl instead.</p>
+
+                      </div>
                       <div class="abstract">
                         <p>Returns the device identifier used to identify the current device in the Bugfender website.
  The device identifier is constant while the application is installed in the device.</p>
@@ -419,12 +452,12 @@ keep a relationship between a Bugfender device and a user or some other importan
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">deviceIdentifier</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">deviceIdentifier</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">deviceIdentifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">deviceIdentifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -462,12 +495,12 @@ keep a relationship between a Bugfender device and a user or some other importan
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="n">deviceIdentifierUrl</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="n">deviceIdentifierUrl</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">deviceIdentifierUrl</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">deviceIdentifierUrl</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -483,13 +516,18 @@ keep a relationship between a Bugfender device and a user or some other importan
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)sessionIdentifier"></a>
                     <a name="//apple_ref/objc/Method/+sessionIdentifier" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sessionIdentifier">+sessionIdentifier</a>
+                    <a class="token discouraged" href="#/c:objc(cs)Bugfender(cm)sessionIdentifier">+sessionIdentifier</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use sessionIdentifierUrl instead.</p>
+
+                      </div>
                       <div class="abstract">
                         <p>The session identifier is constant while the application is running.</p>
 
@@ -498,12 +536,12 @@ keep a relationship between a Bugfender device and a user or some other importan
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">sessionIdentifier</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">sessionIdentifier</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sessionIdentifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sessionIdentifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -539,12 +577,12 @@ keep a relationship between a Bugfender device and a user or some other importan
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="n">sessionIdentifierUrl</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="n">sessionIdentifierUrl</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sessionIdentifierUrl</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sessionIdentifierUrl</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -560,7 +598,7 @@ keep a relationship between a Bugfender device and a user or some other importan
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setForceEnabled:"></a>
                     <a name="//apple_ref/objc/Method/+setForceEnabled:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setForceEnabled:">+setForceEnabled:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setForceEnabled:">+setForceEnabled:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -585,12 +623,12 @@ regardless if the device is enabled in the Bugfender Console.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setForceEnabled</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">enabled</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setForceEnabled</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">enabled</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setForceEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setForceEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -641,12 +679,12 @@ regardless if the device is enabled in the Bugfender Console.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">forceEnabled</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">forceEnabled</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">forceEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">forceEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -658,7 +696,7 @@ regardless if the device is enabled in the Bugfender Console.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setPrintToConsole:"></a>
                     <a name="//apple_ref/objc/Method/+setPrintToConsole:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setPrintToConsole:">+setPrintToConsole:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setPrintToConsole:">+setPrintToConsole:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -673,12 +711,12 @@ regardless if the device is enabled in the Bugfender Console.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPrintToConsole</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">enabled</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setPrintToConsole</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">enabled</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setPrintToConsole</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setPrintToConsole</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -724,12 +762,12 @@ regardless if the device is enabled in the Bugfender Console.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">printToConsole</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="n">printToConsole</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">printToConsole</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">printToConsole</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -756,14 +794,66 @@ regardless if the device is enabled in the Bugfender Console.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enableUIEventLogging</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enableUIEventLogging</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">enableUIEventLogging</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">enableUIEventLogging</span><span class="p">()</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Bugfender(cm)enableUIEventLoggingWithIgnoredViewsTags:"></a>
+                    <a name="//apple_ref/objc/Method/+enableUIEventLoggingWithIgnoredViewsTags:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)enableUIEventLoggingWithIgnoredViewsTags:">+enableUIEventLoggingWithIgnoredViewsTags:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs all actions performed and screen changes in the application, such as button touches, swipes and gestures.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableUIEventLoggingWithIgnoredViewsTags</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSNumber</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">ignoredViewsTags</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">enableUIEventLogging</span><span class="p">(</span><span class="n">withIgnoredViewsTags</span> <span class="nv">ignoredViewsTags</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ignoredViewsTags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Tags of views that should not be observed and logged by Bugfender</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -788,12 +878,12 @@ regardless if the device is enabled in the Bugfender Console.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enableCrashReporting</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enableCrashReporting</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">enableCrashReporting</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">enableCrashReporting</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -806,9 +896,11 @@ regardless if the device is enabled in the Bugfender Console.
               <div class="task-name-container">
                 <a name="/Device%20details"></a>
                 <a name="//apple_ref/objc/Section/Device details" class="dashAnchor"></a>
-                <a href="#/Device%20details">
-                  <h3 class="section-name">Device details</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Device%20details"></a>
+                  <h3 class="section-name"><span>Device details</span>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -816,7 +908,7 @@ regardless if the device is enabled in the Bugfender Console.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)overrideDeviceName:"></a>
                     <a name="//apple_ref/objc/Method/+overrideDeviceName:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)overrideDeviceName:">+overrideDeviceName:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)overrideDeviceName:">+overrideDeviceName:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -836,12 +928,12 @@ regardless if the device is enabled in the Bugfender Console.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">overrideDeviceName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">deviceName</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">overrideDeviceName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">deviceName</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">overrideDeviceName</span><span class="p">(</span><span class="n">_</span> <span class="nv">deviceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">overrideDeviceName</span><span class="p">(</span><span class="n">_</span> <span class="nv">deviceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -872,7 +964,7 @@ regardless if the device is enabled in the Bugfender Console.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setDeviceBOOL:forKey:"></a>
                     <a name="//apple_ref/objc/Method/+setDeviceBOOL:forKey:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setDeviceBOOL:forKey:">+setDeviceBOOL:forKey:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setDeviceBOOL:forKey:">+setDeviceBOOL:<wbr>forKey:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -893,12 +985,12 @@ related to a Bugfender device.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceBOOL</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">b</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceBOOL</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">b</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceBOOL</span><span class="p">(</span><span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceBOOL</span><span class="p">(</span><span class="n">_</span> <span class="nv">b</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -941,7 +1033,7 @@ related to a Bugfender device.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setDeviceString:forKey:"></a>
                     <a name="//apple_ref/objc/Method/+setDeviceString:forKey:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setDeviceString:forKey:">+setDeviceString:forKey:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setDeviceString:forKey:">+setDeviceString:<wbr>forKey:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -962,12 +1054,12 @@ related to a Bugfender device.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceString</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">s</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceString</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">s</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceString</span><span class="p">(</span><span class="n">_</span> <span class="nv">s</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceString</span><span class="p">(</span><span class="n">_</span> <span class="nv">s</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1010,7 +1102,7 @@ related to a Bugfender device.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setDeviceInteger:forKey:"></a>
                     <a name="//apple_ref/objc/Method/+setDeviceInteger:forKey:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setDeviceInteger:forKey:">+setDeviceInteger:forKey:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setDeviceInteger:forKey:">+setDeviceInteger:<wbr>forKey:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1031,12 +1123,12 @@ related to a Bugfender device.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceInteger</span><span class="p">:(</span><span class="n">UInt64</span><span class="p">)</span><span class="nv">i</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceInteger</span><span class="p">:(</span><span class="n">UInt64</span><span class="p">)</span><span class="nv">i</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceInteger</span><span class="p">(</span><span class="n">_</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">UInt64</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceInteger</span><span class="p">(</span><span class="n">_</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">UInt64</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1079,7 +1171,7 @@ related to a Bugfender device.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)setDeviceDouble:forKey:"></a>
                     <a name="//apple_ref/objc/Method/+setDeviceDouble:forKey:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setDeviceDouble:forKey:">+setDeviceDouble:forKey:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)setDeviceDouble:forKey:">+setDeviceDouble:<wbr>forKey:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1100,12 +1192,12 @@ related to a Bugfender device.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceDouble</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">d</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceDouble</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">d</span> <span class="nf">forKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceDouble</span><span class="p">(</span><span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceDouble</span><span class="p">(</span><span class="n">_</span> <span class="nv">d</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1148,7 +1240,7 @@ related to a Bugfender device.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)removeDeviceKey:"></a>
                     <a name="//apple_ref/objc/Method/+removeDeviceKey:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)removeDeviceKey:">+removeDeviceKey:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)removeDeviceKey:">+removeDeviceKey:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1169,12 +1261,12 @@ related to a Bugfender device by indicating its key.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeDeviceKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeDeviceKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">removeDeviceKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">removeDeviceKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1206,9 +1298,11 @@ related to a Bugfender device by indicating its key.
               <div class="task-name-container">
                 <a name="/Logging"></a>
                 <a name="//apple_ref/objc/Section/Logging" class="dashAnchor"></a>
-                <a href="#/Logging">
-                  <h3 class="section-name">Logging</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Logging"></a>
+                  <h3 class="section-name"><span>Logging</span>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -1216,7 +1310,7 @@ related to a Bugfender device by indicating its key.
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)logWithLineNumber:method:file:level:tag:message:"></a>
                     <a name="//apple_ref/objc/Method/+logWithLineNumber:method:file:level:tag:message:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)logWithLineNumber:method:file:level:tag:message:">+logWithLineNumber:method:file:level:tag:message:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)logWithLineNumber:method:file:level:tag:message:">+logWithLineNumber:<wbr>method:<wbr>file:<wbr>level:<wbr>tag:<wbr>message:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1230,8 +1324,7 @@ related to a Bugfender device by indicating its key.
     This command can be called anytime, and will take effect the next time the device is online.
 For efficiency, several log lines can be sent together to the server with some delay.
 
-</div>
-<div class="aside aside-note">
+</div><div class="aside aside-note">
     <p class="aside-title">Note</p>
     In Swift, prefer to use bfprint() in order to get file name and line number filled in automatically. In Objective-C you can use the BFLog or BFLog2 macros.
 
@@ -1242,7 +1335,7 @@ For efficiency, several log lines can be sent together to the server with some d
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">logWithLineNumber</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">lineNumber</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">logWithLineNumber</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">lineNumber</span>
                    <span class="nf">method</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">method</span>
                      <span class="nf">file</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">file</span>
                     <span class="nf">level</span><span class="p">:(</span><span class="n"><a href="../Enums/BFLogLevel.html">BFLogLevel</a></span><span class="p">)</span><span class="nv">level</span>
@@ -1252,7 +1345,7 @@ For efficiency, several log lines can be sent together to the server with some d
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="nv">lineNumber</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Enums/BFLogLevel.html">BFLogLevel</a></span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">log</span><span class="p">(</span><span class="nv">lineNumber</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">file</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">level</span><span class="p">:</span> <span class="kt"><a href="../Enums/BFLogLevel.html">BFLogLevel</a></span><span class="p">,</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1344,9 +1437,11 @@ For efficiency, several log lines can be sent together to the server with some d
               <div class="task-name-container">
                 <a name="/Commands"></a>
                 <a name="//apple_ref/objc/Section/Commands" class="dashAnchor"></a>
-                <a href="#/Commands">
-                  <h3 class="section-name">Commands</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Commands"></a>
+                  <h3 class="section-name"><span>Commands</span>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -1380,12 +1475,12 @@ the server for analysis, regardless if the device is enabled in the Bugfender Co
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">forceSendOnce</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">forceSendOnce</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">forceSendOnce</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">forceSendOnce</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -1398,9 +1493,11 @@ the server for analysis, regardless if the device is enabled in the Bugfender Co
               <div class="task-name-container">
                 <a name="/Issues"></a>
                 <a name="//apple_ref/objc/Section/Issues" class="dashAnchor"></a>
-                <a href="#/Issues">
-                  <h3 class="section-name">Issues</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Issues"></a>
+                  <h3 class="section-name"><span>Issues</span>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -1408,13 +1505,18 @@ the server for analysis, regardless if the device is enabled in the Bugfender Co
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)sendIssueWithTitle:text:"></a>
                     <a name="//apple_ref/objc/Method/+sendIssueWithTitle:text:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sendIssueWithTitle:text:">+sendIssueWithTitle:text:</a>
+                    <a class="token discouraged" href="#/c:objc(cs)Bugfender(cm)sendIssueWithTitle:text:">+sendIssueWithTitle:<wbr>text:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use sendIssueReturningUrlWithTitle:text: instead.</p>
+
+                      </div>
                       <div class="abstract">
                         <p>Sends an issue</p>
 <div class="aside aside-note">
@@ -1429,13 +1531,13 @@ to the server, and marks the session so that it is highlighted in the web consol
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">sendIssueWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">sendIssueWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
                                      <span class="nf">text</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendIssue</span><span class="p">(</span><span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendIssue</span><span class="p">(</span><span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1482,7 +1584,7 @@ to the server, and marks the session so that it is highlighted in the web consol
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)sendIssueReturningUrlWithTitle:text:"></a>
                     <a name="//apple_ref/objc/Method/+sendIssueReturningUrlWithTitle:text:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sendIssueReturningUrlWithTitle:text:">+sendIssueReturningUrlWithTitle:text:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sendIssueReturningUrlWithTitle:text:">+sendIssueReturningUrlWithTitle:<wbr>text:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1503,13 +1605,13 @@ to the server, and marks the session so that it is highlighted in the web consol
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nf">sendIssueReturningUrlWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nf">sendIssueReturningUrlWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
                                               <span class="nf">text</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendIssueReturningUrl</span><span class="p">(</span><span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendIssueReturningUrl</span><span class="p">(</span><span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1557,9 +1659,11 @@ to the server, and marks the session so that it is highlighted in the web consol
               <div class="task-name-container">
                 <a name="/Crashes"></a>
                 <a name="//apple_ref/objc/Section/Crashes" class="dashAnchor"></a>
-                <a href="#/Crashes">
-                  <h3 class="section-name">Crashes</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Crashes"></a>
+                  <h3 class="section-name"><span>Crashes</span>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -1567,7 +1671,7 @@ to the server, and marks the session so that it is highlighted in the web consol
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)sendCrashWithTitle:text:"></a>
                     <a name="//apple_ref/objc/Method/+sendCrashWithTitle:text:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sendCrashWithTitle:text:">+sendCrashWithTitle:text:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sendCrashWithTitle:text:">+sendCrashWithTitle:<wbr>text:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1588,13 +1692,13 @@ it doesn&rsquo;t take into account if crash reporting is enabled or not
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nf">sendCrashWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nf">sendCrashWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
                                   <span class="nf">text</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendCrash</span><span class="p">(</span><span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendCrash</span><span class="p">(</span><span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1642,9 +1746,11 @@ it doesn&rsquo;t take into account if crash reporting is enabled or not
               <div class="task-name-container">
                 <a name="/User%20Feedback"></a>
                 <a name="//apple_ref/objc/Section/User Feedback" class="dashAnchor"></a>
-                <a href="#/User%20Feedback">
-                  <h3 class="section-name">User Feedback</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/User%20Feedback"></a>
+                  <h3 class="section-name"><span>User Feedback</span>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -1652,7 +1758,7 @@ it doesn&rsquo;t take into account if crash reporting is enabled or not
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:"></a>
                     <a name="//apple_ref/objc/Method/+userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:">+userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)userFeedbackViewControllerWithTitle:hint:subjectPlaceholder:messagePlaceholder:sendButtonTitle:cancelButtonTitle:completion:">+userFeedbackViewControllerWithTitle:<wbr>hint:<wbr>subjectPlaceholder:<wbr>messagePlaceholder:<wbr>sendButtonTitle:<wbr>cancelButtonTitle:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1670,7 +1776,7 @@ The returning BFUserFeedbackNavigationController has to be presented modally and
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/BFUserFeedbackNavigationController.html">BFUserFeedbackNavigationController</a></span> <span class="o">*</span><span class="p">)</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/BFUserFeedbackNavigationController.html">BFUserFeedbackNavigationController</a></span> <span class="o">*</span><span class="p">)</span>
     <span class="nf">userFeedbackViewControllerWithTitle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">title</span>
                                    <span class="nf">hint</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">hint</span>
                      <span class="nf">subjectPlaceholder</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">subjectPlaceholder</span>
@@ -1684,7 +1790,7 @@ The returning BFUserFeedbackNavigationController has to be presented modally and
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">userFeedbackViewController</span><span class="p">(</span><span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">hint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">subjectPlaceholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">messagePlaceholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">sendButtonTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">cancelButtonTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BFUserFeedbackNavigationController.html">BFUserFeedbackNavigationController</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">userFeedbackViewController</span><span class="p">(</span><span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">hint</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">subjectPlaceholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">messagePlaceholder</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">sendButtonTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">cancelButtonTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">completion</span> <span class="nv">completionBlock</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BFUserFeedbackNavigationController.html">BFUserFeedbackNavigationController</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1779,13 +1885,18 @@ The returning BFUserFeedbackNavigationController has to be presented modally and
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)sendUserFeedbackWithSubject:message:"></a>
                     <a name="//apple_ref/objc/Method/+sendUserFeedbackWithSubject:message:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sendUserFeedbackWithSubject:message:">+sendUserFeedbackWithSubject:message:</a>
+                    <a class="token discouraged" href="#/c:objc(cs)Bugfender(cm)sendUserFeedbackWithSubject:message:">+sendUserFeedbackWithSubject:<wbr>message:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Use sendUserFeedbackReturningUrlWithSubject:message: instead.</p>
+
+                      </div>
                       <div class="abstract">
                         <p>Allows to create custom UI to gather user feedback and send to Bugfender.</p>
 
@@ -1794,13 +1905,13 @@ The returning BFUserFeedbackNavigationController has to be presented modally and
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sendUserFeedbackWithSubject</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">subject</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sendUserFeedbackWithSubject</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">subject</span>
                             <span class="nf">message</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendUserFeedback</span><span class="p">(</span><span class="n">withSubject</span> <span class="nv">subject</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendUserFeedback</span><span class="p">(</span><span class="n">withSubject</span> <span class="nv">subject</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1843,7 +1954,7 @@ The returning BFUserFeedbackNavigationController has to be presented modally and
                     <code>
                     <a name="/c:objc(cs)Bugfender(cm)sendUserFeedbackReturningUrlWithSubject:message:"></a>
                     <a name="//apple_ref/objc/Method/+sendUserFeedbackReturningUrlWithSubject:message:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sendUserFeedbackReturningUrlWithSubject:message:">+sendUserFeedbackReturningUrlWithSubject:message:</a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)sendUserFeedbackReturningUrlWithSubject:message:">+sendUserFeedbackReturningUrlWithSubject:<wbr>message:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1858,14 +1969,14 @@ The returning BFUserFeedbackNavigationController has to be presented modally and
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span>
     <span class="nf">sendUserFeedbackReturningUrlWithSubject</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">subject</span>
                                     <span class="nf">message</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendUserFeedbackReturningUrl</span><span class="p">(</span><span class="n">withSubject</span> <span class="nv">subject</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">sendUserFeedbackReturningUrl</span><span class="p">(</span><span class="n">withSubject</span> <span class="nv">subject</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">URL</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1907,16 +2018,99 @@ The returning BFUserFeedbackNavigationController has to be presented modally and
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Bugfender(cm)enableNSLogLogging"></a>
+                    <a name="//apple_ref/objc/Method/+enableNSLogLogging" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)enableNSLogLogging">+enableNSLogLogging</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs all logs written via NSLog or OSLog.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">enableNSLogLogging</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">enableNSLogLogging</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)Bugfender(cm)enableNSLogLoggingWithInterceptor:"></a>
+                    <a name="//apple_ref/objc/Method/+enableNSLogLoggingWithInterceptor:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)Bugfender(cm)enableNSLogLoggingWithInterceptor:">+enableNSLogLoggingWithInterceptor:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Logs all logs written via NSLog or OSLog.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">enableNSLogLoggingWithInterceptor</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/BFLogInterceptor.html">BFLogInterceptor</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">interceptor</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">enableNSLogLogging</span><span class="p">(</span><span class="n">withInterceptor</span> <span class="nv">interceptor</span><span class="p">:</span> <span class="kt"><a href="../Protocols/BFLogInterceptor.html">BFLogInterceptor</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interceptor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>intercept the logs and allow to modify or to block them before they are sent to Bugfender</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://bugfender.com" target="_blank" rel="external">Bugfender</a>. All rights reserved. (Last updated: 2021-05-25)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="https://bugfender.com" target="_blank" rel="external noopener">Bugfender</a>. All rights reserved. (Last updated: 2023-09-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

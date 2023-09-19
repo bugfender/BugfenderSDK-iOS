@@ -8,19 +8,27 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a title="BugfenderSDK  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">BugfenderSDK Docs</a> (100% documented)</p>
-        <p class="header-right"><a href="https://github.com/bugfender/BugfenderSDK-iOS"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p><a href="index.html">BugfenderSDK 1.12.2 Docs</a> (89% documented)</p>
+        <p class="header-right"><a href="https://github.com/bugfender/BugfenderSDK-iOS"><img src="img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="index.html">BugfenderSDK Reference</a>
-        <img id="carat" src="img/carat.png" />
+        <img id="carat" src="img/carat.png" alt=""/>
         BugfenderSDK  Reference
       </p>
     </div>
@@ -30,6 +38,12 @@
           <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)BFDefaultLogInterceptor">BFDefaultLogInterceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BFInterceptedLog.html">BFInterceptedLog</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Classes/BFUserFeedbackNavigationController.html">BFUserFeedbackNavigationController</a>
               </li>
@@ -57,6 +71,14 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/BFLogInterceptor.html">BFLogInterceptor</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -65,9 +87,15 @@
             
             <h1 id='bugfender-sdk-for-ios-a-href-https-travis-ci-com-bugfender-bugfendersdk-ios-img-src-https-travis-ci-com-bugfender-bugfendersdk-ios-svg-branch-master-alt-build-status-a-a-href-https-bugfender-github-io-bugfendersdk-ios-img-src-https-img-shields-io-badge-docs-e2-9c-93-blue-svg-alt-docs-a' class='heading'>Bugfender SDK for iOS <a href="https://travis-ci.com/bugfender/BugfenderSDK-iOS"><img src="https://travis-ci.com/bugfender/BugfenderSDK-iOS.svg?branch=master" alt="Build Status"></a> <a href="https://bugfender.github.io/BugfenderSDK-iOS/"><img src="https://img.shields.io/badge/docs-%E2%9C%93-blue.svg" alt="Docs"></a></h1>
 
-<p>Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the <a href="https://app.bugfender.com/">Bugfender console</a>. You&rsquo;ll need an account.</p>
+<p>Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the <a href="https://dashboard.bugfender.com/">Bugfender dashboard</a>. You&rsquo;ll need an account.</p>
 
-<p>BugfenderSDK 1.10 works for iOS 10.0 and newer. For iOS 8 support you can still use the BugfenderSDK 1.8.</p>
+<p>Supported iOS versions:</p>
+
+<ul>
+<li>BugfenderSDK 1.12 works for iOS 11.0 and newer.</li>
+<li>For iOS 10 support you can use BugfenderSDK 1.10.6.</li>
+<li>For iOS 8 support you can use BugfenderSDK 1.8.</li>
+</ul>
 <h1 id='installing-the-sdk' class='heading'>Installing the SDK</h1>
 
 <p>First of all you will need to add the framework to your project.</p>
@@ -77,7 +105,7 @@
 <li>Create a Podfile if you don&rsquo;t have one: <code>pod init</code></li>
 <li>Add Bugfender to your Podfile:
 <code>
-pod &#39;BugfenderSDK&#39;, &#39;~&gt; 1.10&#39;
+pod &#39;BugfenderSDK&#39;, &#39;~&gt; 1.12&#39;
 </code></li>
 <li>Save the file and run: <code>pod install</code>. This creates an <code>.xcworkspace</code> file for your app. Use this file for all future development on your application.</li>
 </ol>
@@ -95,19 +123,17 @@ pod &#39;BugfenderSDK&#39;, &#39;~&gt; 1.10&#39;
 <img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/master/readme-images/spm/spm5.png?raw=true" width="400" ></p></li>
 <li><p>Import <code>SystemConfiguration.framework</code>, <code>Security.framework</code>, <code>CoreServices.framework</code>, <code>CoreGraphics.framework</code> and <code>libc++.tbd</code> as well.</p></li>
 </ol>
-
-<p><em>There is a <a href="https://bugs.swift.org/browse/SR-13343">known issue</a> in Xcode12 failing to launch apps in a physical device when debugging. At the moment of writing this docs, the issue is still not fixed in Xcode12.3 Beta. The issue should not affect release or simulator versions. But, if you get a <code>No code signature found</code> or <code>A valid provisioning profile for this executable was not found</code> we recommend to use the <a href="https://pspdfkit.com/guides/ios/current/knowledge-base/library-not-found-swiftpm/">workaround proposed by the PSPDFKit</a> team.</em></p>
 <h2 id='using-carthage' class='heading'>Using Carthage</h2>
 
 <ol>
 <li>Update to at least Carthage 0.38.0</li>
 <li>Add to your Cartfile:
 <code>
-github &quot;bugfender/BugfenderSDK-iOS&quot; ~&gt;1.10
+github &quot;bugfender/BugfenderSDK-iOS&quot; ~&gt;1.12
 </code></li>
 <li>Save the file and run <code>carthage update --use-xcframeworks</code></li>
 <li>Import <code>Carthage/Build/BugfenderSDK.xcframework</code> to your <code>Linked Frameworks and Libraries</code> (or drag-n-drop the file to your project).</li>
-<li>Make sure to select the option <q>Embed framework</q> (or list the framework in <code>input.xcfilelist</code>).</li>
+<li>Make sure to select the option &ldquo;Embed framework&rdquo; (or list the framework in <code>input.xcfilelist</code>).</li>
 <li>Import <code>SystemConfiguration.framework</code>, <code>Security.framework</code>, <code>CoreServices.framework</code>, <code>CoreGraphics.framework</code> and <code>libc++.tbd</code> as well.</li>
 </ol>
 <h2 id='manual' class='heading'>Manual</h2>
@@ -116,7 +142,7 @@ github &quot;bugfender/BugfenderSDK-iOS&quot; ~&gt;1.10
 
 <ol>
 <li>Go to your <strong>Project</strong> &gt; <strong>Your Target</strong> &gt; <strong>General</strong> &gt; <strong>Frameworks, Libraries, and Embedded Content</strong> and drag <code>BugfenderSDK.xcframework</code> there.</li>
-<li>Make sure to select the option <q>Embed framework</q></li>
+<li>Make sure to select the option &ldquo;Embed framework&rdquo;</li>
 <li>Make sure you have <code>SystemConfiguration.framework</code>, <code>Security.framework</code>, <code>CoreServices.framework</code>, <code>CoreGraphics.framework</code> and <code>libc++.tbd</code> there as well.</li>
 </ol>
 <h1 id='using-bugfender' class='heading'>Using Bugfender</h1>
@@ -152,6 +178,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 <p>And add the following to <code>application(_:didFinishLaunchingWithOptions:)</code>:</p>
 <pre class="highlight plaintext"><code>Bugfender.activateLogger("YOUR_APP_KEY")
+Bugfender.enableNSLogLogging() // optional, capture logs printed to console automatically
 Bugfender.enableUIEventLogging() // optional, log user interactions automatically
 Bugfender.enableCrashReporting() // optional, log crashes automatically
 bfprint("Hello world!") // use bfprint() as you would use print()
@@ -178,6 +205,7 @@ bfprint("Hello world!") // use bfprint() as you would use print()
     ...
     // Activate the remote logger with an App Key.
     [Bugfender activateLogger:@"YOUR_APP_KEY"];
+    [Bugfender enableNSLogLogging]; // optional, capture logs printed to console automatically
     [Bugfender enableUIEventLogging]; // optional, log user interactions automatically
     [Bugfender enableCrashReporting]; // optional, log crashes automatically
     BFLog("Hello world!") // use BFLog as you would use NSLog
@@ -244,7 +272,7 @@ bfprint("Hello world!") // use bfprint() as you would use print()
 <p><img src="https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/docs/User-feedback-default.png" alt=""></p>
 
 <p>The easiest way to implement Bugfender User Feedback is using the customizable User Feedback View Controller. It provides a convenient view controller with two text fields, one short for the subject and another bigger for the feedback. Both text fields grow autommatically.</p>
-<h2 id='using-default-ui' class='heading'>Using default UI</h2>
+<h2 id='using-the-default-ui' class='heading'>Using the default UI</h2>
 
 <p>Using the convenient UI provided by Bugfender requires only creating a new View Controller and presenting it modally. All you need is to call the following method and complete the required parameters with the title and placeholders for your UI.</p>
 <pre class="highlight swift"><code><span class="c1">// Instantiate new User Feedback</span>
@@ -284,7 +312,58 @@ bfprint("Hello world!") // use bfprint() as you would use print()
 
 <p><img src="https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/docs/User-feedback-custom.png" alt=""></p>
 
-<p>For a complete list of customizable attributes you can inspect <q>BFUserFeedbackViewController.h</q> or <a href="http://bugfender.github.io/BugfenderSDK-iOS/">read the docs</a>.</p>
+<p>For a complete list of customizable attributes you can inspect &ldquo;BFUserFeedbackViewController.h&rdquo; or <a href="http://bugfender.github.io/BugfenderSDK-iOS/">read the docs</a>.</p>
+<h2 id='using-swiftui' class='heading'>Using SwiftUI</h2>
+
+<p>Here is an example using the <code><a href="Classes/BFUserFeedbackNavigationController.html">BFUserFeedbackNavigationController</a></code> in SwiftUI:</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">SwiftUIView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="kd">@State</span> <span class="kd">private</span> <span class="k">var</span> <span class="nv">showFeedbackScreen</span> <span class="o">=</span> <span class="kc">false</span>
+
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">VStack</span> <span class="p">{</span>
+            <span class="kt">Text</span><span class="p">(</span><span class="s">"Hello World!"</span><span class="p">)</span>
+            <span class="kt">Button</span><span class="p">(</span><span class="s">"Show Feedback screen"</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">showFeedbackScreen</span> <span class="o">=</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">}</span><span class="o">.</span><span class="nf">sheet</span><span class="p">(</span><span class="nv">isPresented</span><span class="p">:</span> <span class="n">$showFeedbackScreen</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">FeedbackView</span><span class="p">()</span> <span class="p">{</span> <span class="n">sent</span><span class="p">,</span> <span class="n">feedbackUrl</span> <span class="k">in</span>
+                <span class="k">if</span> <span class="n">sent</span> <span class="o">==</span> <span class="kc">true</span><span class="p">,</span>
+                    <span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="n">feedbackUrl</span><span class="p">{</span>
+                    <span class="kt">BFLog</span><span class="p">(</span><span class="s">"Sent feedback to URL: </span><span class="se">\(</span><span class="n">url</span><span class="o">.</span><span class="n">absoluteString</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="kt">BFLog</span><span class="p">(</span><span class="s">"User rejected to send feedback"</span><span class="p">)</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span><span class="o">.</span><span class="nf">navigationBarTitle</span><span class="p">(</span><span class="kt">Text</span><span class="p">(</span><span class="s">"Swift UI Test"</span><span class="p">))</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">SwiftUIView_Previews</span><span class="p">:</span> <span class="kt">PreviewProvider</span> <span class="p">{</span>
+    <span class="kd">static</span> <span class="k">var</span> <span class="nv">previews</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">SwiftUIView</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">FeedbackView</span><span class="p">:</span> <span class="kt">UIViewControllerRepresentable</span> <span class="p">{</span>
+    <span class="kd">typealias</span> <span class="kt">UIViewControllerType</span> <span class="o">=</span> <span class="kt">BFUserFeedbackNavigationController</span>
+
+    <span class="k">let</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">feedbackSent</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">feedbackUrl</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span>
+
+    <span class="kd">func</span> <span class="nf">makeUIViewController</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">Context</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">BFUserFeedbackNavigationController</span> <span class="p">{</span>
+        <span class="kt">BFUserFeedbackNavigationController</span><span class="o">.</span><span class="nf">userFeedbackViewController</span><span class="p">(</span>
+            <span class="nv">withTitle</span><span class="p">:</span> <span class="s">"This title"</span><span class="p">,</span>
+            <span class="nv">hint</span><span class="p">:</span> <span class="s">"This hint"</span><span class="p">,</span>
+            <span class="nv">subjectPlaceholder</span><span class="p">:</span> <span class="s">"This subject"</span><span class="p">,</span>
+            <span class="nv">messagePlaceholder</span><span class="p">:</span> <span class="s">"This message"</span><span class="p">,</span>
+            <span class="nv">sendButtonTitle</span><span class="p">:</span> <span class="s">"Send"</span><span class="p">,</span>
+            <span class="nv">cancelButtonTitle</span><span class="p">:</span> <span class="s">"Cancel"</span><span class="p">)</span> <span class="p">{</span> <span class="n">sent</span><span class="p">,</span> <span class="n">feedbackUrl</span> <span class="k">in</span>
+                <span class="nf">completion</span><span class="p">(</span><span class="n">sent</span><span class="p">,</span> <span class="n">feedbackUrl</span><span class="p">)</span>
+            <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">updateUIViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">uiViewController</span><span class="p">:</span> <span class="kt">BFUserFeedbackNavigationController</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">Context</span><span class="p">)</span> <span class="p">{}</span>
+<span class="p">}</span>
+</code></pre>
 <h2 id='using-a-custom-ui' class='heading'>Using a custom UI</h2>
 
 <p>If you need further customization than provided by BFUserFeedbackViewController you can implement your own UI. All you have to do is collect your user feedback as you wish and send it to Bugfender using <code>sendUserFeedback</code>:</p>
@@ -294,17 +373,27 @@ bfprint("Hello world!") // use bfprint() as you would use print()
 <p>The returned URL is a direct link to the Bugfender&rsquo;s dashboard. Use it to create automations or to keep a reference in your servers.</p>
 <h2 id='updating-from-bugfendersdk-prior-to-1-8-and-objc-only-projects' class='heading'>Updating from BugfenderSDK prior to 1.8 and ObjC only projects</h2>
 
-<p>BugfenderSDK is now a dynamic framework and you will need to check the <q>embed framework</q> option when adding it to your project manually or using Carthage.
+<p>BugfenderSDK is now a dynamic framework and you will need to check the &ldquo;embed framework&rdquo; option when adding it to your project manually or using Carthage.
 <br /> Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted, however, Swift must be available in your project. If you are installing Bugfender manually or using Carthage ensure that <em>Build Settings -&gt; Always Embed Swift Standard Libraries</em> is set to <em>YES</em>.</p>
+<h1 id='symbolicating-crash-reports' class='heading'>Symbolicating crash reports</h1>
+
+<p>Bugfender provides a script is able to upload dSYM bundles to <a href="https://bugfender.com">Bugfender</a>.</p>
+<h2 id='obtain-the-script' class='heading'>Obtain the script</h2>
+
+<p>The script is distributed if you are using Cocoapods or Swift Package Manager.</p>
+
+<p>If you are using any other installation method you can download <a href="https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/xcode-upload-symbols/upload-symbols.sh">the script</a> and copy it into a location inside your project.</p>
+<h2 id='set-up-xcode-to-automatically-upload-dsym-bundles' class='heading'>Set up Xcode to automatically upload dSYM bundles</h2>
+
+<p>Use the <a href="https://github.com/bugfender/BugfenderSDK-iOS/blob/master/xcode-upload-symbols/README.md">following instructions</a> to configure your project.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://bugfender.com" target="_blank" rel="external">Bugfender</a>. All rights reserved. (Last updated: 2021-05-25)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2023 <a class="link" href="https://bugfender.com" target="_blank" rel="external noopener">Bugfender</a>. All rights reserved. (Last updated: 2023-09-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

@@ -1,6 +1,61 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/gimix/git/bf/BugfenderSDK-iOS/BugfenderSDK.framework/Headers/BFInterceptedLog.h",
+      "line": 16,
+      "symbol": "BFInterceptedLog.-initWithText:level:date:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gimix/git/bf/BugfenderSDK-iOS/BugfenderSDK.framework/Headers/BFInterceptedLog.h",
+      "line": 18,
+      "symbol": "BFInterceptedLog.line",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gimix/git/bf/BugfenderSDK-iOS/BugfenderSDK.framework/Headers/BFInterceptedLog.h",
+      "line": 19,
+      "symbol": "BFInterceptedLog.level",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gimix/git/bf/BugfenderSDK-iOS/BugfenderSDK.framework/Headers/BFInterceptedLog.h",
+      "line": 21,
+      "symbol": "BFInterceptedLog.date",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gimix/git/bf/BugfenderSDK-iOS/BugfenderSDK.framework/Headers/BFInterceptedLog.h",
+      "line": 23,
+      "symbol": "BFInterceptedLog.tag",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gimix/git/bf/BugfenderSDK-iOS/BugfenderSDK.framework/Headers/BFInterceptedLog.h",
+      "line": 24,
+      "symbol": "BFInterceptedLog.method",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gimix/git/bf/BugfenderSDK-iOS/BugfenderSDK.framework/Headers/BFInterceptedLog.h",
+      "line": 25,
+      "symbol": "BFInterceptedLog.file",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/gimix/git/bf/BugfenderSDK-iOS/BugfenderSDK.framework/Headers/BFInterceptedLog.h",
+      "line": 26,
+      "symbol": "BFInterceptedLog.text",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    }
   ],
-  "source_directory": "/Users/travis/build/bugfender/BugfenderSDK-iOS"
+  "source_directory": "/Users/gimix/git/bf/BugfenderSDK-iOS"
 }
