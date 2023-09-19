@@ -193,7 +193,6 @@
 				TargetAttributes = {
 					425D16131B7E043F0084A862 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 9YHGX7ST8H;
 					};
 					42F5B27B1DA6BC730011D4EF = {
 						CreatedOnToolsVersion = 8.0;
@@ -425,10 +424,9 @@
 			baseConfigurationReference = 46B01B18BA90FA83488180FF /* Pods-BugfenderExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9YHGX7ST8H;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BugfenderExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugfender.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -439,10 +437,9 @@
 			baseConfigurationReference = 3B220B04AB1FBC4CFC080976 /* Pods-BugfenderExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9YHGX7ST8H;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BugfenderExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugfender.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

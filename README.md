@@ -38,8 +38,6 @@ First of all you will need to add the framework to your project.
 
 6. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
-*There is a [known issue](https://bugs.swift.org/browse/SR-13343) in Xcode12 failing to launch apps in a physical device when debugging. At the moment of writing this docs, the issue is still not fixed in Xcode12.3 Beta. The issue should not affect release or simulator versions. But, if you get a `No code signature found` or `A valid provisioning profile for this executable was not found` we recommend to use the [workaround proposed by the PSPDFKit](https://pspdfkit.com/guides/ios/current/knowledge-base/library-not-found-swiftpm/) team.*
-
 ## Using Carthage
 1. Update to at least Carthage 0.38.0
 2. Add to your Cartfile:
@@ -58,17 +56,6 @@ If you prefer to install the SDK manually you can use the provided xcframework i
 1. Go to your **Project** > **Your Target** > **General** > **Frameworks, Libraries, and Embedded Content** and drag `BugfenderSDK.xcframework` there.
 2. Make sure to select the option "Embed framework"
 3. Make sure you have `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` there as well.
-
-# Symbolicating crash reports
-Bugfender provides a script is able to upload dSYM bundles to [Bugfender](https://bugfender.com).
-
-## Obtain the script
-The script is distributed if you are using Cocoapods or Swift Package Manager.
-
-If you are using any other installation method you can download [the script](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/xcode-upload-symbols/upload-symbols.sh) and copy it into a location inside your project.
-
-## Set up Xcode to automatically upload dSYM bundles
-Use the [following instructions](https://github.com/bugfender/BugfenderSDK-iOS/blob/master/xcode-upload-symbols/README.md) to configure your project.
 
 
 # Using Bugfender
@@ -110,6 +97,7 @@ And add the following to `application(_:didFinishLaunchingWithOptions:)`:
 
 ```Swift
 Bugfender.activateLogger("YOUR_APP_KEY")
+Bugfender.enableNSLogLogging() // optional, capture logs printed to console automatically
 Bugfender.enableUIEventLogging() // optional, log user interactions automatically
 Bugfender.enableCrashReporting() // optional, log crashes automatically
 bfprint("Hello world!") // use bfprint() as you would use print()
@@ -139,6 +127,7 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
     ...
     // Activate the remote logger with an App Key.
     [Bugfender activateLogger:@"YOUR_APP_KEY"];
+    [Bugfender enableNSLogLogging]; // optional, capture logs printed to console automatically
     [Bugfender enableUIEventLogging]; // optional, log user interactions automatically
     [Bugfender enableCrashReporting]; // optional, log crashes automatically
     BFLog("Hello world!") // use BFLog as you would use NSLog
@@ -337,3 +326,14 @@ The returned URL is a direct link to the Bugfender's dashboard. Use it to create
 
 BugfenderSDK is now a dynamic framework and you will need to check the "embed framework" option when adding it to your project manually or using Carthage.
 <br /> Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted, however, Swift must be available in your project. If you are installing Bugfender manually or using Carthage ensure that *Build Settings -> Always Embed Swift Standard Libraries* is set to *YES*.
+
+# Symbolicating crash reports
+Bugfender provides a script is able to upload dSYM bundles to [Bugfender](https://bugfender.com).
+
+## Obtain the script
+The script is distributed if you are using Cocoapods or Swift Package Manager.
+
+If you are using any other installation method you can download [the script](https://raw.githubusercontent.com/bugfender/BugfenderSDK-iOS/master/xcode-upload-symbols/upload-symbols.sh) and copy it into a location inside your project.
+
+## Set up Xcode to automatically upload dSYM bundles
+Use the [following instructions](https://github.com/bugfender/BugfenderSDK-iOS/blob/master/xcode-upload-symbols/README.md) to configure your project.

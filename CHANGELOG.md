@@ -1,3 +1,6 @@
+# 1.12.2
+- Bugfix: race condition when setting device key-values that may lead to a crash
+
 # 1.12.1
 - This release fixes problems with Cocoapods and static library in the previous release.
 

@@ -1,7 +1,8 @@
 #!/bin/sh
-jazzy \
+bundle install
+bundle exec jazzy \
   --clean \
   --umbrella-header BugfenderSDK.framework/Headers/BugfenderSDK.h \
   --framework-root ./BugfenderSDK.framework \
-  --output docs \
+  --output ../BugfenderSDK-iOS-gh-pages \
   --sdk iphonesimulator
