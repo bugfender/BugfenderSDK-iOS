@@ -135,13 +135,16 @@ Get an API key from the [Bugfender console](https://app.bugfender.com/). In your
 }
 ```
 
-Then you may use `BFLog` as you would normally use `NSLog`.
+You may use `BFLog` as you would normally use `NSLog`.
 
 You may also want to specify a logging level by using the following macros:
 
-- `BFLog(...)`: Default log.
-- `BFLogWarn(...)`: Warning log.
+- `BFLogFatal(...)`: Fatal log.
 - `BFLogErr(...)`: Error log.
+- `BFLogWarn(...)`: Warning log.
+- `BFLogInfo(...)`: Info log.
+- `BFLog(...)`: Default (debug) log.
+- `BFLogTrace(...)`: Trace log.
 
 # Advanced features
 
