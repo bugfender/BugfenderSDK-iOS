@@ -3,7 +3,7 @@
 //  BugfenderSDK
 //
 //  Created by Fran Montiel on 24/1/23.
-//  Copyright © 2023 Mobile Jazz. All rights reserved.
+//  Copyright © 2023 Beenario GmbH. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

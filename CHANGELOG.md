@@ -1,3 +1,8 @@
+# 1.13.0
+- Update: add PrivacyInfo.xcprivacy to automatically recognize "other diagnostic data" is being collected, with no tracking and no association with the user identity
+- Update: declare accepted usage of NSUserDefaults in PrivacyInfo.xcprivacy
+- Update: replace some API calls that would "require a reason" -- whilst the reason is not tracking, Apple has not yet listed a suitable accepted reason item. we have removed them to prevent warnings or other issues because of BugfenderSDK usage
+
 # 1.12.2
 - Bugfix: race condition when setting device key-values that may lead to a crash
 

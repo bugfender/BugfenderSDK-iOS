@@ -3,7 +3,7 @@
 //  BugfenderSDK
 //
 //  Created by Rubén Vázquez Otero on 15/10/2018.
-//  Copyright © 2018 Mobile Jazz. All rights reserved.
+//  Copyright © 2018 Beenario GmbH. All rights reserved.
 //
 
 #if TARGET_OS_IOS

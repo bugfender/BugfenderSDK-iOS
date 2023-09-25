@@ -6,23 +6,23 @@
 	<dict>
 		<key>Headers/BFDefaultLogInterceptor.h</key>
 		<data>
-		+hC/EOWAFKPDC8rMcAX/f5qxl5U=
+		HM3OfaV/2/FAmMiZhowi7Z+XD3k=
 		</data>
 		<key>Headers/BFInterceptedLog.h</key>
 		<data>
-		QH3b+qd8tZSyizvAzyTS48u6d/g=
+		InKoTT1wl9WenJUaI/UucvEsjfE=
 		</data>
 		<key>Headers/BFLogInterceptor.h</key>
 		<data>
-		2dcMAChRJzzww2DpbNusTI6md4Q=
+		HEA76HZiRCGnFUYr6egoRlxIx/I=
 		</data>
 		<key>Headers/BFUserFeedbackNavigationController.h</key>
 		<data>
-		hAWbFL8iuwQL5UMr54zGYl/NqH0=
+		pgNFegt5zvOiPUxMA25ZNeKFPoM=
 		</data>
 		<key>Headers/BFUserFeedbackViewController.h</key>
 		<data>
-		O1QDUbmrOcio3ccLkNzspe2C+Og=
+		2nyi/Du3qqDKGIjd2XYC7Mvm6BU=
 		</data>
 		<key>Headers/BugfenderSDK-Swift.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Headers/BugfenderSDK.h</key>
 		<data>
-		i2GetMUMGPo8X1c5ijTpVQY5U5Q=
+		xQMZLdxpL+U39L20uMEfp7QkD04=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tAPeN+7abJqwSBzN/uvNA6kBScQ=
+		dDhWd8fKjpFK573nC25SClKwaA0=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -64,6 +64,10 @@
 		<data>
 		xZtXWOeaGjR4IJPDZoGmvH+flWg=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		hvWgeSSd3CM7mvMNrAyctw4z0FY=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -71,35 +75,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cY+0HbZGoswNfPDG9BwIpv6tvHViJXW53iCUyDxUGdg=
+			RPzjmSJ0KeLiYXq9hGrpzX/YhmMaxX5QUPFjOrC9+rs=
 			</data>
 		</dict>
 		<key>Headers/BFInterceptedLog.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bYdB3Ffa0QJ1HlYJmdnZTaXxocXiir8W1wnP+Jv2jks=
+			UcwfFY0qkHqthVY2AufNK+Eps9AsOCdPr/1xz3EXsBg=
 			</data>
 		</dict>
 		<key>Headers/BFLogInterceptor.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MEUWNn81uy6uk9U8tc61PMPIocAB31+xv8+1uUO8X5E=
+			N4IIYmip6wsKAxkKJ7CKK95v6mHIkVoyURQH938ca5c=
 			</data>
 		</dict>
 		<key>Headers/BFUserFeedbackNavigationController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qnfhjkgqJYRv/xxKLx4B3Pz8ggaeSQC3ZUYJobLQ2b8=
+			l8gcWZ/QAHe/vDz+pEzNEUS0JBQ3UAKqilS9QX0XGxE=
 			</data>
 		</dict>
 		<key>Headers/BFUserFeedbackViewController.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pBEKcy6NiNPp2XaCzESiqMUKA8bTsvSq1W7sZBx/ed4=
+			erKOMKGGxHhi9xZCBIYJTISwyaA0bXoGP3dOUh15uaE=
 			</data>
 		</dict>
 		<key>Headers/BugfenderSDK-Swift.h</key>
@@ -113,7 +117,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uwWXTU5cODXWSaeALXxagwbyIpWX3sy7mF8h/shWxhk=
+			SAOXIgVxzrqVhO+NPpq8S/K9jzuaYRHITlH28LsOq80=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -163,6 +167,13 @@
 			<key>hash2</key>
 			<data>
 			W+xWtwWp87xBEmAY+kx5GGQKmBGHRQjwFHLpY6afDeQ=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8Bw1x3CoeC5gLRbhV0CWwxI3HmL64X/ikUs5sXB+e54=
 			</data>
 		</dict>
 	</dict>

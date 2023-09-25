@@ -1,7 +1,7 @@
 //
 //  BugfenderSDK.h
 //  BugfenderSDK
-//  Copyright (c) 2014 Bugfender SL. All rights reserved.
+//  Copyright (c) 2014 Bugfender GmbH. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -88,6 +88,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_12_0  69
 #define BFLibraryVersionNumber_1_12_1  70
 #define BFLibraryVersionNumber_1_12_2  71
+#define BFLibraryVersionNumber_1_13_0  72
 
 /**
  * Current Bugfender version number.
@@ -98,7 +99,7 @@ FOUNDATION_EXPORT double const BFLibraryVersionNumber;
 /** Defines the level of a log */
 typedef NS_ENUM(NSUInteger, BFLogLevel)
 {
-    /** Default/Degug log level */
+    /** Default/Debug log level */
     BFLogLevelDefault       = 0,
     /** Warning log level */
     BFLogLevelWarning       = 1,
@@ -266,11 +267,11 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  ** ******************************************************************** **/
 
 /**
- * Sets the name for the device. If the Device Name is not set, then the  iOS standard device name will be automatically sent
+ * Sets the name for the device. If the Device Name is not set, then the iOS standard device name will be automatically sent
  * @note This method has to be called prior to activate logger. Otherwise, an exception will be thrown.
- * @param deviceName Device name that will be .
+ * @param deviceName Device name that will be shown in the Dashboard.
  */
-+(void)overrideDeviceName:(NSString *)deviceName;
++(void)overrideDeviceName:(NSString *)deviceName __deprecated_msg("Use setDeviceString:forKey: instead, which allows to change the name once set. This function will be removed in a future version.");
 
 /**
  * Sets a device detail with boolean type.
