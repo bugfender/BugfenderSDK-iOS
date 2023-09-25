@@ -1,3 +1,6 @@
+# 1.13.1
+- Bugfix: bfsdk_ksfu_readEntireFile reimplementation regression introduced in 1.13.0
+
 # 1.13.0
 - Update: add PrivacyInfo.xcprivacy to automatically recognize "other diagnostic data" is being collected, with no tracking and no association with the user identity
 - Update: declare accepted usage of NSUserDefaults in PrivacyInfo.xcprivacy

@@ -1,5 +1,5 @@
 PODS:
-  - BugfenderSDK (1.12.2)
+  - BugfenderSDK (1.13.0)
 
 DEPENDENCIES:
   - BugfenderSDK (from `..`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ".."
 
 SPEC CHECKSUMS:
-  BugfenderSDK: 93dd5feadb0c2c6780f28364b33187cedd8b5aad
+  BugfenderSDK: d62f66c91e78927662926f9c94afe9163b7eafdc
 
 PODFILE CHECKSUM: 59fbc3cddfb38207b7f5aa7b2b8645f436f71cb8
 
