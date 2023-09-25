@@ -22,19 +22,20 @@ First of all you will need to add the framework to your project.
 
 ## Using Swift Package Manager
 
-1. In Xcode go to the target's `General` tab and press on the icon to add a new library <img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/master/readme-images/spm/spm1.png?raw=true" width="400" >
+1. In Xcode go to the target's `General` tab and press on the icon to add a new library
+![](readme-images/spm/spm1.png)
 
 2. In the popover choose `Add Other` and then `Add Package Dependency...`
-<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/master/readme-images/spm/spm2.png?raw=true" width="300" >
+![](readme-images/spm/spm2.png)
 
 3. Paste the GitHub url from the Bugfender iOS repository `https://github.com/bugfender/BugfenderSDK-iOS` in the textfield and press `Next`
-<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/master/readme-images/spm/spm3.png?raw=true" width="400" >
+![](readme-images/spm/spm3.png)
 
 4. Leave the first option checked and press `Next`
-<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/master/readme-images/spm/spm4.png?raw=true" width="400" >
+![](readme-images/spm/spm4.png)
 
 5. Xcode will download the Bugfender files and you will be prompted with the following menu. Ensure BugfenderSDK is selected and press Finish
-<img src="https://github.com/bugfender/BugfenderSDK-iOS/blob/master/readme-images/spm/spm5.png?raw=true" width="400" >
+![](readme-images/spm/spm5.png)
 
 6. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
