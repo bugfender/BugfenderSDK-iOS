@@ -1,3 +1,7 @@
+# 1.13.2
+- Update: remove KSCrash logs to console output (there are benign error messages)
+- Bugfix: replace ID generation function that lead to sporadically missing logs when processing a high volume in a short time
+
 # 1.13.1
 - Bugfix: bfsdk_ksfu_readEntireFile reimplementation regression introduced in 1.13.0
 
