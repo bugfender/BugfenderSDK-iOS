@@ -21,6 +21,8 @@ Our upload script is meant to be executed locally from the Xcode build environme
 
 1. Select your main target from the *TARGETS* list on the left.
 
+1. Select the *Build Settings* tab, find **Build Options** > **User Script Sandboxing** and set it to **No**.
+
 1. Select the *Build Phases* tab.
 
 1. Open menu under the `+` sign and select *New Run Script Phase*.
