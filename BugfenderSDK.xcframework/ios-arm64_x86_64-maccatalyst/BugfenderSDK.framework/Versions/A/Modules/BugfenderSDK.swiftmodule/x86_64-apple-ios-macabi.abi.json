@@ -1,0 +1,980 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BugfenderSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "BFLog",
+        "printedName": "BFLog(_:_:tag:level:filename:line:funcname:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[any Swift.CVarArg]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CVarArg",
+                "printedName": "any Swift.CVarArg",
+                "usr": "s:s7CVarArgP"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "BFLogLevel",
+            "printedName": "BugfenderSDK.BFLogLevel",
+            "hasDefaultArg": true,
+            "usr": "c:@E@BFLogLevel"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:12BugfenderSDK5BFLog__3tag5level8filename4line8funcnameySS_s7CVarArg_pdSSSgSo0C5LevelVSSSiSStF",
+        "mangledName": "$s12BugfenderSDK5BFLog__3tag5level8filename4line8funcnameySS_s7CVarArg_pdSSSgSo0C5LevelVSSSiSStF",
+        "moduleName": "BugfenderSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "BFLogWarn",
+        "printedName": "BFLogWarn(_:_:tag:filename:line:funcname:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[any Swift.CVarArg]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CVarArg",
+                "printedName": "any Swift.CVarArg",
+                "usr": "s:s7CVarArgP"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:12BugfenderSDK9BFLogWarn__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "mangledName": "$s12BugfenderSDK9BFLogWarn__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "moduleName": "BugfenderSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "BFLogErr",
+        "printedName": "BFLogErr(_:_:tag:filename:line:funcname:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[any Swift.CVarArg]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CVarArg",
+                "printedName": "any Swift.CVarArg",
+                "usr": "s:s7CVarArgP"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:12BugfenderSDK8BFLogErr__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "mangledName": "$s12BugfenderSDK8BFLogErr__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "moduleName": "BugfenderSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "BFLogTrace",
+        "printedName": "BFLogTrace(_:_:tag:filename:line:funcname:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[any Swift.CVarArg]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CVarArg",
+                "printedName": "any Swift.CVarArg",
+                "usr": "s:s7CVarArgP"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:12BugfenderSDK10BFLogTrace__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "mangledName": "$s12BugfenderSDK10BFLogTrace__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "moduleName": "BugfenderSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "BFLogInfo",
+        "printedName": "BFLogInfo(_:_:tag:filename:line:funcname:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[any Swift.CVarArg]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CVarArg",
+                "printedName": "any Swift.CVarArg",
+                "usr": "s:s7CVarArgP"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:12BugfenderSDK9BFLogInfo__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "mangledName": "$s12BugfenderSDK9BFLogInfo__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "moduleName": "BugfenderSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "BFLogFatal",
+        "printedName": "BFLogFatal(_:_:tag:filename:line:funcname:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[any Swift.CVarArg]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CVarArg",
+                "printedName": "any Swift.CVarArg",
+                "usr": "s:s7CVarArgP"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:12BugfenderSDK10BFLogFatal__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "mangledName": "$s12BugfenderSDK10BFLogFatal__3tag8filename4line8funcnameySS_s7CVarArg_pdSSSgSSSiSStF",
+        "moduleName": "BugfenderSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "bfprint",
+        "printedName": "bfprint(_:separator:terminator:tag:level:filename:line:funcname:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Any]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.String?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "hasDefaultArg": true,
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "BFLogLevel",
+            "printedName": "BugfenderSDK.BFLogLevel",
+            "hasDefaultArg": true,
+            "usr": "c:@E@BFLogLevel"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "hasDefaultArg": true,
+            "usr": "s:Si"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "hasDefaultArg": true,
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:12BugfenderSDK7bfprint_9separator10terminator3tag5level8filename4line8funcnameyypd_S3SSgSo10BFLogLevelVSSSiSStF",
+        "mangledName": "$s12BugfenderSDK7bfprint_9separator10terminator3tag5level8filename4line8funcnameyypd_S3SSgSo10BFLogLevelVSSSiSStF",
+        "moduleName": "BugfenderSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Bugfender",
+        "printedName": "Bugfender",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "print",
+            "printedName": "print(_:separator:terminator:tag:level:filename:line:funcname:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BFLogLevel",
+                "printedName": "BugfenderSDK.BFLogLevel",
+                "hasDefaultArg": true,
+                "usr": "c:@E@BFLogLevel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So9BugfenderC0A3SDKE5print_9separator10terminator3tag5level8filename4line8funcnameyypd_S3SSgSo10BFLogLevelVSSSiSStFZ",
+            "mangledName": "$sSo9BugfenderC0A3SDKE5print_9separator10terminator3tag5level8filename4line8funcnameyypd_S3SSgSo10BFLogLevelVSSSiSStFZ",
+            "moduleName": "BugfenderSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:separator:terminator:tag:filename:line:funcname:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So9BugfenderC0A3SDKE5error_9separator10terminator3tag8filename4line8funcnameyypd_S3SSgSSSiSStFZ",
+            "mangledName": "$sSo9BugfenderC0A3SDKE5error_9separator10terminator3tag8filename4line8funcnameyypd_S3SSgSSSiSStFZ",
+            "moduleName": "BugfenderSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warning",
+            "printedName": "warning(_:separator:terminator:tag:filename:line:funcname:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So9BugfenderC0A3SDKE7warning_9separator10terminator3tag8filename4line8funcnameyypd_S3SSgSSSiSStFZ",
+            "mangledName": "$sSo9BugfenderC0A3SDKE7warning_9separator10terminator3tag8filename4line8funcnameyypd_S3SSgSSSiSStFZ",
+            "moduleName": "BugfenderSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)Bugfender",
+        "moduleName": "BugfenderSDK",
+        "isOpen": true,
+        "objc_name": "Bugfender",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 364,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 390,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 783,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 1129,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 1155,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 1497,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 1523,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 3822,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/gimix\/git\/bf\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
+      "kind": "StringLiteral",
+      "offset": 3848,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}

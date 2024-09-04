@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "BugfenderPackage",
     platforms: [
-        .iOS("11")
+        .iOS("12")
     ],
     products: [
         .library(
@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BugfenderSDK",
-            url: "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.13.2/BugfenderSDK.xcframework.zip",
-            checksum: "43c50a80ead9a73a2d99c327ec77e476fb6aa4b150df03d94292444ecdc01db5"
+            url: "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/2.0.0/BugfenderSDK.xcframework.zip",
+            checksum: "bb093f8d0467dbcabf891a9809ba7b8d3022255ba17397737640554b50c0a20a"
         )
     ]
 )
