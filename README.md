@@ -11,15 +11,6 @@ Supported iOS versions:
 # Installing the SDK
 First of all you will need to add the framework to your project.
 
-## Using CocoaPods
-
-1. Create a Podfile if you don't have one: `pod init`
-2. Add Bugfender to your Podfile:
-   ```
-   pod 'BugfenderSDK', '~> 1.12'
-   ```
-3. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
-
 ## Using Swift Package Manager
 
 1. In Xcode go to the target's `General` tab and press on the icon to add a new library
@@ -39,16 +30,29 @@ First of all you will need to add the framework to your project.
 
 6. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
 
+## Using CocoaPods
+
+1. Create a Podfile if you don't have one: `pod init`
+2. Add Bugfender to your Podfile:
+   ```
+   pod 'BugfenderSDK', '~> 2.0'
+   ```
+3. Save the file and run: `pod install`. This creates an `.xcworkspace` file for your app. Use this file for all future development on your application.
+
+Note: we recommend SwiftPM instead of CocoaPods, since CocoaPods is in [maintenance mode](https://blog.cocoapods.org/CocoaPods-Support-Plans/).
+
 ## Using Carthage
 1. Update to at least Carthage 0.38.0
 2. Add to your Cartfile:
    ```
-   github "bugfender/BugfenderSDK-iOS" ~>1.12
+   github "bugfender/BugfenderSDK-iOS" ~>2.0
    ```
 3. Save the file and run `carthage update --use-xcframeworks`
 4. Import `Carthage/Build/BugfenderSDK.xcframework` to your `Linked Frameworks and Libraries` (or drag-n-drop the file to your project).
 5. Make sure to select the option "Embed framework" (or list the framework in `input.xcfilelist`).
 6. Import `SystemConfiguration.framework`, `Security.framework`, `CoreServices.framework`, `CoreGraphics.framework` and `libc++.tbd` as well.
+
+Note: we recommend SwiftPM instead of Carthage.
 
 ## Manual
 
@@ -332,7 +336,7 @@ BugfenderSDK is now a dynamic framework and you will need to check the "embed fr
 <br /> Additionally, the Bugfender.swift helper class is not needed anymore and can be safely deleted, however, Swift must be available in your project. If you are installing Bugfender manually or using Carthage ensure that *Build Settings -> Always Embed Swift Standard Libraries* is set to *YES*.
 
 # Symbolicating crash reports
-Bugfender provides a script is able to upload dSYM bundles to [Bugfender](https://bugfender.com).
+Bugfender provides a script to upload dSYM bundles to [Bugfender](https://bugfender.com).
 
 ## Obtain the script
 The script is distributed if you are using Cocoapods or Swift Package Manager.
