@@ -1,3 +1,11 @@
+# 2.0.0
+ - New: the xcframework is now digitally signed.
+ - Breaking update: removed Bitcode, since now Apple rejects builds with Bitcode.
+ - Breaking update: built with Xcode 15, which means you will need Xcode 15 or newer to build your application.
+ - Breaking update: supports iOS version 12.0 and newer (iOS deployment target)
+ - Breaking update: drop static library and dynamic framework builds.
+ - Note there’s no functionality change vs prior version (1.13.2)
+
 # 1.13.2
 - Update: remove KSCrash logs to console output (there are benign error messages)
 - Bugfix: replace ID generation function that lead to sporadically missing logs when processing a high volume in a short time
