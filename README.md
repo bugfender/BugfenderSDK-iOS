@@ -4,7 +4,8 @@ Bugfender SDK for iOS [![Docs](https://img.shields.io/badge/docs-%E2%9C%93-blue.
 Bugfender is a cloud service to collect mobile application logs. Developers can control log sending programmatically and manually for each device. Logs are available at the [Bugfender dashboard](https://dashboard.bugfender.com/). You'll need an account.
 
 Supported iOS versions:
- * BugfenderSDK 1.12 works for iOS 11.0 and newer.
+ * BugfenderSDK 2.0 works for iOS 12.0 and newer.
+ * For iOS 11.0 support you can use BugfenderSDK 1.12.
  * For iOS 10 support you can use BugfenderSDK 1.10.6.
  * For iOS 8 support you can use BugfenderSDK 1.8.
 
