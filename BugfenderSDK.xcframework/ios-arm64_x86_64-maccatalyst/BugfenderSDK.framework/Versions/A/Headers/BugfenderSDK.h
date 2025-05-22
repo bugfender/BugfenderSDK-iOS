@@ -92,6 +92,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_13_1  73
 #define BFLibraryVersionNumber_1_13_2  74
 #define BFLibraryVersionNumber_2_0_0  75
+#define BFLibraryVersionNumber_2_0_1  76
 
 /**
  * Current Bugfender version number.

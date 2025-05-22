@@ -1,3 +1,6 @@
+# 2.0.1
+- Breaking update: built with Xcode 16, which means you will need Xcode 16 or newer to build your application.
+ 
 # 2.0.0
  - New: the xcframework is now digitally signed.
  - Breaking update: removed Bitcode, since now Apple rejects builds with Bitcode.
