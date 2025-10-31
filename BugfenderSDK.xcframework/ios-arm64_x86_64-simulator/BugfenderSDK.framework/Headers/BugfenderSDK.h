@@ -93,6 +93,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_1_13_2  74
 #define BFLibraryVersionNumber_2_0_0  75
 #define BFLibraryVersionNumber_2_0_1  76
+#define BFLibraryVersionNumber_2_1_0  77
 
 /**
  * Current Bugfender version number.
@@ -182,6 +183,13 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * is below this range it will be set to 1 MB, if is above the range it will be set to 50 MB
  **/
 + (void)setMaximumLocalStorageSize:(NSUInteger)maximumLocalStorageSize;
+
+/**
+ * INTERNAL USE ONLY - Sets the SDK type for User-Agent header.
+ * This method should only be called by binding SDKs (React Native, Flutter, etc.).
+ * @param sdkType The SDK type to set (e.g., "reactnative", "flutter", etc.)
+ */
++ (void)setSDKType:(NSString *)sdkType;
 
 /**
  * Returns the device identifier used to identify the current device in the Bugfender website.

@@ -1,3 +1,6 @@
+# 2.1.0
+- Update: Implemented a more robust retry mechanism and error classification to prevent log loss in some unsual situations.
+
 # 2.0.1
 - Breaking update: built with Xcode 16, which means you will need Xcode 16 or newer to build your application.
  
