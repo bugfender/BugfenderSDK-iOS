@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/BugfenderSDK.framework/BugfenderSDK</key>
 		<data>
-		BxFc2IWJsyJpk83aIuIe+92RAqo=
+		7iRTnGy+EBPi39Xr/WBkmc+V7bo=
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Headers/BFDefaultLogInterceptor.h</key>
 		<data>
@@ -30,15 +30,15 @@
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Headers/BugfenderSDK-Swift.h</key>
 		<data>
-		RJXrZCIA4x6v6NAg0cw4GjeG/dw=
+		NwSwCDprcnX8ouvD36eUOb/+EWk=
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Headers/BugfenderSDK.h</key>
 		<data>
-		D8Q3pX3ORaWCDtIIwU1mGGRUE5A=
+		I9OS9TwDelS2MLCEQ06pwgS2mtU=
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Info.plist</key>
 		<data>
-		NTEt1dLf37lLRCagpmeiuIKHCa0=
+		BbrDcqaHOed/c4lAV5sEAahen5Q=
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -46,15 +46,15 @@
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ZJMwceM5CO+p+W4JLPjSgA6qFL0=
+		yMOBC31UElICAjHXe2oyKrKsbeU=
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		F2ZGLh8XVuHVLs8P4hh6qEJVefQ=
+		zU7xxgXF1LHOeXAZVaJe/b3G1lc=
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZJMwceM5CO+p+W4JLPjSgA6qFL0=
+		yMOBC31UElICAjHXe2oyKrKsbeU=
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>ios-arm64/BugfenderSDK.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		hvWgeSSd3CM7mvMNrAyctw4z0FY=
+		coNifaRw37TA9ZH9XdvxrTMYAdo=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/BugfenderSDK</key>
 		<data>
-		+WWKD7FU7GQS7A+437h3nTWcUno=
+		a3lcuXsoN4z3I3hhO+3bGbN/aNs=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Headers/BFDefaultLogInterceptor.h</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Headers/BugfenderSDK-Swift.h</key>
 		<data>
-		QhWKaM7DrU7mC96/EH9C4b4Me+o=
+		ErxH2n6j0x+d+vdWnH89cKx566k=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Headers/BugfenderSDK.h</key>
 		<data>
-		D8Q3pX3ORaWCDtIIwU1mGGRUE5A=
+		I9OS9TwDelS2MLCEQ06pwgS2mtU=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
 		<data>
@@ -102,15 +102,15 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
-		lryhvg8cYOZdwejz7iTO+xfULqU=
+		A32dkZn+xVpvOme1a/nx+weQXlw=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<data>
-		jmG3QzA1rqJlxwwKJUOHplOiIaM=
+		L+RpAkNZ4LA03S2wqHIE5EeBFyc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<data>
-		lryhvg8cYOZdwejz7iTO+xfULqU=
+		A32dkZn+xVpvOme1a/nx+weQXlw=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<data>
@@ -118,15 +118,15 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<data>
-		q44kEC3rMtLrrkjpi1AmYCx0NYc=
+		roon4JsMB3sLkwOyUXKuBAjb1zc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<data>
-		TnrGB8Gf023JE1a1BGxg6uXJRbA=
+		xi5GMp1w5+zH6O2KsIZzs1fH1+U=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<data>
-		q44kEC3rMtLrrkjpi1AmYCx0NYc=
+		roon4JsMB3sLkwOyUXKuBAjb1zc=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/module.modulemap</key>
 		<data>
@@ -134,15 +134,15 @@
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Resources/Info.plist</key>
 		<data>
-		G1txcCKonTv1PKNBpwCG3NhDgfU=
+		ZU9XUP892GF/caobqaUkZXLvwas=
 		</data>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
 		<data>
-		hvWgeSSd3CM7mvMNrAyctw4z0FY=
+		coNifaRw37TA9ZH9XdvxrTMYAdo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/BugfenderSDK</key>
 		<data>
-		4sapqnvEIgJxZBaGqwQbXws2L4Y=
+		whLkQw66daMdL1Ezg1vIgBopv1Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Headers/BFDefaultLogInterceptor.h</key>
 		<data>
@@ -166,15 +166,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Headers/BugfenderSDK-Swift.h</key>
 		<data>
-		QhWKaM7DrU7mC96/EH9C4b4Me+o=
+		ErxH2n6j0x+d+vdWnH89cKx566k=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Headers/BugfenderSDK.h</key>
 		<data>
-		D8Q3pX3ORaWCDtIIwU1mGGRUE5A=
+		I9OS9TwDelS2MLCEQ06pwgS2mtU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Info.plist</key>
 		<data>
-		cvX5lc6CpBd6BCKgAQixy9lLBng=
+		GQBhQv17fbINNGZ/Ruu6JXQrjGc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -182,15 +182,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MKFG80TEDE+TpoQVKFUknoC2jSU=
+		qTnCYdxVbeQYf0Dd1KIBEiswd3o=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2LuCkDafHJZHfnAWcHiiRCN1Vq4=
+		jmNjH5mCuGlU4XNLgfIO39drfA4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MKFG80TEDE+TpoQVKFUknoC2jSU=
+		qTnCYdxVbeQYf0Dd1KIBEiswd3o=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -198,15 +198,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		v3udMFyDgAwSI4Z3GTUv4Tcfa88=
+		ecYSx+KtF+VKQtAokW/7dy64KDI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		h7dfQLFw+DdX+eDOOg48NfttcNc=
+		EQfh7k/3y/UZZM6YbIfKUtquHR0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		v3udMFyDgAwSI4Z3GTUv4Tcfa88=
+		ecYSx+KtF+VKQtAokW/7dy64KDI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		hvWgeSSd3CM7mvMNrAyctw4z0FY=
+		coNifaRw37TA9ZH9XdvxrTMYAdo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		9KUSS3um2NSF1lFqMYZvRaH7x6s=
+		yLjLQ5qpb/wMBjC66zD1B8szf0Q=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -227,11 +227,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BxFc2IWJsyJpk83aIuIe+92RAqo=
+			7iRTnGy+EBPi39Xr/WBkmc+V7bo=
 			</data>
 			<key>hash2</key>
 			<data>
-			PLI40UMvEqyOZpQ5YjW0xJmqcIno1M1HyuliBCPaZ8c=
+			B1BIbUbu9UZC7RiUDcPl0zgG7NZeIOamuoZFDjWTCY0=
 			</data>
 		</dict>
 		<key>ios-arm64/BugfenderSDK.framework/Headers/BFDefaultLogInterceptor.h</key>
@@ -293,33 +293,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RJXrZCIA4x6v6NAg0cw4GjeG/dw=
+			NwSwCDprcnX8ouvD36eUOb/+EWk=
 			</data>
 			<key>hash2</key>
 			<data>
-			r+u9P1Ym5B4vz5eig1ovyeZwWoEkODbzazy9J4ceh+M=
+			o1o1EyRQRYKR2NoHh+wwKyHtmCp9vmpYP1Lj7nXwUlY=
 			</data>
 		</dict>
 		<key>ios-arm64/BugfenderSDK.framework/Headers/BugfenderSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D8Q3pX3ORaWCDtIIwU1mGGRUE5A=
+			I9OS9TwDelS2MLCEQ06pwgS2mtU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0m5lx+z7MjCPlauKDYU+Qw8XCIuf0V+Su+XcoKcFOdE=
+			xwf/TJ+LrFfOECL8KwWIrvI8VsT5U/us/TISmCXip5Y=
 			</data>
 		</dict>
 		<key>ios-arm64/BugfenderSDK.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NTEt1dLf37lLRCagpmeiuIKHCa0=
+			BbrDcqaHOed/c4lAV5sEAahen5Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			iekJ8xpXXafaJs7c8CO6tNzY9EofPbMqn83QxGPF+QA=
+			XMaDWuTQrQuIL4aDit47NsXT3gdLbGQlv0dUWLGQCvg=
 			</data>
 		</dict>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -337,33 +337,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZJMwceM5CO+p+W4JLPjSgA6qFL0=
+			yMOBC31UElICAjHXe2oyKrKsbeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			P2y+JD1LyVogHW/mjUNefkYLbdnqP2tcdmI1zxjZBLg=
+			/L7jgHXCpH4wFzJyGWnRsB0SvygpGHj8jnWIvA3uLgQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F2ZGLh8XVuHVLs8P4hh6qEJVefQ=
+			zU7xxgXF1LHOeXAZVaJe/b3G1lc=
 			</data>
 			<key>hash2</key>
 			<data>
-			DGvQaaeycSRsxUJFOFLgXnCnLvTVCajDtTNLobvweNU=
+			0MsZkd9Kqp7iKfdYIomnetcgiLL10EGp8+Zqq+/4Ctc=
 			</data>
 		</dict>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZJMwceM5CO+p+W4JLPjSgA6qFL0=
+			yMOBC31UElICAjHXe2oyKrKsbeU=
 			</data>
 			<key>hash2</key>
 			<data>
-			P2y+JD1LyVogHW/mjUNefkYLbdnqP2tcdmI1zxjZBLg=
+			/L7jgHXCpH4wFzJyGWnRsB0SvygpGHj8jnWIvA3uLgQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BugfenderSDK.framework/Modules/module.modulemap</key>
@@ -381,11 +381,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hvWgeSSd3CM7mvMNrAyctw4z0FY=
+			coNifaRw37TA9ZH9XdvxrTMYAdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Bw1x3CoeC5gLRbhV0CWwxI3HmL64X/ikUs5sXB+e54=
+			SELJiu7/mOzI2Sir9zcWz5HzOwN/Y4zBI7m31bRAQHc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/BugfenderSDK</key>
@@ -412,11 +412,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+WWKD7FU7GQS7A+437h3nTWcUno=
+			a3lcuXsoN4z3I3hhO+3bGbN/aNs=
 			</data>
 			<key>hash2</key>
 			<data>
-			aGjWXJHNgVW47vBXlU2MqREZ3NQsHvFuqQaQHun4F5w=
+			Clb3wp3wtE2mdufIThK0WgAca0mmepB8WRiJjEBqlE0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Headers/BFDefaultLogInterceptor.h</key>
@@ -478,22 +478,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QhWKaM7DrU7mC96/EH9C4b4Me+o=
+			ErxH2n6j0x+d+vdWnH89cKx566k=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y0LJJoXp5e9aYBpZAG1FV6gVovULHG/Kadc8u0rmKbY=
+			nsAU8wdijSzxumYxsLd09z3Emck8JeZ+jjP/Kj8w9nA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Headers/BugfenderSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D8Q3pX3ORaWCDtIIwU1mGGRUE5A=
+			I9OS9TwDelS2MLCEQ06pwgS2mtU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0m5lx+z7MjCPlauKDYU+Qw8XCIuf0V+Su+XcoKcFOdE=
+			xwf/TJ+LrFfOECL8KwWIrvI8VsT5U/us/TISmCXip5Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-macabi.abi.json</key>
@@ -511,33 +511,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lryhvg8cYOZdwejz7iTO+xfULqU=
+			A32dkZn+xVpvOme1a/nx+weQXlw=
 			</data>
 			<key>hash2</key>
 			<data>
-			V+ipQ32/Wrn3eNl9cIqYF4b391VekH+U3VrWBUKhsD8=
+			3uiOdLSNf/ipcL+amZrnSyELGnLztRAoxjq7KdRYUY0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jmG3QzA1rqJlxwwKJUOHplOiIaM=
+			L+RpAkNZ4LA03S2wqHIE5EeBFyc=
 			</data>
 			<key>hash2</key>
 			<data>
-			NCNeHdDLyN9hp0irJQqoI0Pvycz4NeMlmZwdb85oKxk=
+			aF1SltZNSe2YDl7U+OGeJpGnCIKY2ZY9O2XdSrRVUj8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lryhvg8cYOZdwejz7iTO+xfULqU=
+			A32dkZn+xVpvOme1a/nx+weQXlw=
 			</data>
 			<key>hash2</key>
 			<data>
-			V+ipQ32/Wrn3eNl9cIqYF4b391VekH+U3VrWBUKhsD8=
+			3uiOdLSNf/ipcL+amZrnSyELGnLztRAoxjq7KdRYUY0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
@@ -555,33 +555,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q44kEC3rMtLrrkjpi1AmYCx0NYc=
+			roon4JsMB3sLkwOyUXKuBAjb1zc=
 			</data>
 			<key>hash2</key>
 			<data>
-			AB3SKAYrHsaWAgXa/W3WypA6d1GGu91Eq5JHScLHEcs=
+			m1jQXj78EIyRA0HQzOVl8YTiL7tCL9zgSiMoczpFOPs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TnrGB8Gf023JE1a1BGxg6uXJRbA=
+			xi5GMp1w5+zH6O2KsIZzs1fH1+U=
 			</data>
 			<key>hash2</key>
 			<data>
-			4vMKv4CqEV3+scJNyx6op/QKrlpgl+ExgvPhPvR/Mro=
+			sDCbBzR4+u3zQGSsX/dPbeJERguNlMgda2awlW2npNE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-macabi.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			q44kEC3rMtLrrkjpi1AmYCx0NYc=
+			roon4JsMB3sLkwOyUXKuBAjb1zc=
 			</data>
 			<key>hash2</key>
 			<data>
-			AB3SKAYrHsaWAgXa/W3WypA6d1GGu91Eq5JHScLHEcs=
+			m1jQXj78EIyRA0HQzOVl8YTiL7tCL9zgSiMoczpFOPs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Modules/module.modulemap</key>
@@ -599,22 +599,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G1txcCKonTv1PKNBpwCG3NhDgfU=
+			ZU9XUP892GF/caobqaUkZXLvwas=
 			</data>
 			<key>hash2</key>
 			<data>
-			/KOaxcMS9GjHfHH3bieXE/0qqsLSKx79SsWzq096zk4=
+			fH+p931xAQCRYDojGPWa37Zvo0gNf3XDOqIpqsz/RaI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/A/Resources/PrivacyInfo.xcprivacy</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hvWgeSSd3CM7mvMNrAyctw4z0FY=
+			coNifaRw37TA9ZH9XdvxrTMYAdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Bw1x3CoeC5gLRbhV0CWwxI3HmL64X/ikUs5sXB+e54=
+			SELJiu7/mOzI2Sir9zcWz5HzOwN/Y4zBI7m31bRAQHc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-maccatalyst/BugfenderSDK.framework/Versions/Current</key>
@@ -626,11 +626,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4sapqnvEIgJxZBaGqwQbXws2L4Y=
+			whLkQw66daMdL1Ezg1vIgBopv1Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			h3+n2Stt2xrrManEy3zxf2FnUkntdWLtFFH7Su38CzA=
+			vCS3i4yyhZJ/vDhYa0c+Z+WUuzJ46LuLeq5q6VnHMeU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Headers/BFDefaultLogInterceptor.h</key>
@@ -692,33 +692,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QhWKaM7DrU7mC96/EH9C4b4Me+o=
+			ErxH2n6j0x+d+vdWnH89cKx566k=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y0LJJoXp5e9aYBpZAG1FV6gVovULHG/Kadc8u0rmKbY=
+			nsAU8wdijSzxumYxsLd09z3Emck8JeZ+jjP/Kj8w9nA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Headers/BugfenderSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D8Q3pX3ORaWCDtIIwU1mGGRUE5A=
+			I9OS9TwDelS2MLCEQ06pwgS2mtU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0m5lx+z7MjCPlauKDYU+Qw8XCIuf0V+Su+XcoKcFOdE=
+			xwf/TJ+LrFfOECL8KwWIrvI8VsT5U/us/TISmCXip5Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cvX5lc6CpBd6BCKgAQixy9lLBng=
+			GQBhQv17fbINNGZ/Ruu6JXQrjGc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ztiFAGDFHzu5w/4QalpRuqpjnW5H8+md3mGBMnWlQKM=
+			5xIUOnGpPizpS1c0OtzgmiEr17NMKun2QhrW5NzfLTI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -736,33 +736,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MKFG80TEDE+TpoQVKFUknoC2jSU=
+			qTnCYdxVbeQYf0Dd1KIBEiswd3o=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZqASF8RnnIGqx+whtjHXNI7BGOzSF3OYVNmWHE6TXRQ=
+			zfK8RGO2yMqQjwjKluymcO8v07s7T9OglKLpVHPSbU0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2LuCkDafHJZHfnAWcHiiRCN1Vq4=
+			jmNjH5mCuGlU4XNLgfIO39drfA4=
 			</data>
 			<key>hash2</key>
 			<data>
-			kJqOv74axu8MDlT0vXs1kGMnW1ckp5Qs3AdRsDuVtcg=
+			vOiJ3N/E8rMFfGhd5TpKR0jHhPlHva6XNfqcvRFfcwM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MKFG80TEDE+TpoQVKFUknoC2jSU=
+			qTnCYdxVbeQYf0Dd1KIBEiswd3o=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZqASF8RnnIGqx+whtjHXNI7BGOzSF3OYVNmWHE6TXRQ=
+			zfK8RGO2yMqQjwjKluymcO8v07s7T9OglKLpVHPSbU0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -780,33 +780,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v3udMFyDgAwSI4Z3GTUv4Tcfa88=
+			ecYSx+KtF+VKQtAokW/7dy64KDI=
 			</data>
 			<key>hash2</key>
 			<data>
-			CFLY17YMHB4QvOjN13jkKj5z4fO5143sOCbnqTC9wWI=
+			g8qRRUtxIFai6mBSwwBfMkMPahH5/jom5DCZNm9AAf0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			h7dfQLFw+DdX+eDOOg48NfttcNc=
+			EQfh7k/3y/UZZM6YbIfKUtquHR0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ur6xnJ1Dd0gbBrYHgfY4/PROjSI/cwKMqJz8EmiYvyY=
+			29ayrHa5q+OM7P8LKxBQoeDU+zmk4jKg9IPQ08NVSyQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v3udMFyDgAwSI4Z3GTUv4Tcfa88=
+			ecYSx+KtF+VKQtAokW/7dy64KDI=
 			</data>
 			<key>hash2</key>
 			<data>
-			CFLY17YMHB4QvOjN13jkKj5z4fO5143sOCbnqTC9wWI=
+			g8qRRUtxIFai6mBSwwBfMkMPahH5/jom5DCZNm9AAf0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/Modules/module.modulemap</key>
@@ -824,22 +824,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hvWgeSSd3CM7mvMNrAyctw4z0FY=
+			coNifaRw37TA9ZH9XdvxrTMYAdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Bw1x3CoeC5gLRbhV0CWwxI3HmL64X/ikUs5sXB+e54=
+			SELJiu7/mOzI2Sir9zcWz5HzOwN/Y4zBI7m31bRAQHc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BugfenderSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9KUSS3um2NSF1lFqMYZvRaH7x6s=
+			yLjLQ5qpb/wMBjC66zD1B8szf0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			HE/VMjzJe4v4dXrMkQaWpXsfkycdik01WIWbENOTXpM=
+			6ldBjoeeWqx0Wvgric25EDtotzAY0U+/lRkMsHxzNK4=
 			</data>
 		</dict>
 	</dict>

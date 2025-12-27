@@ -1,3 +1,6 @@
+# 2.2.0
+- Update: Privacy Manifest updated with missing required reason API declarations.
+
 # 2.1.0
 - Update: Implemented a more robust retry mechanism and error classification to prevent log loss in some unsual situations.
 

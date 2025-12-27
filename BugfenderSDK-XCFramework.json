@@ -19,5 +19,6 @@
   "1.13.2" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/1.13.2/BugfenderSDK.xcframework.zip",
   "2.0.0" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/2.0.0/BugfenderSDK.xcframework.zip",
   "2.0.1" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/2.0.1/BugfenderSDK.xcframework.zip",
-  "2.1.0" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/2.1.0/BugfenderSDK.xcframework.zip"
+  "2.1.0" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/2.1.0/BugfenderSDK.xcframework.zip",
+  "2.2.0" : "https://github.com/bugfender/BugfenderSDK-iOS/releases/download/2.2.0/BugfenderSDK.xcframework.zip"
 }
