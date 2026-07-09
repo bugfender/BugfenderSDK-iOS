@@ -428,7 +428,7 @@
 				DEVELOPMENT_TEAM = 656H3CZH7T;
 				INFOPLIST_FILE = BugfenderExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bugfender.--PRODUCT-NAME-rfc1034identifier-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bugfender.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -441,7 +441,7 @@
 				DEVELOPMENT_TEAM = 656H3CZH7T;
 				INFOPLIST_FILE = BugfenderExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bugfender.--PRODUCT-NAME-rfc1034identifier-";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bugfender.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

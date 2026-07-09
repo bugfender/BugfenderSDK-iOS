@@ -574,6 +574,292 @@
         "children": [
           {
             "kind": "Function",
+            "name": "setNetworkLoggingRequestObfuscationHandler",
+            "printedName": "setNetworkLoggingRequestObfuscationHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String, [Swift.String : Swift.String], Swift.String?) -> (url: Swift.String, headers: [Swift.String : Swift.String], body: Swift.String?))?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, [Swift.String : Swift.String], Swift.String?) -> (url: Swift.String, headers: [Swift.String : Swift.String], body: Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(url: Swift.String, headers: [Swift.String : Swift.String], body: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, [Swift.String : Swift.String], Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So9BugfenderC0A3SDKE42setNetworkLoggingRequestObfuscationHandleryySS3url_SDyS2SG7headersSSSg4bodytSS_AfHtcSgFZ",
+            "mangledName": "$sSo9BugfenderC0A3SDKE42setNetworkLoggingRequestObfuscationHandleryySS3url_SDyS2SG7headersSSSg4bodytSS_AfHtcSgFZ",
+            "moduleName": "BugfenderSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNetworkLoggingResponseObfuscationHandler",
+            "printedName": "setNetworkLoggingResponseObfuscationHandler(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(([Swift.String : Swift.String], Swift.String?) -> (headers: [Swift.String : Swift.String], body: Swift.String?))?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Swift.String], Swift.String?) -> (headers: [Swift.String : Swift.String], body: Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(headers: [Swift.String : Swift.String], body: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "([Swift.String : Swift.String], Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Swift.String]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So9BugfenderC0A3SDKE43setNetworkLoggingResponseObfuscationHandleryySDyS2SG7headers_SSSg4bodytAE_AGtcSgFZ",
+            "mangledName": "$sSo9BugfenderC0A3SDKE43setNetworkLoggingResponseObfuscationHandleryySDyS2SG7headers_SSSg4bodytAE_AGtcSgFZ",
+            "moduleName": "BugfenderSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNetworkLoggingMaxRequestsPerMinute",
+            "printedName": "setNetworkLoggingMaxRequestsPerMinute(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So9BugfenderC0A3SDKE37setNetworkLoggingMaxRequestsPerMinuteyySiSgFZ",
+            "mangledName": "$sSo9BugfenderC0A3SDKE37setNetworkLoggingMaxRequestsPerMinuteyySiSgFZ",
+            "moduleName": "BugfenderSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "print",
             "printedName": "print(_:separator:terminator:tag:level:filename:line:funcname:)",
             "children": [
@@ -923,70 +1209,70 @@
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 364,
+      "offset": 1977,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 2003,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 757,
+      "offset": 2370,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 2396,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 1129,
+      "offset": 2742,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 2768,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 1497,
+      "offset": 3110,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 1523,
+      "offset": 3136,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 3822,
+      "offset": 5435,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/aleix.ventayol\/Projects\/bugfender\/remote-logger-ios\/BugfenderSDK\/BugfenderSDK\/Bugfender.swift",
       "kind": "StringLiteral",
-      "offset": 3848,
+      "offset": 5461,
       "length": 2,
       "value": "\"\""
     }

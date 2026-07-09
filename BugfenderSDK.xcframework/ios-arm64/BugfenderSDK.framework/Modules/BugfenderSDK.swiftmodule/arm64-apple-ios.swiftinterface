@@ -1,13 +1,24 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BugfenderSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import BugfenderSDK
 import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension BugfenderSDK.Bugfender {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public class func setNetworkLoggingRequestObfuscationHandler(_ handler: ((_ url: Swift.String, _ headers: [Swift.String : Swift.String], _ body: Swift.String?) -> (url: Swift.String, headers: [Swift.String : Swift.String], body: Swift.String?))?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public class func setNetworkLoggingResponseObfuscationHandler(_ handler: ((_ headers: [Swift.String : Swift.String], _ body: Swift.String?) -> (headers: [Swift.String : Swift.String], body: Swift.String?))?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public class func setNetworkLoggingMaxRequestsPerMinute(_ count: Swift.Int?)
+  #endif
+}
 extension BugfenderSDK.Bugfender {
   #if compiler(>=5.3) && $NonescapableTypes
   public class func print(_ items: Any..., separator: Swift.String = " ", terminator: Swift.String = "\n", tag: Swift.String? = nil, level: BugfenderSDK.BFLogLevel = .default, filename: Swift.String = #file, line: Swift.Int = #line, funcname: Swift.String = #function)

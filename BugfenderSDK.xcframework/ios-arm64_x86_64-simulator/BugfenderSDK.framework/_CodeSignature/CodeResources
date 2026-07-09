@@ -26,55 +26,55 @@
 		</data>
 		<key>Headers/BugfenderSDK-Swift.h</key>
 		<data>
-		ErxH2n6j0x+d+vdWnH89cKx566k=
+		L9vos1WEKY74L7s1WAN1TgxmKiI=
 		</data>
 		<key>Headers/BugfenderSDK.h</key>
 		<data>
-		I9OS9TwDelS2MLCEQ06pwgS2mtU=
+		Uw+/0eQ/myRRbsyJdhtHL9y0uys=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GQBhQv17fbINNGZ/Ruu6JXQrjGc=
+		Zw7pCZsg/EvGQ86doIFBaHXL7rs=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		XGU0y8hfpQ+hBtIi5EWAXQl32gs=
+		ObdtVFzTZOqAMkXWWVol7eZI5eY=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		qTnCYdxVbeQYf0Dd1KIBEiswd3o=
+		yAijbLvNkH32EsO1VfQuxI5XJnE=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jmNjH5mCuGlU4XNLgfIO39drfA4=
+		YGv5Uc6YbjZbf/U0guNTipsKocw=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		qTnCYdxVbeQYf0Dd1KIBEiswd3o=
+		yAijbLvNkH32EsO1VfQuxI5XJnE=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		u6ilR99zobpaeQ1Ih/dTZkRvUI0=
+		xLWUhunVsgpD1r6p6fU/agaD7HA=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		XGU0y8hfpQ+hBtIi5EWAXQl32gs=
+		ObdtVFzTZOqAMkXWWVol7eZI5eY=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ecYSx+KtF+VKQtAokW/7dy64KDI=
+		qaJ7YGNBjJXfvSuZ/CyV1wvU5Is=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		EQfh7k/3y/UZZM6YbIfKUtquHR0=
+		r1pO3IByb7Sd3bPKV/psbDVPCzs=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ecYSx+KtF+VKQtAokW/7dy64KDI=
+		qaJ7YGNBjJXfvSuZ/CyV1wvU5Is=
 		</data>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Jrh1Rwwd0yae7wdIqusvFhCtH4I=
+		H1Un8NJF2LdQZ4dUkofxpVH+b24=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -126,84 +126,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nsAU8wdijSzxumYxsLd09z3Emck8JeZ+jjP/Kj8w9nA=
+			iAZ923qkVNl9w0LS4PDHmx2dyPvo9ICV90yA6gCG/oU=
 			</data>
 		</dict>
 		<key>Headers/BugfenderSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xwf/TJ+LrFfOECL8KwWIrvI8VsT5U/us/TISmCXip5Y=
+			Z9feDLeDtOsTqxz2oNIxMnsy1fr3PxwDyvyeDo1q/Hs=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4s8SpPBxqDz44Ec7j3TZEY79FXhcNeebJTBerC1thfs=
+			mZg6Kbt7m/9OSggabWqgCQ3KWw/oczocBB6J5zII+Tk=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zfK8RGO2yMqQjwjKluymcO8v07s7T9OglKLpVHPSbU0=
+			W1FAhzV2iN5fzP7uwWzxkFK+8LgaTnUKpshcGtRRCxc=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vOiJ3N/E8rMFfGhd5TpKR0jHhPlHva6XNfqcvRFfcwM=
+			kSzP2BOg2eKOPVEcaoTgFlBcUNADu31ncX6YA58xG+c=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zfK8RGO2yMqQjwjKluymcO8v07s7T9OglKLpVHPSbU0=
+			W1FAhzV2iN5fzP7uwWzxkFK+8LgaTnUKpshcGtRRCxc=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fDGnIEfY1wA33M9uq4qb0IHYwccQwmpoqYBVKmq1Zck=
+			tezLgP9k5og3TL+TVVJPswLHgCM6YsxyS+v3VmSWgYM=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4s8SpPBxqDz44Ec7j3TZEY79FXhcNeebJTBerC1thfs=
+			mZg6Kbt7m/9OSggabWqgCQ3KWw/oczocBB6J5zII+Tk=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g8qRRUtxIFai6mBSwwBfMkMPahH5/jom5DCZNm9AAf0=
+			68em0UT+XjqVJh8JzRUgPB5Lgs9zu6/TRr5ztyW0txY=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			29ayrHa5q+OM7P8LKxBQoeDU+zmk4jKg9IPQ08NVSyQ=
+			Gb6hRsZf7XtKISqJ7F8ugQWA/Nsv/q+Jqi7uM6cP4uE=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g8qRRUtxIFai6mBSwwBfMkMPahH5/jom5DCZNm9AAf0=
+			68em0UT+XjqVJh8JzRUgPB5Lgs9zu6/TRr5ztyW0txY=
 			</data>
 		</dict>
 		<key>Modules/BugfenderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M7Y/32ulHLQ0jXJUgoOsYaz4kjftsslLC5GJxAE2+cI=
+			a2f/MidSNWzTxYXZPqrCEMDeJ+TuS3dR8bacTJMk5XI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

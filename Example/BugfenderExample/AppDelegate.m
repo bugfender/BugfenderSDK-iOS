@@ -18,9 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Configure Bugfender with all options enabled
-    [Bugfender overrideDeviceName:@"This is the device name"];
-    [Bugfender activateLogger:@"S4Ko0xfy9j4kaL4hZZT4bPEGpIncXLCo"]; // Use your own token here in order to see results in your account
+    [Bugfender activateLogger:@"WyzM3mYU8SxmgsErYbdpZ5JvkhW8Nvmn"]; // Use your own token here in order to see results in your account
     [Bugfender enableUIEventLogging];
+    [Bugfender enableCrashReporting];
+    [Bugfender enableNSLogLogging];
+    
     BFLog(@"Hello world! 🎉");
     return YES;
 }

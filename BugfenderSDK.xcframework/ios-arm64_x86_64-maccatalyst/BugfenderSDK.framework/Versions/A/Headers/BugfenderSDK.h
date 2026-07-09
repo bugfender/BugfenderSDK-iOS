@@ -95,6 +95,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define BFLibraryVersionNumber_2_0_1  76
 #define BFLibraryVersionNumber_2_1_0  77
 #define BFLibraryVersionNumber_2_2_0  78
+#define BFLibraryVersionNumber_3_0_0  79
 
 /**
  * Current Bugfender version number.
@@ -118,6 +119,38 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
     /** Fatal log level */
     BFLogLevelFatal         = 5
 };
+
+@class BFNetworkRequestData;
+@class BFNetworkResponseData;
+
+typedef BFNetworkRequestData * _Nonnull (^BFNetworkLoggingRequestObfuscationHandler)(NSString *url, NSDictionary<NSString *, NSString *> *headers, NSString * _Nullable body);
+typedef BFNetworkResponseData * _Nonnull (^BFNetworkLoggingResponseObfuscationHandler)(NSDictionary<NSString *, NSString *> *headers, NSString * _Nullable body);
+
+@interface BFNetworkRequestData : NSObject
+
+@property (nonatomic, copy, readonly) NSString *url;
+@property (nonatomic, copy, readonly) NSDictionary<NSString *, NSString *> *headers;
+@property (nonatomic, copy, readonly, nullable) NSString *body;
+
+- (instancetype)initWithURL:(NSString *)url
+                    headers:(NSDictionary<NSString *, NSString *> *)headers
+                       body:(nullable NSString *)body NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)init NS_UNAVAILABLE;
+
+@end
+
+@interface BFNetworkResponseData : NSObject
+
+@property (nonatomic, copy, readonly) NSDictionary<NSString *, NSString *> *headers;
+@property (nonatomic, copy, readonly, nullable) NSString *body;
+
+- (instancetype)initWithHeaders:(NSDictionary<NSString *, NSString *> *)headers
+                           body:(nullable NSString *)body NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)init NS_UNAVAILABLE;
+
+@end
 
 #define BFLog(args, ...)     BFLog2(BFLogLevelDefault, nil, args, ##__VA_ARGS__)
 #define BFLogWarn(args, ...) BFLog2(BFLogLevelWarning, nil, args, ##__VA_ARGS__)
@@ -256,6 +289,45 @@ typedef NS_ENUM(NSUInteger, BFLogLevel)
  * Gets the status of printToConsole. printToConsole prints messages to console. By default it is enabled.
  */
 +(BOOL) printToConsole;
+
+/**
+ * Enables or disables network request/response capture for URLSession traffic.
+ * Default value is NO. Correlation headers are only injected into requests that are captured.
+ * Sensitive headers (Authorization, Cookie, Set-Cookie, etc.) are redacted by default.
+ */
++(void)setNetworkLoggingEnabled:(BOOL)enabled;
+
+/**
+ * Enables or disables full network body capture. Default value is NO.
+ */
++(void)setNetworkLoggingCaptureBodies:(BOOL)capture;
+
+/**
+ * Enables or disables response-body capture for HTTP status codes >= 400 when full body capture is disabled.
+ */
++(void)setNetworkLoggingCaptureErrorResponseBodies:(BOOL)capture;
+
+/**
+ * Sets an optional request obfuscation handler for captured network logs.
+ */
++(void)setNetworkLoggingRequestObfuscationHandler:(nullable BFNetworkLoggingRequestObfuscationHandler)handler NS_SWIFT_NAME(setNetworkLoggingRequestObfuscationHandlerObjC(_:));
+
+/**
+ * Sets an optional response obfuscation handler for captured network logs.
+ */
++(void)setNetworkLoggingResponseObfuscationHandler:(nullable BFNetworkLoggingResponseObfuscationHandler)handler NS_SWIFT_NAME(setNetworkLoggingResponseObfuscationHandlerObjC(_:));
+
+/**
+ * Sets URL allowlist and denylist filters for network capture. Patterns use NSString wildcard matching.
+ */
++(void)setNetworkLoggingURLFilterWithAllowlist:(nullable NSArray<NSString *> *)allowlist
+                                      denylist:(nullable NSArray<NSString *> *)denylist NS_SWIFT_NAME(setNetworkLoggingURLFilter(allowlist:denylist:));
+
+/**
+ * Sets a maximum number of captured network logs per minute. Pass nil to disable the limit.
+ * Values lower than 1 are invalid and ignored.
+ */
++(void)setNetworkLoggingMaxRequestsPerMinute:(nullable NSNumber *)count NS_SWIFT_NAME(setNetworkLoggingMaxRequestsPerMinuteNumber(_:));
 
 #if TARGET_OS_IOS
 /**
