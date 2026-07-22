@@ -1,3 +1,6 @@
+# 3.0.1
+- New: Network logging feature
+
 # 2.2.0
 - Update: Privacy Manifest updated with missing required reason API declarations.
 
