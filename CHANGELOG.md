@@ -1,3 +1,12 @@
+# 3.1.0
+- Breaking update: raised the minimum deployment target to iOS 15.
+- Update: improved upload reliability with persistent retries, capped backoff, early cancellation, and connectivity-aware recovery.
+- Update: preserved logs, issues, key-values, and crash data during temporary failures and application restrictions.
+- Update: improved corrupt-log recovery, upload batch limits, disk accounting, and memory usage.
+- Bugfix: fixed missing device ID in key-value requests.
+- Bugfix: restored crash reporting after processing saved reports.
+- Bugfix: removed the redundant `HTTPBodyStream` assignment that cleared `HTTPBody`.
+
 # 3.0.1
 - New: Network logging feature
 
