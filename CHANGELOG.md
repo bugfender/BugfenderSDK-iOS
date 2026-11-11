@@ -1,3 +1,6 @@
+# 3.1.1
+- Bugfix: corrected the packaged SDK version.
+
 # 3.1.0
 - Breaking update: raised the minimum deployment target to iOS 15.
 - Update: improved upload reliability with persistent retries, capped backoff, early cancellation, and connectivity-aware recovery.
